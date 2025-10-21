@@ -7,8 +7,10 @@ Supports both Azure OpenAI and OpenAI via the llm_client module.
 import json
 import argparse
 import logging
+import time
 from pathlib import Path
 from typing import List, Dict, Any
+from tenacity import retry, stop_after_attempt, wait_random_exponential
 from llm_client import get_tag_generation_client, LLMConfigError
 
 # Set up logging
@@ -17,6 +19,18 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+
+@retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+def make_llm_call(client, messages, response_format):
+    """
+    Makes a chat completion call with retry logic.
+    Retries up to 6 times with exponential backoff (1-60 seconds).
+    """
+    return client.chat.completions.create(
+        messages=messages,
+        response_format=response_format
+    )
 
 
 def load_prompt_template(prompt_file: Path) -> str:
@@ -70,7 +84,8 @@ def generate_tags_from_batch(
     logger.info(f"  Batch {batch_num}: Calling LLM API...")
 
     try:
-        response = client.chat.completions.create(
+        response = make_llm_call(
+            client,
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that analyzes academic papers and identifies research themes."},
                 {"role": "user", "content": prompt}
@@ -153,7 +168,8 @@ def aggregate_batch_tags(
     logger.info("Calling LLM API for aggregation...")
 
     try:
-        response = client.chat.completions.create(
+        response = make_llm_call(
+            client,
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that analyzes and merges research theme classifications."},
                 {"role": "user", "content": prompt}
@@ -198,7 +214,8 @@ def generate_tags(
     aggregate_prompt_template: str,
     num_tags: int,
     client,
-    batch_size: int = 50
+    batch_size: int = 50,
+    delay_between_batches: float = 30.0
 ) -> List[Dict[str, Any]]:
     """
     Generate tags using LLM with multi-batch processing.
@@ -226,6 +243,11 @@ def generate_tags(
             len(papers)
         )
         batch_results.append(batch_tags)
+
+        # Sleep between batches to avoid rate limiting (except after last batch)
+        if i < num_batches - 1:
+            logger.info(f"  Waiting {delay_between_batches} seconds before next batch...")
+            time.sleep(delay_between_batches)
 
     # If only one batch, return those tags directly
     if len(batch_results) == 1:
@@ -283,6 +305,12 @@ def main():
         default=50,
         help='Number of papers to include in prompt (default: 50)'
     )
+    parser.add_argument(
+        '--delay-between-batches',
+        type=float,
+        default=30.0,
+        help='Delay in seconds between batches to avoid rate limiting (default: 30.0)'
+    )
 
     args = parser.parse_args()
 
@@ -328,7 +356,8 @@ def main():
         aggregate_prompt_template,
         args.num_tags,
         client,
-        args.batch_size
+        args.batch_size,
+        args.delay_between_batches
     )
 
     # Write output

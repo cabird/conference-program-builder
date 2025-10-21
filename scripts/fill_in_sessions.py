@@ -115,6 +115,40 @@ class FillInSessionBuilder:
         print(f"  Min fill ratio: {self.min_fill_ratio:.0%} ({self.min_fill_minutes} min)")
         print(f"  Estimated sessions needed: {self.max_sessions}")
 
+        # Validate that the problem is feasible
+        self._validate_feasibility()
+
+    def _validate_feasibility(self):
+        """
+        Pre-flight checks to catch common infeasibility issues.
+        Raises ValueError with actionable error message if problem is infeasible.
+        """
+        # Check for papers that are too large to fit in any session
+        oversized_papers = []
+        for paper in self.papers:
+            if paper['minutes'] > self.session_duration:
+                oversized_papers.append(paper)
+
+        if oversized_papers:
+            error_msg = f"Found {len(oversized_papers)} paper(s) larger than session duration ({self.session_duration} min):\n"
+            for paper in oversized_papers:
+                error_msg += f"  - {paper['id']}: {paper['minutes']} min - '{paper['title'][:60]}...'\n"
+            error_msg += "\nProblem is infeasible. Options:\n"
+            error_msg += "  1. Increase session_duration in config\n"
+            error_msg += "  2. Split or remove oversized papers\n"
+            error_msg += "  3. Manually assign these papers outside the solver"
+            raise ValueError(error_msg)
+
+        # Check if total capacity is sufficient
+        total_minutes = sum(p['minutes'] for p in self.papers)
+        max_capacity = self.max_sessions * self.session_duration
+        if total_minutes > max_capacity:
+            raise ValueError(
+                f"Insufficient capacity: {total_minutes} min needed but only "
+                f"{max_capacity} min available in {self.max_sessions} sessions.\n"
+                f"This should not happen - check max_sessions calculation."
+            )
+
     def _compute_similarity_matrix(self) -> Dict[Tuple[int, int], int]:
         """
         Pre-compute similarity scores for all paper pairs.

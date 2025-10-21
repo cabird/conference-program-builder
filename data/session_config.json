@@ -19,6 +19,7 @@
     "swap_passes": 3,
     "time_budget_seconds": 30,
     "random_seed": 42,
+    "leftover_swap_score_tolerance": 2.0,
     "weights": {
       "utilization": 1.0,
       "primary": 4.0,
@@ -28,7 +29,7 @@
   },
   "constraints": {
     "avoid_author_conflicts": true,
-    "author_contstraints": [
+    "author_constraints": [
       {
         "type": "date_constraint",
         "author_name": "David Lo",

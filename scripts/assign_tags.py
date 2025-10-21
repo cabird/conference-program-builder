@@ -19,11 +19,21 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Save progress every N papers to balance resume capability with performance
+SAVE_INTERVAL = 10
+
 
 def load_prompt_template(prompt_file: Path) -> str:
     """Load prompt template from file."""
     with open(prompt_file, 'r', encoding='utf-8') as f:
         return f.read()
+
+
+def save_papers(papers: List[Dict], output_path: Path) -> None:
+    """Save papers to JSON file."""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(papers, f, indent=2, ensure_ascii=False)
 
 
 def format_tag_list(tags: List[Dict[str, str]]) -> str:
@@ -242,10 +252,10 @@ def main():
 
             logger.info(f"  Tags: {assigned_tags['primary_tag']}, {assigned_tags['secondary_tag']}, {assigned_tags['tertiary_tag']}")
 
-            # Write to disk after each paper
-            args.output.parent.mkdir(parents=True, exist_ok=True)
-            with open(args.output, 'w', encoding='utf-8') as f:
-                json.dump(papers, f, indent=2, ensure_ascii=False)
+            # Save progress periodically (every SAVE_INTERVAL papers or at the end)
+            if i % SAVE_INTERVAL == 0 or i == len(papers):
+                logger.info(f"  Saving progress...")
+                save_papers(papers, args.output)
 
             # Add delay to avoid rate limiting
             if i < len(papers):
@@ -255,9 +265,7 @@ def main():
             logger.error(f"FATAL ERROR: {e}")
             logger.error("Stopping script due to repeated validation failures.")
             # Write current state before exiting
-            args.output.parent.mkdir(parents=True, exist_ok=True)
-            with open(args.output, 'w', encoding='utf-8') as f:
-                json.dump(papers, f, indent=2, ensure_ascii=False)
+            save_papers(papers, args.output)
             return
 
     logger.info("Tag assignment complete!")

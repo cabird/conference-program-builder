@@ -631,7 +631,7 @@ Examples:
         print(f"\nLoading session config from: {args.session_config}")
         session_config = load_json(args.session_config)
         schedule = session_config.get('schedule', [])
-        author_constraints = session_config.get('constraints', {}).get('author_contstraints', [])
+        author_constraints = session_config.get('constraints', {}).get('author_constraints', [])
 
         print(f"  Schedule days: {len(schedule)}")
         print(f"  Author constraints: {len(author_constraints)}")

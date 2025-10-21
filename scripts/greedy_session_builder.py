@@ -679,8 +679,9 @@ class GreedySessionBuilder:
                             new_unassigned = len(self.unassigned)
 
                             # Accept if score improves OR score stays same/close and we reduced unassigned
-                            # Be aggressive about placing papers - allow up to 2 point score decrease
-                            score_acceptable = (new_score >= current_score - 2.0)
+                            # Be aggressive about placing papers - allow score decrease up to tolerance
+                            score_tolerance = self.config.get('leftover_swap_score_tolerance', 2.0)
+                            score_acceptable = (new_score >= current_score - score_tolerance)
                             reduced_unassigned = (new_unassigned < current_unassigned)
 
                             if score_acceptable and reduced_unassigned:
