@@ -1,0 +1,1505 @@
+[
+    {
+        "pid": 1,
+        "title": "On Automated Assistants for Software Development: The Role of LLMs",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-4563ea6c2b366de5cdd9858234b65697450f06080b6b30a48081af08226cf3a0",
+            "timestamp": 1685315797,
+            "size": 323150,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "Software developers handle many complex tasks that include gathering and applying domain knowledge, coordinating subtasks, designing interfaces, turning ideas into elegant code, and more. They must switch contexts between these tasks, which incurs additional cognitive costs. Recent advances in large language models (LLMs) open up new possibilities for moving beyond the support provided by automated assistants available today. In this paper, we explore if a human memory model can provide a framework for the systematic exploration of automated assistants for software development based on LLMs and other new technologies.",
+        "authors": [
+            {
+                "email": "miralng@cs.ubc.ca",
+                "first": "Mira",
+                "last": "Leung",
+                "affiliation": "University of British Columbia",
+                "contact": true
+            },
+            {
+                "email": "murphy@cs.ubc.ca",
+                "first": "Gail",
+                "last": "Murphy",
+                "affiliation": "University of British Columbia",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE",
+            "AI and Software Engineering: autonomous and self-adapting systems",
+            "AI and Software Engineering: other",
+            "Human Aspects of Software Engineering: program comprehension"
+        ],
+        "pc_conflicts": {
+            "xinyunchen@google.com": true
+        },
+        "collaborators": "All (Google)\r\nAll (UBC)\r\nAll (University of British Columbia)\r\nA Ruvimova\r\nA Lill\r\nJ Gugler\r\nL Howe\r\nE Huang\r\nAnna Eilertsen (University of Bergen)\r\nMartin P. Robillard (McGill)\r\nArthur Marques (UBC)\r\nGiovanni Viviani (UBC)\r\nThomas Fritz (University of Zurich)\r\nThomas Zimmermann (Microsoft)\r\nMauricio Soto (ABB)\r\nChris Satterfield (UBC)\r\nDavid C Shepherd\r\nNicholas Kraft\r\nZhiyuan Wan (Zhejiang University)\r\nNicholas Bradley (UBC)\r\nAndre N Meyer\r\nK Kevic\r\nJ Bryan (Tasktop)\r\nR D Elves (Tasktop)\r\nC Janik-Jones\r\nL Bao\r\nL Barton\r\nG Candan\r\nQ Huang\r\nA Potanin\r\nIvan Beschastnikh\r\nXin Xia\r\nDavid Lo\r\nDaniel Almeida\r\nGreg Wilson\r\nMichael Hoye\r\nGiovanni Viviani\r\nMik Kersten\r\nRob Elves\r\nNicole Bryan\r\nAlex Potanin\r\nMarc Palyart\r\nMichalis Famelis\r\nMarko Gasparic\r\nFrancesco Ricci\r\nAndrea Janes\r\nTural Gurbanov\r\nLaura E. Barton\r\nAndrian Marcus\r\nChristoph Truede\r\nGabriele Bavota\r\nOscar Chaparro\r\nNeil A. Ernst\r\nMarco Aureilo Gerosa\r\nMichael W. Godfrey\r\nMichele Lanza\r\nMario Linares Vasquez\r\nLaura Moreno\r\nDavid C. Shepherd\r\nEdmund Wong\r\nGloria Mark\r\nDaniel Rozenberg\r\nFabian Kosmale\r\nValerie Poser\r\nHeiko Becker\r\nC. Albert Thompson\r\nHenrique Rocha\r\nMarco Tulio Valente\r\nHumberto Marques-Neto",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685153905
+    },
+    {
+        "pid": 15,
+        "title": "PURLTL: Mining LTL Specification from Imperfect Traces in Testing",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-82f60a642e71206a8829dbbb2ff5d25e6daf0c5c7d19c192214818b295a3c33c",
+            "timestamp": 1685533238,
+            "size": 304835,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "Formal specifications are widely used in software testing approaches, while writing such specifications is a time-consuming job. Recently, a number of methods have been proposed to mine specifications from execution traces, typically in the form of linear temporal logic (LTL). However, existing works have the following disadvantages: (1) ignoring the negative impact of imperfect traces, which come from partial profiling, missing context information, or buggy programs; (2) relying on templates, resulting in limited expressiveness; (3) requesting negative traces, which are usually unavailable in practice.\r\n\r\nIn this paper, we propose PURLTL, which is able to mine arbitrary LTL specifications from imperfect traces. To alleviate the search space explosion and the wrong search bias, we propose a neural-based method to search LTL formulae, which, intuitively, simulates LTL path checking through differentiable parameter operations. To solve the problem of lacking negative traces, we transform the problem into learning from positive and unlabeled samples, by means of data augmentation and applying positive and unlabeled learning to the training process. Experiments show that our approach surpasses the previous start-of-the-art (SOTA) approach by a large margin. Besides, the results suggest that our approach is not only robust with imperfect traces, but also does not rely on formula templates.",
+        "authors": [
+            {
+                "email": "pengb8@mail2.sysu.edu.cn",
+                "first": "Bo",
+                "last": "Peng",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            },
+            {
+                "email": "liangpj3@mail2.sysu.edu.cn",
+                "first": "Pingjia",
+                "last": "Liang",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            },
+            {
+                "email": "hantch@mail2.sysu.edu.cn",
+                "first": "Tingchen",
+                "last": "Han",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            },
+            {
+                "email": "luowlin3@mail2.sysu.edu.cn",
+                "first": "Weilin",
+                "last": "Luo",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            },
+            {
+                "email": "jfdu@gdufs.edu.cn",
+                "first": "Jianfeng",
+                "last": "Du",
+                "affiliation": "Guangdong University of Foreign Studies",
+                "contact": true
+            },
+            {
+                "email": "wanhai@mail.sysu.edu.cn",
+                "first": "Hai",
+                "last": "Wan",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            },
+            {
+                "email": "yerzh@mail2.sysu.edu.cn",
+                "first": "Rongzhen",
+                "last": "Ye",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            },
+            {
+                "email": "zhengyh29@mail2.sysu.edu.cn",
+                "first": "Yuhang",
+                "last": "Zheng",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE"
+        ],
+        "pc_conflicts": {},
+        "collaborators": "None",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685132351
+    },
+    {
+        "pid": 19,
+        "title": "Live Programming for Finite Model Finders",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-503be00be505989b648f69de507b65e2979c000fff1eeed57c701c2f4c196b53",
+            "timestamp": 1685483420,
+            "size": 529792,
+            "pages": 6,
+            "format_status": "ok"
+        },
+        "abstract": "Finite model finders give users the ability to specify properties of a system in mathematical logic and then automatically find concrete examples, called solutions, that satisfy the properties. These solutions are often viewed as a key benefit of model finders, as they create an exploratory environment for developers to engage with their model. In practice, users find less benefit from these solutions than expected. For years, researchers believed that the problem was that too many solutions are produced. However, a recent user study found that users actually prefer enumerating a broad set of solutions. Inspired by a recent user study on Alloy, a modeling language backed by a finite model finder, we believe that the issue is that solutions are too removed from the logical constraints that generate them to help users build an understanding of the constraints themselves. In this paper, we outline a proof-of-concept for live programming of Alloy models in which writing the model and exploring solutions are intertwined. We highlight how this development environment enables more productive feedback loops between the developer, the model and the solutions.",
+        "authors": [
+            {
+                "email": "allison.sullivan@uta.edu",
+                "first": "Allison",
+                "last": "Sullivan",
+                "affiliation": "The University of Texas at Arlington",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "Formal Aspects of Software Engineering: formal methods, validation and verification",
+            "Human Aspects of Software Engineering: software visualization"
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685042560
+    },
+    {
+        "pid": 25,
+        "title": "Enhancing Code Safety in Quantum Intermediate Representation",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-85be019502f6e1df7c07533870813cc3e2668dd402da92270dfbe2e3ecae4d07",
+            "timestamp": 1685107817,
+            "size": 384266,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "Quantum Intermediate Representation (QIR) is an LLVM-based intermediate representation developed by Microsoft for quantum program compilers. QIR is designed to offer a universal solution for quantum program compilers, decoupled from both front-end languages and back-end hardware, thereby eliminating the need for redundant development of intermediate representations and compilers. However, the lack of a formal definition and reliance on natural language descriptions in the current state of QIR result in interpretational ambiguity and a dearth of rigor in implementing quantum functions. In this paper, we present formal definitions for QIR's data types and instruction sets to establish correctness and safety assurances for operations and intermediate code conversions within QIR. To demonstrate the effectiveness of our approach, we provide examples of unsafe QIR code where errors can be identified with our method.",
+        "authors": [
+            {
+                "email": "luo.junjie.609@s.kyushu-u.ac.jp",
+                "first": "Junjie",
+                "last": "Luo",
+                "affiliation": "Kyushu University",
+                "contact": true
+            },
+            {
+                "email": "zhao@ait.kyushu-u.ac.jp",
+                "first": "Jianjun",
+                "last": "Zhao",
+                "affiliation": "Kyushu University",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "Dependability, Safety, and Reliability: reliability",
+            "Formal Aspects of Software Engineering: formal methods, validation and verification",
+            "Formal Aspects of Software Engineering: programming languages"
+        ],
+        "pc_conflicts": {
+            "d.wang@ait.kyushu-u.ac.jp": true,
+            "kondo@ait.kyushu-u.ac.jp": true,
+            "weima93@gmail.com": true
+        },
+        "collaborators": "Lei Ma (The University of Tokyo)",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685107817
+    },
+    {
+        "pid": 31,
+        "title": "Characterizing Flaky Tests in Node.js Applications",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-d6f1b7c0170fb5d5c95ba1c6cafcddd8e969cb11c06c662c689d0e46e87d426a",
+            "timestamp": 1685027590,
+            "size": 101353,
+            "pages": 3,
+            "format_status": "ok"
+        },
+        "abstract": "Regression testing is an important means of assessing the quality of\r\n  Node.js applications. However, non-deterministic executions inside\r\n  Node.js framework could make test cases intermittently pass or fail on the\r\n  same version of code, which are called flaky tests. Flaky tests can\r\n  cause unreliable test results, and make developers waste a\r\n  significant amount of time debugging the bugs that do not belong to\r\n  the target application. \r\n\r\n  In this paper, we conduct an empirical study on 87 flaky tests from\r\n  7 popular Node.js applications, and analyze the non-determinism that\r\n  causes these\r\n  flaky tests. Through this study, there is a wide range of\r\n  non-determinism to cause flaky tests, including non-deterministic\r\n  event triggering order, non-deterministic function calls,\r\n  non-deterministic process\/thread scheduling order, non-deterministic\r\n  execution of asynchronous tasks and non-deterministic event\r\n  triggering data. The results reveals that, existing approaches on\r\n  event race detection are not sufficient for flaky test detection.\r\n  In future, researchers can design flaky test detection approaches\r\n  targeted at different categories of non-determinism.",
+        "authors": [
+            {
+                "email": "changxiaoning17@otcaix.iscas.ac.cn",
+                "first": "Xiaoning",
+                "last": "Chang",
+                "affiliation": "State Key Lab of Computer Sciences, Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "liangzheheng@qq.com",
+                "first": "Zheheng",
+                "last": "Liang",
+                "affiliation": "GuangDong Power Grid"
+            },
+            {
+                "email": "gqwu@otcaix.iscas.ac.cn",
+                "first": "Guoquan",
+                "last": "Wu",
+                "affiliation": "State Key Lab of Computer Sciences, Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "gaoyu15@otcaix.iscas.ac.cn",
+                "first": "Yu",
+                "last": "Gao",
+                "affiliation": "Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "wchen@otcaix.iscas.ac.cn",
+                "first": "Wei",
+                "last": "Chen",
+                "affiliation": "Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "wj@otcaix.iscas.ac.cn",
+                "first": "Jun",
+                "last": "Wei",
+                "affiliation": "State Key Lab of Computer Sciences, Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "zhenyue@undecidable.org",
+                "first": "Zhenyue",
+                "last": "Long",
+                "affiliation": "GuangDong Power Grid"
+            },
+            {
+                "email": "cuilei@gdxx.csg.cn",
+                "first": "Lei",
+                "last": "Cui",
+                "affiliation": "GuangDong Power Grid"
+            },
+            {
+                "email": "tao@otcaix.iscas.ac.cn",
+                "first": "Tao",
+                "last": "Huang",
+                "affiliation": "Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            }
+        ],
+        "submission_type": "Late-Breaking Advances (2 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "Software Analytics: mining software repositories"
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685027590
+    },
+    {
+        "pid": 42,
+        "title": "PSMT: Satisfiability Modulo Theories Meets Probability Distribution",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-9a4c314423450bab6de4f8384743075a3047a0f326a2266df2c8e1db82b7714f",
+            "timestamp": 1685534757,
+            "size": 1972773,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "SMT (Satisfiability Modulo Theories) has been widely used in program verification, analysis, and test generation. But sometimes, SMT solver outputs incomprehensible solutions, especially for practical instances. Besides, due to the design of the deterministic algorithms, for a given formula, the result of each run is the same. In this paper, we concentrate on combining SMT solving with probability, which will instruct the SMT solver to give some plausible solutions.\r\n\r\nWe define a special problem: PSMT, which allows solving an SMT instance with variables conforming to a certain distribution. We define distribution under constraint for PSMT, which is based on MCSAT (Model Constructing Satisfiability), a mainstream SMT-solving algorithm. We propose the Prob-MCSAT algorithm, which combines the MCSAT algorithm and introduces the probability to variables. The visualized examples show that the resulting assignments will form a clear trend based on Prob-SMT.",
+        "authors": [
+            {
+                "email": "jiafq@ios.ac.cn",
+                "first": "Fuqi",
+                "last": "Jia",
+                "affiliation": "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "hanrui@ios.ac.cn",
+                "first": "Rui",
+                "last": "Han",
+                "affiliation": "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "maxt@ios.ac.cn",
+                "first": "Xutong",
+                "last": "Ma",
+                "affiliation": "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "cuibq@ios.ac.cn",
+                "first": "Baoquan",
+                "last": "Cui",
+                "affiliation": "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "Liumh@ios.ac.cn",
+                "first": "Minghao",
+                "last": "Liu",
+                "affiliation": "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "huangpei@ios.ac.cn",
+                "first": "Pei",
+                "last": "Huang",
+                "affiliation": "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "maff@ios.ac.cn",
+                "first": "Feifei",
+                "last": "Ma",
+                "affiliation": "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "zj@ios.ac.cn",
+                "first": "Jian",
+                "last": "Zhang",
+                "affiliation": "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences, Beijing, China",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "Formal Aspects of Software Engineering: formal methods, validation and verification",
+            "Formal Aspects of Software Engineering: programming languages",
+            "Formal Aspects of Software Engineering: other"
+        ],
+        "pc_conflicts": {
+            "liuyp1@sustech.edu.cn": true
+        },
+        "collaborators": "None",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685534324
+    },
+    {
+        "pid": 46,
+        "title": "Hot Patching Hot Fixes: Reflection and Perspectives",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-2ff326a1f1b9eb11506d0c31c386c04762e0a146b2dfce76116a301a7899d53f",
+            "timestamp": 1685529117,
+            "size": 181391,
+            "pages": 6,
+            "format_status": "ok"
+        },
+        "abstract": "With our reliance on software continuously increasing, it is of utmost importance that it be reliable. However, complete prevention of bugs in live systems is unfortunately an impossible task due to time constraints, incomplete testing, and developers not having knowledge of the full stack. As a result, mitigating risks for systems in production through hot patching and hot fixing has become an integral part of software development. In this paper, we first give an overview of the terminology used in the literature for research on this topic. Subsequently, we build upon these findings and present our vision for an automated framework for predicting and mitigating critical software issues at runtime. Our framework combines hot patching and hot fixing research from multiple fields, in particular: software defect and vulnerability prediction, automated test generation and repair, as well as runtime patching. We hope that our vision inspires research collaboration between the different communities.",
+        "authors": [
+            {
+                "email": "carol.hanna.21@ucl.ac.uk",
+                "first": "Carol",
+                "last": "Hanna",
+                "affiliation": "University College London"
+            },
+            {
+                "email": "j.petke@ucl.ac.uk",
+                "first": "Justyna",
+                "last": "Petke",
+                "affiliation": "University College London",
+                "contact": true
+            }
+        ],
+        "submission_type": "Reflections (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE",
+            "AI and Software Engineering: search-based software engineering",
+            "Maintenance and Evolution: debugging and fault-localization",
+            "Testing and Analysis: program repairs"
+        ],
+        "pc_conflicts": {
+            "jie.zhang@kcl.ac.uk": true,
+            "m.kechagia@ucl.ac.uk": true,
+            "matias.martinez@upc.edu": true,
+            "v.nowack@imperial.ac.uk": true,
+            "zp.chen@ucl.ac.uk": true
+        },
+        "collaborators": "None",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685088185
+    },
+    {
+        "pid": 50,
+        "title": "Better patching using LLM prompting, via Self-Consistency",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-52b38d4130721c767b008b586254288ac04dd9c6917c45efdfabccaf0639c407",
+            "timestamp": 1685520711,
+            "size": 310101,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "Large Language models (LLMs) can be induced to solve non-trivial problems with “few-shot” prompts including illustrative problem-solution examples. Now if the few-shots also include “chain of thought” (CoT ) explanations, which are of the form problem-explanation-solution, LLMs will generate a “explained” solution, and perform even better. Recently an exciting, substantially better technique, self-consistency [1] (S-C) has emerged, based on the intuition that there are many plausible explanations for the right solution; when the LLM is sampled repeatedly to generate a pool of explanation-solution pairs, for a given problem, the most frequently occurring solutions in the pool (ignoring the explanations) tend to be even more likely to be correct!\r\n\r\nUnfortunately, the use of this highly-performant S-C (or even CoT ) approach in software engineering settings is hampered by the lack of explanations; most software datasets lack explanations. In this paper, we describe an application of the S-C approach to program repair, using the commit log on the fix as the explanation, only in the illustrative few-shots. We achieve state-of-the art results, beating previous approaches to prompting-based program repair, on the MODIT dataset; we also find evidence suggesting that the LLM is learning to produce better reasoning paths from the commit messages.",
+        "authors": [
+            {
+                "email": "tfahmed@ucdavis.edu",
+                "first": "Toufique",
+                "last": "Ahmed",
+                "affiliation": "UC Davis",
+                "contact": true
+            },
+            {
+                "email": "ptdevanbu@ucdavis.edu",
+                "first": "Premkumar",
+                "last": "Devanbu",
+                "affiliation": "UC Davis",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE"
+        ],
+        "pc_conflicts": {
+            "bxu22@ncsu.edu": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685481036
+    },
+    {
+        "pid": 55,
+        "title": "Towards Safe Automated Refactoring of Imperative Deep Learning Programs to Graph Execution",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-7953c9d03114e28f85ee9ab6ad3410651bbbf92038cdc4599d78d3931cbf66d3",
+            "timestamp": 1685534081,
+            "size": 155681,
+            "pages": 3,
+            "format_status": "ok"
+        },
+        "abstract": "Efficiency is essential to support responsiveness w.r.t. ever-growing datasets, especially for Deep Learning (DL) systems. DL frameworks have traditionally embraced deferred execution-style DL code—supporting symbolic, graph-based Deep Neural Network (DNN) computation. While scalable, such development tends to produce code that is error-prone, non-intuitive, and difficult to debug. Consequently, more natural, less error-prone imperative DL frameworks encouraging eager execution have emerged at the expense of run-time performance. Though hybrid approaches aim for the \"best of both worlds,\" using them effectively requires subtle considerations to make code amenable to safe, accurate, and efficient graph execution—avoiding performance bottlenecks and semantically inequivalent results. We present our ongoing work on an automated refactoring approach that assists developers in specifying whether and how their otherwise eagerly-executed imperative DL code could be reliably and efficiently executed as graphs at run-time in a semantics-preserving fashion. The approach, based on a novel tensor analysis specifically for imperative DL code, consists of refactoring preconditions for automatically determining when it is safe and potentially advantageous to migrate imperative DL code to graph execution and modifying decorator parameters or eagerly executing code already running as graphs. The approach is being implemented as a PyDev Eclipse IDE plug-in and uses the WALA Ariadne analysis framework. We discuss our ongoing work towards optimizing imperative DL code to its full potential.",
+        "authors": [
+            {
+                "email": "raffi.khatchadourian@hunter.cuny.edu",
+                "first": "Raffi",
+                "last": "Khatchadourian",
+                "affiliation": "City University of New York (CUNY) Hunter College",
+                "contact": true
+            },
+            {
+                "email": "tcastrovelez@gradcenter.cuny.edu",
+                "first": "Tatiana Castro",
+                "last": "Vélez",
+                "affiliation": "City University of New York (CUNY) Graduate Center",
+                "contact": true
+            },
+            {
+                "email": "mbagherzadeh@oakland.edu",
+                "first": "Mehdi",
+                "last": "Bagherzadeh",
+                "affiliation": "Oakland University",
+                "contact": true
+            },
+            {
+                "email": "njia@gradcenter.cuny.edu",
+                "first": "Nan",
+                "last": "Jia",
+                "affiliation": "City University of New York (CUNY) Graduate Center",
+                "contact": true
+            },
+            {
+                "email": "anita.raja@hunter.cuny.edu",
+                "first": "Anita",
+                "last": "Raja",
+                "affiliation": "City University of New York (CUNY) Hunter College",
+                "contact": true
+            }
+        ],
+        "submission_type": "Late-Breaking Advances (2 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: SE for AI",
+            "Dependability, Safety, and Reliability: performance",
+            "Dependability, Safety, and Reliability: safety",
+            "Formal Aspects of Software Engineering: programming languages",
+            "Human Aspects of Software Engineering: human-computer interface",
+            "Maintenance and Evolution: refactoring and reengineering",
+            "Testing and Analysis: program analysis"
+        ],
+        "pc_conflicts": {},
+        "collaborators": "All (City University of New York)\r\nYiming Tang (Rochester Institute of Technology)\r\nAll (Oakland University)",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685534081
+    },
+    {
+        "pid": 63,
+        "title": "A Majority Invariant Approach to Patch Robustness Certification for Deep Learning Models",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-fd57a7ea7fc9ccdd7b79741c35675a2d822f6b4bd0fce1611705f065453971fb",
+            "timestamp": 1685462398,
+            "size": 572970,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "Patch robustness certification ensures no patch within a given bound on a sample can manipulate a deep learning model to predict a different label. However, existing techniques cannot certify samples which cannot meet their strict bars at the classifier or patch region levels. This paper proposes \\textit{MajorCert}. \\textit{MajorCert} firstly finds all possible label sets manipulatable by the same patch region on the same sample across the underlying classifiers, then enumerates their combinations element-wise, and finally checks whether the majority invariant of all these combinations is intact to certify samples.",
+        "authors": [
+            {
+                "email": "qlzhou4-c@my.cityu.edu.hk",
+                "first": "Qilin",
+                "last": "Zhou",
+                "affiliation": "City University of Hong Kong",
+                "contact": true
+            },
+            {
+                "email": "zywei4-c@my.cityu.edu.hk",
+                "first": "Zhengyuan",
+                "last": "Wei",
+                "affiliation": "City University of Hong Kong",
+                "contact": true
+            },
+            {
+                "email": "haipewang5-c@my.cityu.edu.hk",
+                "first": "Haipeng",
+                "last": "Wang",
+                "affiliation": "City University of Hong Kong",
+                "contact": true
+            },
+            {
+                "email": "wkchan@cityu.edu.hk",
+                "first": "Wing-Kwong",
+                "last": "Chan",
+                "affiliation": "City University of Hong Kong",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: SE for AI",
+            "Dependability, Safety, and Reliability: privacy and security",
+            "Dependability, Safety, and Reliability: reliability",
+            "Dependability, Safety, and Reliability: safety"
+        ],
+        "pc_conflicts": {},
+        "collaborators": "None",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685091828
+    },
+    {
+        "pid": 69,
+        "title": "Symbolic Verification of Fuzzy Logic Models",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-e8985a0f7a3c12f71e881bad684723a32cad91c2cabb978c7c82c499a06a212e",
+            "timestamp": 1685530796,
+            "size": 301958,
+            "pages": 3,
+            "format_status": "ok"
+        },
+        "abstract": "Fuzzy logic is widely used in many different areas. However, ensuring the correctness of fuzzy logic models is challenging. This extended abstract reports our recent in-progress work of verifying fuzzy logic models. We consider a fuzzy logic model as a program and propose a symbolic execution-based verification method for fuzzy logic models. We have designed and implemented the environment models for the frequently used functions and the logic inferences rules in fuzzy logic models. The preliminary evaluation of our prototype indicates the promise of our verification method.",
+        "authors": [
+            {
+                "email": "zhaosiang16@nudt.edu.cn",
+                "first": "Siang",
+                "last": "Zhao",
+                "affiliation": "School of Computer, National University of Defense Technology, China",
+                "contact": true
+            },
+            {
+                "email": "lzy@nudt.edu.cn",
+                "first": "Zhongyang",
+                "last": "Li",
+                "affiliation": "School of Computer, National University of Defense Technology, China",
+                "contact": true
+            },
+            {
+                "email": "zbchen@nudt.edu.cn",
+                "first": "Zhenbang",
+                "last": "Chen",
+                "affiliation": "National University of Defense Technology",
+                "contact": true
+            },
+            {
+                "email": "wj@nudt.edu.cn",
+                "first": "Ji",
+                "last": "Wang",
+                "affiliation": "School of Computer, National University of Defense Technology, China",
+                "contact": true
+            }
+        ],
+        "submission_type": "Late-Breaking Advances (2 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "Formal Aspects of Software Engineering: formal methods, validation and verification",
+            "Testing and Analysis: program analysis"
+        ],
+        "pc_conflicts": {},
+        "collaborators": "None",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685530725
+    },
+    {
+        "pid": 71,
+        "title": "MUTEN: Mutant-Based Ensembles for Boosting Gradient-Based Adversarial Attack",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-3ec4020b2c7df4b2c1138dd46f11b6b9d09841c0a419d968731818d3786bf5e5",
+            "timestamp": 1684931385,
+            "size": 513634,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "Mutation testing~(MT) for deep learning~(DL) has gained huge attention in the past few years. However, how MT can really help DL is still unclear. In this paper, we introduce one promising direction for the usage of mutants. Specifically, since mutants can be seen as one kind of ensemble model and ensemble model can be used to boost the adversarial attack, we propose MUTEN, which applies the attack on mutants to improve the success rate of well-known attacks against gradient-masking models. Experimental results on MNIST, SVHN, and CIFAR10 show that MUTEN can increase the success rate of four attacks by up to 45\\%. Furthermore, experiments on four defense approaches, \\emph{bit-depth reduction}, \\emph{JPEG compression}, \\emph{Defensive distillation}, and \\emph{Label smoothing}, demonstrate that MUTEN can break the defense models effectively by enhancing the attacks with the success rate of up to 96\\%.",
+        "authors": [
+            {
+                "email": "qiang.hu@uni.lu",
+                "first": "Qiang",
+                "last": "Hu",
+                "affiliation": "University of Luxembourg",
+                "contact": true
+            },
+            {
+                "email": "yuejun.guo@list.lu",
+                "first": "Yuejun",
+                "last": "Guo",
+                "affiliation": "Luxembourg Institute of Science and Technology",
+                "contact": true
+            },
+            {
+                "email": "maxime.cordy@uni.lu",
+                "first": "Maxime",
+                "last": "Cordy",
+                "affiliation": "University of Luxembourg",
+                "contact": true
+            },
+            {
+                "email": "michail.papadakis@uni.lu",
+                "first": "Mike",
+                "last": "Papadakis",
+                "affiliation": "University of Luxembourg",
+                "contact": true
+            },
+            {
+                "email": "Yves.LeTraon@uni.lu",
+                "first": "Yves",
+                "last": "Le Traon",
+                "affiliation": "University of Luxembourg",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: SE for AI"
+        ],
+        "pc_conflicts": {
+            "jie.zhang@kcl.ac.uk": true,
+            "sarra.habchi@ubisoft.com": true,
+            "mike.papadakis@gmail.com": true,
+            "renzo.degiovanni@uni.lu": true,
+            "szy_@pku.edu.cn": true,
+            "weima93@gmail.com": true
+        },
+        "collaborators": "All (University of Luxembourg)",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1684760687
+    },
+    {
+        "pid": 77,
+        "title": "SOCRATEST- Towards Autonomous Testing Agents via Conversational Large Language Models",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-e7b84cabe178842ce18d7b369c6cd996b55fe7c218605363965dfecc5fa1a37d",
+            "timestamp": 1685520989,
+            "size": 104216,
+            "pages": 6,
+            "format_status": "ok"
+        },
+        "abstract": "Software testing is an important part of the development cycle, yet it requires specialized expertise and substantial developer effort to adequately test software. The recent discoveries of the capabilities of large language models (LLMs) suggest that they can be used as automated testing assistants, and thus provide helpful information and even drive the testing process. To highlight the potential of this technology, we present a taxonomy of LLM-based testing agents based on their level of autonomy, and describe how a greater level of autonomy can benefit developers in practice. An example use of LLMs as a testing assistant is provided to demonstrate how a conversational framework for testing can help developers. This also highlights how the often criticized hallucination of LLMs can be beneficial while testing. We identify other tangible benefits that LLM-driven testing agents can bestow, and also discuss some potential limitations.",
+        "authors": [
+            {
+                "email": "robert.feldt@chalmers.se",
+                "first": "Robert",
+                "last": "Feldt",
+                "affiliation": "Chalmers University of Technology",
+                "contact": true
+            },
+            {
+                "email": "sungmin.kang@kaist.ac.kr",
+                "first": "Sungmin",
+                "last": "Kang",
+                "affiliation": "Korea Advanced Institute of Science and Technology",
+                "contact": true
+            },
+            {
+                "email": "juyeon.yoon@kaist.ac.kr",
+                "first": "Juyeon",
+                "last": "Yoon",
+                "affiliation": "KAIST",
+                "contact": true
+            },
+            {
+                "email": "shin.yoo@kaist.ac.kr",
+                "first": "Shin",
+                "last": "Yoo",
+                "affiliation": "Korea Advanced Institute of Science and Technology",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE",
+            "Human Aspects of Software Engineering: human-computer interface",
+            "Testing and Analysis: other"
+        ],
+        "pc_conflicts": {
+            "shane.mcintosh@uwaterloo.ca": true,
+            "jie.zhang@kcl.ac.uk": true,
+            "jinhankim@kaist.ac.kr": true,
+            "mike.papadakis@gmail.com": true,
+            "ndwalkinshaw@gmail.com": true
+        },
+        "collaborators": "Sungmin Kang (Microsoft)",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685183333
+    },
+    {
+        "pid": 93,
+        "title": "SAT-verifiable LTL Satisfiability Checking via Graph Representation Learning",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-1855f521730c14c2d5581e85b0f9239423b1ce7870083f8199562202021db17c",
+            "timestamp": 1685534910,
+            "size": 325376,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "With the superior learning ability of neural networks, it is promising to obtain highly confident results for linear temporal logic (LTL) satisfiability checking in polynomial time.\r\nHowever, the existing neural network-based approaches are difficult to satisfy the permutation invariance of atomic propositions, which potentially leads to insufficient inductive ability, and limits the maximum number of atomic propositions.\r\nBesides, there is no mechanism to verify the validity of the binary classification.\r\nIn this paper, we propose a new approach to check the satisfiability and meanwhile answer a satisfiable trace if it is satisfiable, where the satisfiable trace provides an SAT-verification mechanism.\r\nWe design a new graph representation for LTL formulae: one-step unfolded graph (OSUG).\r\nIts core idea is to incorporate the syntax and semantic features of LTL through special graph structure. \r\nWith the OSUG, we leverage graph neural networks to capture inductive bias to check LTL satisfiability and predict a satisfiable trace.\r\nWe conduct preliminary experiments on synthetic datasets.\r\nExperimental results show that our approach is superior to the state-of-the-art neural network-based approaches and confirms the effectiveness of OSUG.",
+        "authors": [
+            {
+                "email": "luowlin3@mail2.sysu.edu.cn",
+                "first": "Weilin",
+                "last": "Luo",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            },
+            {
+                "email": "zhengyh29@mail2.sysu.edu.cn",
+                "first": "Yuhang",
+                "last": "Zheng",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            },
+            {
+                "email": "yerzh@mail2.sysu.edu.cn",
+                "first": "Rongzhen",
+                "last": "Ye",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            },
+            {
+                "email": "wanhai@mail.sysu.edu.cn",
+                "first": "Hai",
+                "last": "Wan",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            },
+            {
+                "email": "jfdu@gdufs.edu.cn",
+                "first": "Jianfeng",
+                "last": "Du",
+                "affiliation": "Guangdong University of Foreign Studies",
+                "contact": true
+            },
+            {
+                "email": "liangpj3@mail2.sysu.edu.cn",
+                "first": "Pingjia",
+                "last": "Liang",
+                "affiliation": "Sun Yat-Sen University",
+                "contact": true
+            },
+            {
+                "email": "chenplong@mail2.sysu.edu.cn",
+                "first": "Polong",
+                "last": "Chen",
+                "affiliation": "Sun Yat-Sen University"
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE"
+        ],
+        "pc_conflicts": {},
+        "collaborators": "None",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685188445
+    },
+    {
+        "pid": 100,
+        "title": "Are We Ready to Embrace Generative AI for Software Q&A?",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-699f758689c1a4245ac7a05b70252362b2b56a381428484e45b7bec3d3812d45",
+            "timestamp": 1685527788,
+            "size": 152130,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "Stack Overflow, the world's largest software Q&A (SQA) website, is facing a significant traffic drop due to the emergence of generative AI techniques. ChatGPT is banned by Stack Overflow after only 6 days from its release. The main reason provided by the official Stack Overflow is that the answers generated by ChatGPT are of low quality. To verify this, we conduct a comparative evaluation of human-written and ChatGPT-generated answers. Our methodology employs both automatic comparison and a manual study. Our results suggest that human-written and ChatGPT-generated answers are semantically similar, however, human-written answers outperform ChatGPT-generated ones consistently across multiple aspects, specifically by 10% on the overall score. We release the data, analysis scripts, and detailed results at https:\/\/anonymous.4open.science\/r\/GAI4SQA-FD5C.",
+        "authors": [
+            {
+                "email": "bxu22@ncsu.edu",
+                "first": "Bowen",
+                "last": "Xu",
+                "affiliation": "School of Computing and Information Systems, Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "thanhdatn@student.unimelb.edu.au",
+                "first": "Thanh-Dat",
+                "last": "Nguyen",
+                "affiliation": "University of Melbourne",
+                "contact": true
+            },
+            {
+                "email": "congthanh.le@student.unimelb.edu.au",
+                "first": "Thanh",
+                "last": "Le-Cong",
+                "affiliation": "University of Melbourne",
+                "contact": true
+            },
+            {
+                "email": "james.hoang@data61.csiro.au",
+                "first": "Thong",
+                "last": "Hoang",
+                "affiliation": "CSIRO's Data61",
+                "contact": true
+            },
+            {
+                "email": "jkliu@smu.edu.sg",
+                "first": "Jiakun",
+                "last": "Liu",
+                "affiliation": "School of Computing and Information Systems, Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "kisubkim@smu.edu.sg",
+                "first": "Kisub",
+                "last": "Kim",
+                "affiliation": "School of Computing and Information Systems, Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "fzv6en@virginia.edu",
+                "first": "Chen",
+                "last": "GONG",
+                "affiliation": "University of Virginia",
+                "contact": true
+            },
+            {
+                "email": "niu.ca@outlook.com",
+                "first": "Changan",
+                "last": "Niu",
+                "affiliation": "Software Institute, Nanjing University",
+                "contact": true
+            },
+            {
+                "email": "chenyuwang@smu.edu.sg",
+                "first": "Chenyu",
+                "last": "Wang",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "bach.le@unimelb.edu.au",
+                "first": "Bach",
+                "last": "Le",
+                "affiliation": "University of Melbourne",
+                "contact": true
+            },
+            {
+                "email": "davidlo@smu.edu.sg",
+                "first": "David",
+                "last": "Lo",
+                "affiliation": "School of Computing and Information Systems, Singapore Management University",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE",
+            "Software Analytics: mining software repositories"
+        ],
+        "pc_conflicts": {
+            "chaiyong.rag@mahidol.edu": true,
+            "csytang@ieee.org": true,
+            "gaocuiyun@hit.edu.cn": true,
+            "iftekha@uci.edu": true,
+            "shaowei.wang@umanitoba.ca": true,
+            "bxu22@ncsu.edu": "collaborator author"
+        },
+        "collaborators": "None",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685503467
+    },
+    {
+        "pid": 104,
+        "title": "Evolve the Model universe of a System Universe",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-64828d921aa8334c8945b05b0dd56d655e1759e0e7ee541b0d12c440d1997a13",
+            "timestamp": 1685352546,
+            "size": 168551,
+            "pages": 6,
+            "format_status": "ok"
+        },
+        "abstract": "Uncertain, unpredictable, real-time, and lifelong evolution causes operational failures in intelligent software systems, leading to significant damages, safety and security hazards, and tragedies. To fully unleash such systems’ potential and facilitate their wider adoption, ensuring the trustworthiness of their decision-making under uncertainty is the prime challenge. To overcome this challenge, an intelligent software system and its operating environment should be continuously monitored, tested, and refined during its lifetime operation. Existing technologies, such as digital twins, can enable continuous synchronisation with such systems to reflect their most up-to-date states. Such representations are often in the form of prior-knowledge-based and machine-learning models, together called ‘model universe’.\r\nIn this paper, we present our vision of combining techniques from software engineering, evolutionary computation, and machine learning to support the model universe evolution.",
+        "authors": [
+            {
+                "email": "tao@simula.no",
+                "first": "Tao",
+                "last": "Yue",
+                "affiliation": "Simula Research Laboratory",
+                "contact": true
+            },
+            {
+                "email": "shaukat@simula.no",
+                "first": "Shaukat",
+                "last": "Ali",
+                "affiliation": "Simula Research Laboratory and Oslo Metropolitan University, Oslo",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE",
+            "AI and Software Engineering: search-based software engineering",
+            "Requirements and Design: modeling and model-driven engineering"
+        ],
+        "pc_conflicts": {
+            "shaukat@simula.no": "author"
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685091748
+    },
+    {
+        "pid": 111,
+        "title": "Towards a Knowledge Base of Common Sustainability Weaknesses in Green Software Development",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-63c42d23c8f1ed4c9d1af5866b4e539915755e26332c8e5ed9ad453410130512",
+            "timestamp": 1685462348,
+            "size": 125499,
+            "pages": 3,
+            "format_status": "ok"
+        },
+        "abstract": "With the climate crisis looming, engineering sustainable software systems become crucial to optimize resource utilization, minimize environmental impact, and foster a greener, more resilient digital ecosystem. For developers, getting access to automated tools that analyze code and suggest sustainability-related optimizations becomes extremely important from a learning and implementation perspective. However, there is currently a dearth of such tools due to the lack of standardized knowledge, which serves as the foundation of these tools. In this paper, we motivate the need for the development of a standard knowledge base of commonly occurring sustainability weaknesses in code, and propose an initial way of doing that. Furthermore, through preliminary experiments, we demonstrate why existing knowledge regarding software weaknesses cannot be re-tagged \"as is\" to sustainability without significant due diligence, thereby urging further explorations in this ecologically significant domain.",
+        "authors": [
+            {
+                "email": "priyavanshi.pathania@accenture.com",
+                "first": "Priyavanshi",
+                "last": "Pathania",
+                "affiliation": "Accenture Labs, India",
+                "contact": true
+            },
+            {
+                "email": "rohit.a.mehra@accenture.com",
+                "first": "Rohit",
+                "last": "Mehra",
+                "affiliation": "Accenture Labs, India",
+                "contact": true
+            },
+            {
+                "email": "vibhu.sharma@accenture.com",
+                "first": "Vibhu Saujanya",
+                "last": "Sharma",
+                "affiliation": "Accenture Labs, India",
+                "contact": true
+            },
+            {
+                "email": "vikrant.kaulgud@accenture.com",
+                "first": "Vikrant",
+                "last": "Kaulgud",
+                "affiliation": "Accenture Labs, India",
+                "contact": true
+            },
+            {
+                "email": "sanjay.podder@accenture.com",
+                "first": "Sanjay",
+                "last": "Podder",
+                "affiliation": "Technology Sustainability Innovation, Accenture, India",
+                "contact": true
+            },
+            {
+                "email": "adam.p.burden@accenture.com",
+                "first": "Adam P.",
+                "last": "Burden",
+                "affiliation": "Accenture, USA"
+            }
+        ],
+        "submission_type": "Late-Breaking Advances (2 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "Social Aspects of Software Engineering: green and sustainable technologies"
+        ],
+        "pc_conflicts": {},
+        "collaborators": "All (Accenture)",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685462348
+    },
+    {
+        "pid": 129,
+        "title": "Fault Localization for Buggy Deep Learning Framework Conversions in Image Recognition",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-85b0717635e9c8005876b59ad9004e006b18a569a18e4922e700b14f86de4d81",
+            "timestamp": 1685525458,
+            "size": 1200242,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "When deploying Deep Neural Networks (DNNs), developers often convert models from one deep learning framework to another (e.g., \\textit{TensorFlow} to \\textit{PyTorch}).\r\nHowever, this process is error-prone and can \r\nimpact target model accuracy.\r\nTo identify the extent of such impact, we perform and briefly present a differential analysis  against three DNNs used for image recognition (\\textit{MobileNetV2, ResNet101}, and \\textit{InceptionV3}), converted across four well-known deep learning frameworks (\\textit{PyTorch, Keras, TensorFlow (TF)}, and \\textit{TFLite}), which revealed numerous model crashes and output label discrepancies of up to 100\\%.\r\nTo mitigate such errors, we present a novel approach towards fault localization and repair of buggy deep learning framework conversions, focusing on pre-trained image recognition models.\r\nOur technique consists of four primary stages of analysis: 1) conversion tools, 2) model parameters, 3) model hyperparameters, and 4) graph representation.\r\nIn addition, we propose a number of strategies towards fault repair of the faults detected.\r\nWe implement our technique on top of \\textit{Apache TVM} deep learning compiler, and we test it by conducting a preliminary fault localization analysis for the conversion of \\textit{InceptionV3}, from \\textit{TF} to \\textit{TFLite}. Our approach detected that the \\textit{tf2onnx} tool used in the conversion process introduced precision errors to model weights for convolutional layers in particular, which negatively affected the model accuracy. We then repaired the target model by replacing the affected weights with those from source model.",
+        "authors": [
+            {
+                "email": "n.louloudakis@ed.ac.uk",
+                "first": "Nikolaos",
+                "last": "Louloudakis",
+                "affiliation": "University of Edinburgh"
+            },
+            {
+                "email": "p.gibson.2@research.gla.ac.uk",
+                "first": "Perry",
+                "last": "Gibson",
+                "affiliation": "University of Glasgow",
+                "contact": true
+            },
+            {
+                "email": "jose.canoreyes@glasgow.ac.uk",
+                "first": "José",
+                "last": "Cano",
+                "affiliation": "University of Glasgow",
+                "contact": true
+            },
+            {
+                "email": "arajan@ed.ac.uk",
+                "first": "Ajitha",
+                "last": "Rajan",
+                "affiliation": "University of Edinburgh",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: SE for AI",
+            "Dependability, Safety, and Reliability: reliability",
+            "Dependability, Safety, and Reliability: safety",
+            "Maintenance and Evolution: debugging and fault-localization",
+            "Testing and Analysis: program analysis",
+            "Testing and Analysis: program repairs",
+            "Testing and Analysis: regression, mutation, model-based testing"
+        ],
+        "pc_conflicts": {},
+        "collaborators": "None",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685488632
+    },
+    {
+        "pid": 134,
+        "title": "Semantic Data Augmentation for Deep Learning Testing using Generative AI",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-43d3e4f36b86d015de9f60523f05d5a0ad8a3e3c5ed2a88c398f54a1115e4cfb",
+            "timestamp": 1685534271,
+            "size": 1555825,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "The performance of state-of-the-art Deep Learning models heavily depends on the availability of well-curated training and testing datasets that sufficiently capture the operational domain. Data augmentation is an effective technique in alleviating data scarcity, reducing the time-consuming and expensive data collection and labelling processes. Despite the potential, existing data augmentation techniques primarily focus on simple geometric and colour space transformations, like noise, flipping and resizing, producing datasets with limited diversity. When the augmented dataset is used for testing the Deep Learning models, the derived results are typically uninformative about the robustness of the models. We address this gap by introducing GENERATIVEFUZZER, a novel coverage-guided data augmentation fuzzing technique for Deep Learning models underpinned by generative AI. We demonstrate our approach using widely-adopted datasets and models employed for image classification and object detection, illustrating its effectiveness in generating informative datasets leading up to a 26% increase in widely-used coverage criteria.",
+        "authors": [
+            {
+                "email": "sondess.missaoui@york.ac.uk",
+                "first": "sondess",
+                "last": "missaoui",
+                "affiliation": "University of York",
+                "contact": true
+            },
+            {
+                "email": "simos.gerasimou@york.ac.uk",
+                "first": "Simos",
+                "last": "Gerasimou",
+                "affiliation": "University of York",
+                "contact": true
+            },
+            {
+                "email": "nikolaos.matragkas@cea.fr",
+                "first": "Nicholas",
+                "last": "Matragkas",
+                "affiliation": "Université Paris-Saclay, CEA, List.",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: SE for AI",
+            "Dependability, Safety, and Reliability: safety",
+            "Formal Aspects of Software Engineering: formal methods, validation and verification",
+            "Testing and Analysis: regression, mutation, model-based testing",
+            "Testing and Analysis: other"
+        ],
+        "pc_conflicts": {
+            "m.kechagia@ucl.ac.uk": true
+        },
+        "collaborators": "None",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685531675
+    },
+    {
+        "pid": 138,
+        "title": "Towards a Formal Framework for Normative Requirements Elicitation",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-07dc6342b201d5f419e7e50152264a9c1676b7b8c41a8f9a5f18e5b179918418",
+            "timestamp": 1685373431,
+            "size": 304126,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "As software and cyber-physical systems interacting with humans become prevalent in domains such as healthcare, education and customer service, software engineers need to consider the \\emph{normative} (i.e., social, legal, ethical, empathetic and cultural)  requirements of their stakeholders. However, the elicitation of such requirements is very challenging, as they must reflect the often conflicting or redundant views of stakeholders ranging from system users and operators to law experts, ethicists and regulators. To address this challenge, we introduce a work-in-progress, tool-supported Formal framework for normaTive requirements elicitation (FormaTive). \r\nIt allows specification of normative rules for a software system in an intuitive high-level language, and automates: (i) the mapping of the rules to an internal formal representation; (ii) their analysis to identify rule conflicts, redundancies, and concerns; and (iii) the synthesis of feedback enabling users to understand and resolve problems.",
+        "authors": [
+            {
+                "email": "nick.feng@mail.utoronto.ca",
+                "first": "Nick",
+                "last": "Feng",
+                "affiliation": "University of Toronto",
+                "contact": true
+            },
+            {
+                "email": "lina.marsso@utoronto.ca",
+                "first": "Lina",
+                "last": "Marsso",
+                "affiliation": "University of Toronto",
+                "contact": true
+            },
+            {
+                "email": "sinem.getir.yaman@york.ac.uk",
+                "first": "Sinem Getir",
+                "last": "Yaman",
+                "affiliation": "University of York",
+                "contact": true
+            },
+            {
+                "email": "bev.townsend@york.ac.uk",
+                "first": "Beverley",
+                "last": "Townsend",
+                "affiliation": "University of York",
+                "contact": true
+            },
+            {
+                "email": "ana.cavalcanti@york.ac.uk",
+                "first": "Ana",
+                "last": "Cavalcanti",
+                "affiliation": "University of York",
+                "contact": true
+            },
+            {
+                "email": "radu.calinescu@york.ac.uk",
+                "first": "Radu",
+                "last": "Calinescu",
+                "affiliation": "University of York",
+                "contact": true
+            },
+            {
+                "email": "chechik@cs.toronto.edu",
+                "first": "Marsha",
+                "last": "Chechik",
+                "affiliation": "University of Toronto",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "Dependability, Safety, and Reliability: privacy and security",
+            "Formal Aspects of Software Engineering: formal methods, validation and verification",
+            "Formal Aspects of Software Engineering: specification languages, DSLs",
+            "Requirements and Design: requirements elicitation and management, traceability analysis"
+        ],
+        "pc_conflicts": {},
+        "collaborators": "All (University of Toronto)\nAll (University of York)",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685373502
+    },
+    {
+        "pid": 140,
+        "title": "Scalable Industrial Control System Analysis via XAI-based Gray-Box Fuzzing",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-3f13d75b4f81fdd252796a95b5f687e40a47c9982e7e124c2f259d16c179603a",
+            "timestamp": 1685502038,
+            "size": 3208511,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "Conventional approaches to analyzing industrial control systems have relied on either white-box analysis or black-box fuzzing. However, white-box methods rely on sophisticated domain expertise, while black-box methods suffers from state explosion and thus scales poorly when analyzing real ICS involving a large number of sensors and actuators. To address these limitations, we propose XAI-based gray-box fuzzing, a novel approach that leverages explainable AI and machine learning modeling of ICS to accurately identify a small set of actuators critical to ICS safety, which result in significant reduction of state space without relying on domain expertise. Experiment results show that our method accurately explains the ICS model and significantly speeds-up fuzzing by 64x when compared to conventional black-box methods.",
+        "authors": [
+            {
+                "email": "jakur@oakland.edu",
+                "first": "Justin",
+                "last": "Kur",
+                "affiliation": "Oakland University",
+                "contact": true
+            },
+            {
+                "email": "jingshuchen@oakland.edu",
+                "first": "Jingshu",
+                "last": "Chen",
+                "affiliation": "Oakland University",
+                "contact": true
+            },
+            {
+                "email": "jun.huang@cityu.edu.hk",
+                "first": "Jun",
+                "last": "Huang",
+                "affiliation": "City University of Hong Kong",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE",
+            "Dependability, Safety, and Reliability: safety",
+            "Testing and Analysis: program analysis"
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685502038
+    },
+    {
+        "pid": 142,
+        "title": "Automating Bias Testing of LLMs",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-aa6980340ea69780f76e7257c83462002c3fd404ec99e2fff996fd4d1ec658b6",
+            "timestamp": 1685288525,
+            "size": 93015,
+            "pages": 3,
+            "format_status": "ok"
+        },
+        "abstract": "Large Language Models (LLMs) are being quickly integrated in a myriad of software applications. This may introduce a number of biases, such as gender, age or ethnicity, in the behavior of such applications. To face this challenge, we explore the automatic generation of tests suites to assess the potential biases of an LLM. Each test is defined as a prompt used as input to the LLM and a test oracle that analyses the LLM output to detect the presence of biases.",
+        "authors": [
+            {
+                "email": "smoralesg@uoc.edu",
+                "first": "Sergio",
+                "last": "Morales",
+                "affiliation": "Universitat Oberta de Catalunya",
+                "contact": true
+            },
+            {
+                "email": "rclariso@uoc.edu",
+                "first": "Robert",
+                "last": "Clarisó",
+                "affiliation": "Universitat Oberta de Catalunya",
+                "contact": true
+            },
+            {
+                "email": "jordi.cabot@list.lu",
+                "first": "Jordi",
+                "last": "Cabot",
+                "affiliation": "Luxembourg Institute of Science and Technology",
+                "contact": true
+            }
+        ],
+        "submission_type": "Late-Breaking Advances (2 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: SE for AI",
+            "AI and Software Engineering: other",
+            "Social Aspects of Software Engineering: ethics in software engineering",
+            "Testing and Analysis: regression, mutation, model-based testing"
+        ],
+        "pc_conflicts": {
+            "matias.martinez@upc.edu": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685288627
+    },
+    {
+        "pid": 144,
+        "title": "Towards Self-Adaptive Machine Learning-Enabled Systems Through QoS-Aware Model Switching",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-5a4d0835980089236226b6008f7251b17d2352e1331cce8f14eeb7c9ccc4fb6a",
+            "timestamp": 1685533221,
+            "size": 3301836,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "Machine Learning (ML), particularly deep learning, has seen vast advancements, leading to the rise of Machine Learning-Enabled Systems (MLS). However, numerous software engineering challenges persist in propelling these MLS into production, largely due to various run-time uncertainties that impact the overall Quality of Service (QoS). These uncertainties emanate from ML models, software components, and environmental factors. Self-adaptation techniques present potential in managing these uncertainties, but their application in MLS remains largely unexplored. As a solution, we propose the concept of a Machine Learning Model Balancer, focusing on managing uncertainties related to ML models by using multiple models. Subsequently, we introduce AdaMLS, a novel self-adaptation approach that leverages this concept and extends the traditional MAPE-K loop for continuous MLS adaptation. AdaMLS employs lightweight unsupervised learning for dynamic model switching, thereby ensuring consistent QoS. Through a self-adaptive object detection system prototype, we demonstrate AdaMLS's effectiveness in balancing system and model performance. Preliminary results suggest AdaMLS surpasses both naive and single state-of-the-art models in QoS guarantees, heralding the advancement towards self-adaptive MLS with optimal QoS in dynamic environments.",
+        "authors": [
+            {
+                "email": "shubham.kulkarni@research.iiit.ac.in",
+                "first": "Shubham",
+                "last": "Kulkarni",
+                "affiliation": "IIIT Hyderabad",
+                "contact": true
+            },
+            {
+                "email": "arya.marda@students.iiit.ac.in",
+                "first": "Arya",
+                "last": "Marda",
+                "affiliation": "IIIT Hyderabad",
+                "contact": true
+            },
+            {
+                "email": "karthik.vaidhyanathan@iiit.ac.in",
+                "first": "Karthik",
+                "last": "Vaidhyanathan",
+                "affiliation": "IIIT Hyderabad",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE",
+            "AI and Software Engineering: autonomous and self-adapting systems",
+            "AI and Software Engineering: SE for AI"
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685121088
+    },
+    {
+        "pid": 145,
+        "title": "Modeling Programmer Attention as Scanpath Prediction",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-2714d3de784cc99c2fadbafd08f603079bfd3c9b18c2c6f5b63b3e600524df7e",
+            "timestamp": 1685335009,
+            "size": 392301,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "This paper launches a new effort at modeling programmer attention by predicting eye movement scanpaths. Programmer attention refers to what information people intake when performing programming tasks.  Models of programmer attention refer to machine prediction of what information is important to people. Models of programmer attention are important because they help researchers build better interfaces, assistive technologies, and more human-like AI.  For many years, researchers in SE have built these models based on features such as mouse clicks, key logging, and IDE interactions. Yet the holy grail in this area is scanpath prediction -- the prediction of the sequence of eye fixations a person would take over a visual stimulus.  A person's eye movements are considered the most concrete evidence that a person is taking in a piece of information.  Scanpath prediction is a notoriously difficult problem, but we believe that the emergence of lower-cost, higher-accuracy eye tracking equipment and better large language models of source code brings a solution within grasp.  We present an eye tracking experiment with 27 programmers and a prototype scanpath predictor to present preliminary results and obtain early community feedback.",
+        "authors": [
+            {
+                "email": "abansal1@nd.edu",
+                "first": "Aakash",
+                "last": "Bansal",
+                "affiliation": "University of Notre Dame",
+                "contact": true
+            },
+            {
+                "email": "csu3@nd.edu",
+                "first": "Chia-Yi",
+                "last": "Su",
+                "affiliation": "University of Notre Dame",
+                "contact": true
+            },
+            {
+                "email": "z.karas@vanderbilt.edu",
+                "first": "Zachary",
+                "last": "Karas",
+                "affiliation": "Vanderbilt University",
+                "contact": true
+            },
+            {
+                "email": "yifan.zhang.2@vanderbilt.edu",
+                "first": "Yifan",
+                "last": "Zhang",
+                "affiliation": "Vanderbilt University",
+                "contact": true
+            },
+            {
+                "email": "yu.huang@vanderbilt.edu",
+                "first": "Yu",
+                "last": "Huang",
+                "affiliation": "Vanderbilt University",
+                "contact": true
+            },
+            {
+                "email": "toby.j.li@nd.edu",
+                "first": "Toby Jia-Jun",
+                "last": "Li",
+                "affiliation": "University of Notre Dame",
+                "contact": true
+            },
+            {
+                "email": "cmc@nd.edu",
+                "first": "Collin",
+                "last": "McMillan",
+                "affiliation": "University of Notre Dame",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE",
+            "Human Aspects of Software Engineering: human-computer interface",
+            "Human Aspects of Software Engineering: program comprehension"
+        ],
+        "pc_conflicts": {},
+        "collaborators": "None",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685135390
+    },
+    {
+        "pid": 180,
+        "title": "Log Parsing: How Far Can ChatGPT Go?",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-d6d34e76f5cba7a6c9f8bfd7b5dcdb9300c4d5987d5e183eb4477ac04b9f993e",
+            "timestamp": 1685534657,
+            "size": 2552412,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "Software logs play an essential role in ensuring the reliability and maintainability of large-scale software systems, as they are often the sole source of runtime information. Log parsing, which converts raw log messages into structured data, is an important initial step towards downstream log analytics. In recent studies, ChatGPT, the current cutting-edge large language model (LLM), has been widely applied to a wide range of software engineering tasks. However, its performance in automated log parsing remains unclear. In this paper, we evaluate ChatGPT’s ability to undertake log parsing by addressing two research questions. (1) Can ChatGPT effectively parse logs? (2) How does ChatGPT perform with different prompting methods? Our results show that ChatGPT can achieve promising results for log parsing with appropriate prompts, especially with few-shot prompting. Based on our findings, we outline several challenges and opportunities for ChatGPT-based log parsing.",
+        "authors": [
+            {
+                "email": "vanhoang.le@uon.edu.au",
+                "first": "Van-Hoang",
+                "last": "Le",
+                "affiliation": "The University of Newcastle",
+                "contact": true
+            },
+            {
+                "email": "hyzhang@cqu.edu.cn",
+                "first": "Hongyu",
+                "last": "Zhang",
+                "affiliation": "Chongqing University",
+                "contact": true
+            }
+        ],
+        "submission_type": "Groundbreaking Research (4 pages, including all text, appendices, figures, and can have up to 2 additional pages containing references only)",
+        "topics": [
+            "AI and Software Engineering: AI for SE",
+            "Dependability, Safety, and Reliability: reliability",
+            "Maintenance and Evolution: other"
+        ],
+        "pc_conflicts": {
+            "gaocuiyun@hit.edu.cn": true
+        },
+        "collaborators": "None",
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685532188
+    }
+]

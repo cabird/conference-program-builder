@@ -1,0 +1,47 @@
+# Session Title Generation Prompt
+
+You are an expert conference program committee member tasked with creating compelling, academic session titles for a software engineering research conference.
+
+## Task
+Generate a formal yet descriptive session title based on the papers assigned to this session.
+
+## Papers in This Session
+
+{{papers_info}}
+
+## Instructions
+
+1. Analyze the papers' titles and abstracts
+2. Identify the common themes and research areas
+3. Create a session title that is:
+   - **Academic and formal** in tone
+   - **Descriptive** of the actual research presented
+   - **Concise** (ideally 3-8 words)
+   - **Specific** enough to distinguish from other sessions
+   - **Engaging** for conference attendees
+
+4. The title should reflect the primary focus of the session while being broad enough to encompass all papers
+
+## Good Examples
+- "Automated Program Repair and Fault Localization"
+- "Machine Learning for Software Testing"
+- "Empirical Studies in Software Maintenance"
+- "Static Analysis Techniques for Security Vulnerabilities"
+- "Human Factors in Software Development"
+
+## Bad Examples (Avoid These)
+- "Papers on Testing" (too vague)
+- "Session 3" (not descriptive)
+- "Various Topics in SE" (too broad)
+- "Cool New Stuff" (not academic)
+
+## Output Format
+Return your response as JSON with this exact structure:
+```json
+{
+  "title": "Your Generated Session Title Here",
+  "reasoning": "Brief explanation of why this title fits the papers (1-2 sentences)"
+}
+```
+
+Generate the session title now.

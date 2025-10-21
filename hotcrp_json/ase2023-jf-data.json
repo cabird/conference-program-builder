@@ -1,0 +1,2254 @@
+[
+    {
+        "pid": 5,
+        "title": "Automated Identification and Qualitative Characterization of Safety Concerns Reported in UAV Software Platforms",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-0725f2558d1a66e96960745acfbe454aeb5fa2f845ba89c398097fe83a6b28fe",
+            "timestamp": 1685009864,
+            "size": 83816,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "disorbo@unisannio.it",
+                "first": "Andrea",
+                "last": "Di Sorbo",
+                "affiliation": "University of Sannio",
+                "contact": true
+            },
+            {
+                "email": "fzampetti@unisannio.it",
+                "first": "Fiorella",
+                "last": "Zampetti",
+                "affiliation": "University of Sannio",
+                "contact": true
+            },
+            {
+                "email": "visaggio@unisannio.it",
+                "first": "Corrado Aaron",
+                "last": "Visaggio",
+                "affiliation": "University of Sannio",
+                "contact": true
+            },
+            {
+                "email": "dipenta@unisannio.it",
+                "first": "Massimiliano (Max)",
+                "last": "Di Penta",
+                "affiliation": "University of Sannio",
+                "contact": true
+            },
+            {
+                "email": "panc@zhaw.ch",
+                "first": "Sebastiano",
+                "last": "Panichella",
+                "affiliation": "Zurich University of Applied Sciences (ZHAW)",
+                "contact": true
+            }
+        ],
+        "opt3": "Unmanned Aerial Vehicles (UAVs) are nowadays used in a variety of applications. Given the cyber-physical nature of UAVs, software defects in these systems can cause issues with safety-critical implications. An important aspect of the lifecycle of UAV software is to minimize the possibility of harming humans or damaging properties through a continuous process of hazard identification and safety risk management. Specifically, safety-related concerns typically emerge during the operation of UAV systems, reported by end-users and developers in the form of issue reports and pull requests. However, popular UAV systems daily receive tens or hundreds of reports of varying types and quality. To help developers timely identify and triage safety-critical UAV issues, we (i) experiment with automated approaches (previously used for issue classification) for detecting the safety-related matters appearing in the titles and descriptions of issues and pull requests reported in UAV platforms and (ii) propose a categorization of the main hazards and accidents discussed in such issues. Our results (i) show that shallow machine learning (ML)-based approaches can identify safety-related sentences with precision, recall, and F-measure values of about 80%; and (ii) provide a categorization and description of the relationships between safety issue hazards and accidents.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-04b06c4d14018d496fef1c48c8d8c359bb4c6a7a1ec9f87778737465301c65f6",
+            "timestamp": 1685009864,
+            "size": 2058592,
+            "filename": "TOSEM_2023.pdf",
+            "pages": 37
+        },
+        "publication_journal": "ACM Transactions on Software Engineering and Methodology (ACM TOSEM)",
+        "topics": [
+            "AI for SE",
+            "Mining software repositories",
+            "Requirements elicitation and management, traceability analysis",
+            "Safety"
+        ],
+        "date_acceptance": "September 13th, 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Sebastiano Panichella",
+        "pc_conflicts": {
+            "davide.diruscio@univaq.it": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685789656
+    },
+    {
+        "pid": 6,
+        "title": "How to Find Actionable Static Analysis Warnings: A Case Study with FindBugs",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-6d21e091831621d44ff7a2efb25d3a2a15bc11bb3a5331d1d0c1b8e5a8b3d055",
+            "timestamp": 1685913142,
+            "size": 97811,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "ryedida@ncsu.edu",
+                "first": "Rahul",
+                "last": "Yedida",
+                "affiliation": "North Carolina State University",
+                "contact": true
+            },
+            {
+                "email": "hjkang.2018@smu.edu.sg",
+                "first": "Hong Jin",
+                "last": "Kang",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "huyqtu7@gmail.com",
+                "first": "Huy",
+                "last": "Tu",
+                "affiliation": "North Carolina State University",
+                "contact": true
+            },
+            {
+                "email": "xyang37@ncsu.edu",
+                "first": "Xueqi",
+                "last": "Yang",
+                "affiliation": "North Carolina State University",
+                "contact": true
+            },
+            {
+                "email": "davidlo@smu.edu.sg",
+                "first": "David",
+                "last": "Lo",
+                "affiliation": "School of Computing and Information Systems, Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "timm@ieee.org",
+                "first": "Tim",
+                "last": "Menzies",
+                "affiliation": "North Carolina State University",
+                "contact": true
+            }
+        ],
+        "opt3": "Automatically generated static code warnings suffer from a large number of false alarms. Hence, developers only take action on a small percent of those warnings. To better predict which static code warnings should not be ignored, we suggest that analysts need to look deeper into their algorithms to find choices that better improve the particulars of their specific problem. Specifically, we show here that effective predictors of such warnings can be created by methods that locally adjust the decision boundary (between actionable warnings and others). These methods yield a new high water-mark for recognizing actionable static code warnings. For eight open-source Java projects (cassandra, jmeter, commons, lucene-solr, maven, ant, tomcat, and derby) we achieve perfect test results on 4\/8 datasets and, overall, a median AUC (area under the true negatives, true positives curve) of 92%.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-8f19f24823c3bb21e6887b5eee00367a68651d60789f4512ef374ebe690a4469",
+            "timestamp": 1685575736,
+            "size": 1586762,
+            "filename": "How_to_Find_Actionable_Static_Analysis_Warnings_A_Case_Study_With_FindBugs.pdf",
+            "pages": 17
+        },
+        "publication_journal": "IEEE Transaction of Software Engineering (IEEE TSE)",
+        "topics": [
+            "AI for SE",
+            "Mining software repositories",
+            "Program analysis"
+        ],
+        "date_acceptance": "2023-01-09",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Rahul Yedida",
+        "pc_conflicts": {
+            "sahraouh@iro.umontreal.ca": true,
+            "julia.lawall@inria.fr": true,
+            "Tien.N.Nguyen@utdallas.edu": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685913142
+    },
+    {
+        "pid": 11,
+        "title": "T-Evos: A Large-Scale Longitudinal Study on CI Test Execution and Failure",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-8dae50352a2e962a9e93bc8e4d0a51eb1eddf1291ebed532a8ea116746b0edbe",
+            "timestamp": 1686020699,
+            "size": 33028,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "anr_chen@encs.concordia.ca",
+                "first": "An Ran",
+                "last": "Chen",
+                "affiliation": "Concordia University",
+                "contact": true
+            },
+            {
+                "email": "peterc@encs.concordia.ca",
+                "first": "Tse-Hsun Peter",
+                "last": "Chen",
+                "affiliation": "Concordia University",
+                "contact": true
+            },
+            {
+                "email": "shaowei.wang@umanitoba.ca",
+                "first": "Shaowei",
+                "last": "Wang",
+                "affiliation": "University of Manitoba",
+                "contact": true
+            }
+        ],
+        "opt3": "Continuous integration is widely adopted in software projects to reduce the time it takes to deliver the changes to the market. To ensure software quality, developers also run regression test cases in a continuous fashion. The CI practice generates commit-by-commit software evolution data that provides great opportunities for future testing research. However, such data is often unavailable due to space limitation (e.g., developers only keep the data for a certain period) and the significant effort involved in re-running the test cases on a per-commit basis. In this paper, we present T-Evos, a dataset on test result and coverage evolution, covering 8,093 commits across 12 open-source Java projects. Our dataset includes the evolution of statement-level code coverage for every test case (either passed and failed), test result, all the builds information, code changes, and the corresponding bug reports. We conduct an initial analysis to demonstrate the overall dataset. In addition, we conduct an empirical study using T-Evos to study the characteristics of test failures in CI settings. We find that test failures are frequent, and while most failures are resolved within a day, some failures require several weeks to resolve. We highlight the relationship between code changes and test failure, and provide insights for future automated testing research. Our dataset may be used for future testing research and benchmarking in CI. Our findings provide an important first step in understanding code coverage evolution and test failures in a continuous environment. ",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-28a809263b00d9d2eb14203d944b4d06e0479c7880dd6edb1b312fe70de09f10",
+            "timestamp": 1686021014,
+            "size": 2918484,
+            "filename": "TSE-2022_JF.pdf",
+            "pages": 14
+        },
+        "publication_journal": "IEEE Transaction of Software Engineering (IEEE TSE)",
+        "topics": [
+            "Mining software repositories",
+            "Reliability"
+        ],
+        "date_acceptance": "2022-10-27",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "An Ran Chen",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1686021014
+    },
+    {
+        "pid": 12,
+        "title": "Out of the BLEU: How should we assess quality of the Code Generation models?",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-a2c48f43dcac02b044e53e9d80e4e31ae84014b684cf9aaa3f0d9a10c221d679",
+            "timestamp": 1685953389,
+            "size": 105613,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "Mikhail.Evtikhiev@jetbrains.com",
+                "first": "Mikhail",
+                "last": "Evtikhiev",
+                "affiliation": "JetBrains Research",
+                "contact": true
+            },
+            {
+                "email": "egor.bogomolov@jetbrains.com",
+                "first": "Egor",
+                "last": "Bogomolov",
+                "affiliation": "JetBrains Research",
+                "contact": true
+            },
+            {
+                "email": "yaroslav.sokolov@jetbrains.com",
+                "first": "Yaroslav",
+                "last": "Sokolov",
+                "affiliation": "JetBrains"
+            },
+            {
+                "email": "timofey.bryksin@jetbrains.com",
+                "first": "Timofey",
+                "last": "Bryksin",
+                "affiliation": "JetBrains Research",
+                "contact": true
+            }
+        ],
+        "opt3": "In recent years, researchers have created and introduced a significant number of various code\r\ngeneration models. As human evaluation of every new model version is unfeasible, the community\r\nadopted automatic evaluation metrics such as BLEU to approximate the results of human judgement. These metrics originate from the machine translation domain and it is unclear whether they are applicable for the code generation tasks and how well they agree with the human evaluation on this task. There are also other metrics, CodeBLEU and RUBY, developed to estimate the similarity of code, that take into account the properties of source code. However, for these metrics there are hardly any studies on their agreement with the human evaluation. Despite all that, minimal differences in the metric scores have been used in recent papers to claim superiority of some code generation models over the others.\r\nIn this paper, we present a study on the applicability of six metrics—BLEU, ROUGE-L, METEOR,\r\nChrF, CodeBLEU, and RUBY—for evaluation of code generation models. We conduct a study on two different code generation datasets and use human annotators to assess the quality of all models run on these datasets. The results indicate that for the CoNaLa dataset of Python one-liners, none of the metrics can correctly emulate human judgement on which model is better with > 95% certainty if the difference in model scores is less than 5 points. For the HearthStone dataset, which consists of classes of a particular structure, a difference in model scores of at least 2 points is enough to claim the superiority of one model over the other. Our findings suggest that the ChrF metric is a better fit for the evaluation of code generation models than the commonly used BLEU and CodeBLEU. Yet, finding a metric for code generation that closely agrees with humans requires additional work.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-8e981538b672f131f070022f0e75f5fdf32d21943ffbadb1c72d4fdb1121cfd9",
+            "timestamp": 1685910784,
+            "size": 800920,
+            "filename": "metrics-paper.pdf",
+            "pages": 17
+        },
+        "publication_journal": "Journal of Systems and Software (JSS, Elsevier)",
+        "topics": [
+            "AI for SE",
+            "Program synthesis",
+            "SE for AI"
+        ],
+        "date_acceptance": "2 May 2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Mikhail Evtikhiev",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685910784
+    },
+    {
+        "pid": 13,
+        "title": "Combatting Front-Running in Smart Contracts: Attack Mining, Benchmark Construction and Vulnerability Detector Evaluation",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-41510692fa3492229de68ba7a9cb85bd6ecfce91e5933ebd66af2b418bbe41eb",
+            "timestamp": 1683683280,
+            "size": 71723,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "wuqi.zhang@connect.ust.hk",
+                "first": "Wuqi",
+                "last": "Zhang",
+                "affiliation": "The Hong Kong University of Science and Technology",
+                "contact": true
+            },
+            {
+                "email": "lili.wei@mcgill.ca",
+                "first": "Lili",
+                "last": "Wei",
+                "affiliation": "McGill University",
+                "contact": true
+            },
+            {
+                "email": "scc@cse.ust.hk",
+                "first": "Shing-Chi",
+                "last": "Cheung",
+                "affiliation": "The Hong Kong University of Science and Technology",
+                "contact": true
+            },
+            {
+                "email": "liuyp1@sustech.edu.cn",
+                "first": "Yepang",
+                "last": "Liu",
+                "affiliation": "Southern University of Science and Technology",
+                "contact": true
+            },
+            {
+                "email": "sqli21@cse.cuhk.edu.hk",
+                "first": "Shuqing",
+                "last": "Li",
+                "affiliation": "The Chinese University of Hong Kong",
+                "contact": true
+            },
+            {
+                "email": "lliubf@connect.ust.hk",
+                "first": "Lu",
+                "last": "Liu",
+                "affiliation": "The Hong Kong University of Science and Technology",
+                "contact": true
+            },
+            {
+                "email": "lyu@cse.cuhk.edu.hk",
+                "first": "Michael R.",
+                "last": "Lyu",
+                "affiliation": "The Chinese University of Hong Kong",
+                "contact": true
+            }
+        ],
+        "opt3": "Front-running attacks have been a major concern on the blockchain. Attackers launch front-running attacks by inserting additional transactions before upcoming victim transactions to manipulate victim transaction executions and make profits. Recent studies have shown that front-running attacks are prevalent on the Ethereum blockchain and have caused millions of US dollars loss. It is the vulnerabilities in smart contracts, which are blockchain programs invoked by transactions, that enable the front-running attack opportunities. Although techniques to detect front-running vulnerabilities have been proposed, their performance on real-world vulnerable contracts is unclear. There is no large-scale benchmark based on real attacks to evaluate their capabilities. We make four contributions in this paper. First, we design an effective algorithm to mine real-world attacks in the blockchain history. The evaluation shows that our mining algorithm is more effective and comprehensive, achieving higher recall in finding real attacks than the previous study. Second, we propose an automated and scalable vulnerability localization approach to localize code snippets in smart contracts that enable front-running attacks. The evaluation also shows that our localization approaches are effective in achieving higher precision in pinpointing vulnerabilities compared to the baseline technique. Third, we build a benchmark consisting of 513 real-world attacks with vulnerable code labeled in 235 distinct smart contracts, which is useful to help understand the nature of front-running attacks, vulnerabilities in smart contracts, and evaluate vulnerability detection techniques. Last but not least, we conduct an empirical evaluation of seven state-of-the-art vulnerability detection techniques on our benchmark. The evaluation experiment reveals the inadequacy of existing techniques in detecting front-running vulnerabilities, with a low recall of $\\leq$  6.04%. Our further analysis identifies four common limitations in existing techniques: lack of support for inter-contract analysis, inefficient constraint solving for cryptographic operations, improper vulnerability patterns, and lack of token support.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-1ad43a187bbf16e7a1bcf5a363c8990b2a48a0204116decf274fb20f93349ad2",
+            "timestamp": 1683683280,
+            "size": 6220634,
+            "filename": "Combatting_Front-Running_in_Smart_Contracts_Attack_Mining_Benchmark_Construction_and_Vulnerability_Detector_Evaluation.pdf",
+            "pages": 17
+        },
+        "publication_journal": "IEEE Transaction of Software Engineering (IEEE TSE)",
+        "topics": [
+            "Privacy and security",
+            "Program analysis"
+        ],
+        "date_acceptance": "18 April 2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Wuqi Zhang",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1683683280
+    },
+    {
+        "pid": 14,
+        "title": "Estimating the Potential of Program Repair Search Spaces with Commit Analysis",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-fb34850a887225aa96aedc6105bf4d6bdce5a9a89bcaf95733cfa06d7c0b49ef",
+            "timestamp": 1685890398,
+            "size": 67422,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "khaes@kth.se",
+                "first": "Khashayar",
+                "last": "Etemadi",
+                "affiliation": "KTH Royal Institute of Technology",
+                "contact": true
+            },
+            {
+                "email": "tarighat_niloofar@ee.sharif.edu",
+                "first": "Niloofar",
+                "last": "Tarighat",
+                "affiliation": "Sharif University of Technology"
+            },
+            {
+                "email": "siddharth16268@iiitd.ac.in",
+                "first": "Siddharth",
+                "last": "Yadav",
+                "affiliation": "Indraprastha Institute of Information Technology"
+            },
+            {
+                "email": "matias.martinez@uphf.fr",
+                "first": "Matias",
+                "last": "Martinez",
+                "affiliation": "Universite Polytechnique Hauts-de-France",
+                "contact": true
+            },
+            {
+                "email": "monperrus@kth.se",
+                "first": "Martin",
+                "last": "Monperrus",
+                "affiliation": "KTH Royal Institute of Technology",
+                "contact": true
+            }
+        ],
+        "opt3": "The most natural method for evaluating program repair systems is to run them on bug datasets, such as Defects4J. There are two main obstacles when this evaluation is done on an arbitrary software project. First, fully executing a repair approach on a real world project often requires heavy and time-consuming configuration of the repair approach and the target project. Second, the target programs under repair should have a test suite specifying their correct behavior and, at least, one failing test case that exposes the bug. Previous work showed it is hard to find real world commits with test suites that can be compiled and executed. These two major obstacles (configuration and dependability on strong testing) hinder assessment of automated program repair on new projects.\r\nIn this paper, we propose a purely static method to evaluate the potential of the search space of repair approaches. In this context, the search space of the repair approach is the set of all program patches that can be potentially generated by a repair approach.\r\n\r\nOur new method enables researchers and practitioners to encode the search spaces of repair approaches and select potentially useful ones without struggling with tool configuration and execution. We encode the search spaces by specifying the repair strategies they employ. Next, we use the specifications to check whether past commits lie in repair search spaces. For a repair approach, including many human-written past commits in its search space indicates its potential to generate useful patches. We implement our evaluation method in LighteR. LighteR gets a Git repository and outputs a list of commits whose source code changes lie in repair search spaces.\r\n\r\nOur original paper can be found via https:\/\/doi.org\/10.1016\/j.jss.2022.111263.\r\n\r\nTo sum up, our contributions are:\r\n- A novel method for specifying the search space of program repair approaches, appropriate to study the potential of program repair to create patches corresponding to past commits of software repositories. This framework implemented in a tool called LighteR, is lightweight, it does not require configuration and execution of repair systems.\r\n- A comprehensive series of experiments on past commits. By analyzing $55,309$ human-written commits from $72$ Github repositories, we show that $1.35\\% \\, (747\/55,309)$ of past commits lie in the search space of at least one of the considered repair systems, $62\\%$ of these commits are indeed bug-fixing commits according to the  manual inspection we conducted. \r\nOverall, our experiments show that our novel method is an effective means to study the potential of program repair search space.\r\n- A systematic measurement of the reliability of LighteR. Our prototype system has a precision and recall of $77\\%$ and $92\\%$, respectively, which is arguably high compared to close tools, such as  PPD (Patch Pattern Detector).\r\n\r\nAll the data presented in this paper are publicly-available at https:\/\/github.com\/khaes-kth\/GithubRepairPatterns.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-3950fe87b6b97a6520e8530338a51a5ea68c01d29191706b393cd1eb2cf85601",
+            "timestamp": 1685890398,
+            "size": 589417,
+            "filename": "original.pdf",
+            "pages": 17
+        },
+        "publication_journal": "Journal of Systems and Software (JSS, Elsevier)",
+        "topics": [
+            "Debugging and fault-localization",
+            "Mining software repositories",
+            "Program analysis",
+            "Program repairs",
+            "Program synthesis",
+            "Search-based software engineering"
+        ],
+        "date_acceptance": "03 February 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Khashayar Etemadi",
+        "pc_conflicts": {
+            "julia.lawall@inria.fr": true,
+            "anne.etien@univ-lille.fr": true,
+            "baudry@kth.se": true,
+            "abergel@dcc.uchile.cl": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685890398
+    },
+    {
+        "pid": 20,
+        "title": "Fine-Grained Coverage-Based Fuzzing",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-67ff90624326c04d7cf6c4096311e7fccf51b3d53b0d0c8df55d590b52049664",
+            "timestamp": 1685966358,
+            "size": 104462,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "wwu@isi.edu",
+                "first": "Wei-Cheng",
+                "last": "Wu",
+                "affiliation": "CEA, LIST, Université Paris Saclay and University of Southern California",
+                "contact": true
+            },
+            {
+                "email": "bernard.nongpoh@gmail.com",
+                "first": "Bernard",
+                "last": "Nongpoh",
+                "affiliation": "CEA, LIST, Université Paris Saclay",
+                "contact": true
+            },
+            {
+                "email": "marwan.s.nour@gmail.com",
+                "first": "Marwan",
+                "last": "Nour",
+                "affiliation": "CEA, LIST, Université Paris Saclay",
+                "contact": true
+            },
+            {
+                "email": "michael.marcozzi@cea.fr",
+                "first": "Michaël",
+                "last": "Marcozzi",
+                "affiliation": "CEA, LIST, Université Paris Saclay",
+                "contact": true
+            },
+            {
+                "email": "sebastien.bardin@cea.fr",
+                "first": "Sébastien",
+                "last": "Bardin",
+                "affiliation": "CEA, LIST, Université Paris Saclay",
+                "contact": true
+            },
+            {
+                "email": "hauser@isi.edu",
+                "first": "Christophe",
+                "last": "Hauser",
+                "affiliation": "University of Southern California",
+                "contact": true
+            }
+        ],
+        "opt3": "Fuzzing is a popular software testing method that discovers bugs by massively feeding target applications with automatically generated inputs. Many state-of-art fuzzers use branch coverage as a feedback metric to guide the fuzzing process. The fuzzer retains inputs for further mutation only if branch coverage is increased. However, branch coverage only provides a shallow sampling of program behaviours and hence may discard interesting inputs to mutate. This work aims at taking advantage of the large body of research over defining finer-grained code coverage metrics (such as control-flow, data-flow or mutation coverage) and at evaluating how fuzzing performance is impacted when using these metrics to select interesting inputs for mutation. We propose to make branch coverage-based fuzzers support most fine-grained coverage metrics out of the box (i.e., without changing fuzzer internals). We achieve this by making the test objectives defined by these metrics (such as conditions to activate or mutants to kill) explicit as new branches in the target program. Fuzzing such a modified target is then equivalent to fuzzing the original target, but the fuzzer will also retain inputs covering the additional metrics objectives for mutation. In addition, all the fuzzer mechanisms to penetrate hard-to-cover branches will help covering the additional metrics objectives. We use this approach to evaluate the impact of supporting two fine-grained coverage metrics (multiple condition coverage and weak mutation) over the performance of two state-of-the-art fuzzers (AFL++ and QSYM) with the standard LAVA-M and MAGMA benchmarks. This evaluation suggests that our mechanism for runtime fuzzer guidance, where the fuzzed code is instrumented with additional branches, is effective and could be leveraged to encode guidance from human users or static analysers. Our results also show that the impact of fine-grained metrics over fuzzing performance is hard to predict before fuzzing, and most of the time either neutral or negative. As a consequence, we do not recommend using them to guide fuzzers, except maybe in some possibly favorable circumstances yet to investigate, like for limited parts of the code or to complement classical fuzzing campaigns.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-3732fac9a27ab547bc322f332b662a7ac34162f0997dfdb921c485854ec833c8",
+            "timestamp": 1685958689,
+            "size": 3715137,
+            "filename": "3587158.pdf",
+            "pages": 40
+        },
+        "publication_journal": "ACM Transactions on Software Engineering and Methodology (ACM TOSEM)",
+        "topics": [
+            "Formal methods, validation and verification",
+            "Privacy and security",
+            "Program analysis",
+            "Regression, mutation, model-based testing",
+            "Search-based software engineering"
+        ],
+        "date_acceptance": "13 February 2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Wei-Cheng Wu and Michaël Marcozzi",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685966358
+    },
+    {
+        "pid": 29,
+        "title": "Rise of Distributed Deep Learning Training in the Big Model Era: From a Software Engineering Perspective",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-509f825a4a0a6306278cae97cf6f05f5f5e5ebe59ac5ac15ecb1c5004c76f9fa",
+            "timestamp": 1685929231,
+            "size": 51931,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "liuxuanzhe@pku.edu.cn",
+                "first": "Xuanzhe",
+                "last": "Liu",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "gudiandian1998@pku.edu.cn",
+                "first": "Diandian",
+                "last": "Gu",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "zp.chen@ucl.ac.uk",
+                "first": "Zhenpeng",
+                "last": "Chen",
+                "affiliation": "University College London",
+                "contact": true
+            },
+            {
+                "email": "jinfeng.wen@stu.pku.edu.cn",
+                "first": "Jinfeng",
+                "last": "Wen",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "zzlcs@pku.edu.cn",
+                "first": "Zili",
+                "last": "Zhang",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "mayun@pku.edu.cn",
+                "first": "Yun",
+                "last": "Ma",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "haoyuwang@hust.edu.cn",
+                "first": "Haoyu",
+                "last": "Wang",
+                "affiliation": "Huazhong University of Science and Technology",
+                "contact": true
+            },
+            {
+                "email": "xinjinpku@pku.edu.cn",
+                "first": "Xin",
+                "last": "Jin",
+                "affiliation": "Peking University",
+                "contact": true
+            }
+        ],
+        "opt3": "Deep learning (DL) has become a key component of modern software. In the big model era, the rich features of DL-based software (i.e., DL software) substantially rely on powerful DL models, e.g., BERT, GPT-3, and the recently emerging GPT-4, which are trained on the powerful cloud with large datasets. Hence, training effective DL models has become a vital stage in the whole software lifecycle. When training deep learning models, especially those big models, developers need to parallelize and distribute the computation and memory resources amongst multiple devices (e.g., a cluster of GPUs) in the training process, which is known as distributed deep learning training, or distributed training for short. However, the unique challenges that developers encounter in distributed training process have not been studied in the software engineering community. Given the increasingly heavy dependence of current DL-based software on distributed training, this paper aims to fill in the knowledge gap and presents the first comprehensive study on developers’ issues in distributed training. To this end, we focus on popular DL frameworks that support distributed training (including TensorFlow, PyTorch, Keras, and Horovod) and analyze 1,131 real-world developers’ issues about using these frameworks reported on Stack Overflow and GitHub. We construct a fine-grained taxonomy consisting of 30 categories regarding the fault symptoms and summarize common fix patterns for different symptoms. We find that : (1) many distributed-specific faults and non-distributed-specific faults inherently share the same fault symptoms, making it challenging to debug; (2) most of the fault symptoms have frequent fix patterns; (3) about half of the faults are related to system-level configurations. Based on the results, we suggest actionable implications on research avenues that can potentially facilitate the distributed training to develop DL-based software, such as focusing on the frequent and common fix patterns when designing testing or debugging tools, developing efficient testing and debugging techniques for communication configuration along with the synthesis of network configuration analysis, designing new multi-device checkpoint-and-replay techniques to help reproduction, and designing serverless APIs for cloud platforms. ",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-c55e6e0892ce24a4ba9f798088537f20df01fa59dd1cf2fe3e5808b87d136482",
+            "timestamp": 1684743541,
+            "size": 1385845,
+            "filename": "tosem.pdf",
+            "pages": 25
+        },
+        "publication_journal": "ACM Transactions on Software Engineering and Methodology (ACM TOSEM)",
+        "topics": [
+            "Mining software repositories",
+            "SE for AI"
+        ],
+        "date_acceptance": "April 17, 2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Diandian Gu",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1684915140
+    },
+    {
+        "pid": 32,
+        "title": "Enhancing the defectiveness prediction of methods and classes via JIT",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-e9a1825eea46a2290c2a6d4bf4856507a71ad52dc55164e729a49e2a50b12c26",
+            "timestamp": 1684332513,
+            "size": 44926,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "falessi@ing.uniroma2.it",
+                "first": "Davide",
+                "last": "Falessi",
+                "affiliation": "University of Rome Tor Vergata",
+                "contact": true
+            },
+            {
+                "email": "simone.mesianolaureani@alumni.uniroma2.eu",
+                "first": "Simone Mesiano",
+                "last": "Laureani",
+                "affiliation": "University of Rome Tor Vergata"
+            },
+            {
+                "email": "jonida.carka@students.uniroma2.eu",
+                "first": "Jonida",
+                "last": "Çarka",
+                "affiliation": "University of Rome Tor Vergata",
+                "contact": true
+            },
+            {
+                "email": "m.esposito@ing.uniroma2.it",
+                "first": "Matteo",
+                "last": "Esposito",
+                "affiliation": "University of Rome Tor Vergata",
+                "contact": true
+            },
+            {
+                "email": "danielcalencar@otago.ac.nz",
+                "first": "Daniel Alencar",
+                "last": "da Costa",
+                "affiliation": "University of Otago",
+                "contact": true
+            }
+        ],
+        "opt3": "Context\r\nDefect prediction can help at prioritizing testing tasks by, for instance, ranking a list of items (methods and classes) according to their likelihood to be defective. While many studies investigated how to predict the defectiveness of commits, methods, or classes separately, no study investigated how these predictions differ or benefit each other. Specifically, at the end of a release, before the code is shipped to production, testing can be aided by ranking methods or classes, and we do not know which of the two approaches is more accurate. Moreover, every commit touches one or more methods in one or more classes; hence, the likelihood of a method and a class being defective can be associated with the likelihood of the touching commits being defective. Thus, it is reasonable to assume that the accuracy of methods-defectiveness-predictions (MDP) and the class-defectiveness-predictions (CDP) are increased by leveraging commits-defectiveness-predictions (aka JIT).\r\nObjective\r\nThe contribution of this paper is fourfold: (i) We compare methods and classes in terms of defectiveness and (ii) of accuracy in defectiveness prediction, (iii) we propose and evaluate a first and simple approach that leverages JIT to increase MDP accuracy and (iv) CDP accuracy.\r\nMethod\r\nWe analyse accuracy using two types of metrics (threshold-independent and effort-aware). We also use feature selection metrics, nine machine learning defect prediction classifiers, more than 2.000 defects related to 38 releases of nine open source projects from the Apache ecosystem. Our results are based on a ground truth with a total of 285,139 data points and 46 features among commits, methods and classes.\r\nResults\r\nOur results show that leveraging JIT by using a simple median approach increases the accuracy of MDP by an average of 17% AUC and 46% PofB10 while it increases the accuracy of CDP by an average of 31% AUC and 38% PofB20.\r\nConclusions\r\nFrom a practitioner’s perspective, it is better to predict and rank defective methods than defective classes. From a researcher’s perspective, there is a high potential for leveraging statement-defectiveness-prediction (SDP) to aid MDP and CDP.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-aa1bfcad58a5e70a7b95545a91d942ad53376f821495c3f0d3ee593169494d04",
+            "timestamp": 1684252584,
+            "size": 4370567,
+            "filename": "s10664-022-10261-z-2.pdf",
+            "pages": 43
+        },
+        "publication_journal": "Empirical Software Engineering Journal (EMSE, Springer)",
+        "topics": [
+            "AI for SE",
+            "Debugging and fault-localization",
+            "Mining software repositories",
+            "Other"
+        ],
+        "date_acceptance": "07.11.2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Matteo Esposito",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1684332513
+    },
+    {
+        "pid": 33,
+        "title": "JavaScript Dead Code Identification, Elimination, and Empirical Assessment",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-aebb39f6c61e9dcd941143469ec239e6a6e6afcc27f08bb21a2f0386ed892317",
+            "timestamp": 1685820908,
+            "size": 75804,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "i.malavolta@vu.nl",
+                "first": "Ivano",
+                "last": "Malavolta",
+                "affiliation": "Vrije Universiteit Amsterdam",
+                "contact": true
+            },
+            {
+                "email": "k.j.nirghin@student.vu.nl",
+                "first": "Kishan",
+                "last": "Nirghin",
+                "affiliation": "Vrije Universiteit Amsterdam"
+            },
+            {
+                "email": "gianluca.scoccia@gssi.it",
+                "first": "Gian Luca",
+                "last": "Scoccia",
+                "affiliation": "Gran Sasso Science Institute"
+            },
+            {
+                "email": "siromano@unisa.it",
+                "first": "Simone",
+                "last": "Romano",
+                "affiliation": "University of Salerno",
+                "contact": true
+            },
+            {
+                "email": "salvatore.lombardi@studenti.unibas.it",
+                "first": "Salvatore",
+                "last": "Lombardi",
+                "affiliation": "University of Basilicata"
+            },
+            {
+                "email": "gscanniello@unisa.it",
+                "first": "Giuseppe",
+                "last": "Scanniello",
+                "affiliation": "University of Salerno",
+                "contact": true
+            },
+            {
+                "email": "p.lago@vu.nl",
+                "first": "Patricia",
+                "last": "Lago",
+                "affiliation": "Vrije Universiteit Amsterdam",
+                "contact": true
+            }
+        ],
+        "opt3": "Web apps are built by using a combination of HTML, CSS, and JavaScript. While building modern web apps, it is common practice to make use of third-party libraries and frameworks, as to improve developers’ productivity and code quality. Alongside these benefits, the adoption of such libraries results in the introduction of JavaScript dead code, i.e., code implementing unused functionalities. The costs for downloading and parsing dead code can negatively contribute to the loading time and resource usage of web apps. The goal of our study is two-fold. First, we present Lacuna, an approach for automatically detecting and eliminating JavaScript dead code from web apps. The proposed approach supports both static and dynamic analyses, it is extensible and can be applied to any JavaScript code base, without imposing constraints on the coding style or on the use of specific JavaScript constructs. Secondly, by leveraging Lacuna we conduct an experiment to empirically evaluate the run-time overhead of JavaScript dead code in terms of energy consumption, performance, network usage, and resource usage in the context of mobile web apps. We applied Lacuna four times on 30 mobile web apps independently developed by third-party developers, each time eliminating dead code according to a different optimization level provided by Lacuna. Afterward, each different version of the web app is executed on an Android device, while collecting measures to assess the potential run-time overhead caused by dead code. Experimental results, among others, highlight that the removal of JavaScript dead code has a positive impact on the loading time of mobile web apps, while significantly reducing the number of bytes transferred over the network.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-e070446cb0cb51891bd20af07fa1aca027b1bb6e31b12524ed03e6fccf5c1e4c",
+            "timestamp": 1685820908,
+            "size": 986004,
+            "filename": "JavaScript_Dead_Code_Identification_Elimination_and_Empirical_Assessment.pdf",
+            "pages": 23
+        },
+        "publication_journal": "IEEE Transaction of Software Engineering (IEEE TSE)",
+        "topics": [
+            "Green and sustainable technologies",
+            "Program analysis",
+            "Refactoring and reengineering"
+        ],
+        "date_acceptance": "06-Apr-2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Gian Luca Scoccia",
+        "pc_conflicts": {
+            "Coen.De.Roover@vub.be": true,
+            "davide.diruscio@univaq.it": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685820908
+    },
+    {
+        "pid": 35,
+        "title": "Towards Robustness of Deep Program Processing Models -- Detection, Estimation and Enhancement",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-6d9bc41c1c8d910367d571666c26340dc804a18ba97954a790b8aea4b3e12bd2",
+            "timestamp": 1685414399,
+            "size": 318139,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "zhang_hz@pku.edu.cn",
+                "first": "Huangzhao",
+                "last": "Zhang",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "ypfzy@pku.edu.cn",
+                "first": "Zhiyi",
+                "last": "Fu",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "lige@pku.edu.cn",
+                "first": "Ge",
+                "last": "Li",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "ma.lei@acm.org",
+                "first": "Lei",
+                "last": "Ma",
+                "affiliation": "The University of Tokyo & University of Alberta",
+                "contact": true
+            },
+            {
+                "email": "zhaozhehao@pku.edu.cn",
+                "first": "Zhehao",
+                "last": "Zhao",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "chrisyoung@pku.edu.cn",
+                "first": "Hua'an",
+                "last": "Yang",
+                "affiliation": "Peking University"
+            },
+            {
+                "email": "yizhe@pku.edu.cn",
+                "first": "Yizhe",
+                "last": "Sun",
+                "affiliation": "Peking University"
+            },
+            {
+                "email": "yangliu@ntu.edu.sg",
+                "first": "Yang",
+                "last": "Liu",
+                "affiliation": "Nanyang Technological University",
+                "contact": true
+            },
+            {
+                "email": "zhijin@pku.edu.cn",
+                "first": "Zhi",
+                "last": "Jin",
+                "affiliation": "Peking University",
+                "contact": true
+            }
+        ],
+        "opt3": "Deep learning (DL) has recently been widely applied to diverse source code processing tasks in the software engineering (SE) community, which achieves competitive performance (e.g., accuracy).\r\nHowever, the robustness, which requires the model to produce consistent decisions given minorly perturbed code inputs, still lacks systematic investigation as an important quality indicator.\r\nThis paper initiates an early step and proposes a framework CARROT for robustness detection, measurement, and enhancement of DL models for source code processing. We first propose an optimization-based attack technique CARROTA to generate valid adversarial source code examples effectively and efficiently. Based on this, we define the robustness metrics and propose robustness measurement toolkit CARROTM, which employs the worst-case performance approximation under the allowable perturbations. We further propose to improve the robustness of the DL models by adversarial training (CARROTT) with our proposed attack techniques. Our in-depth evaluations on three source code processing tasks (i.e., functionality classification, code clone detection, defect prediction) containing more than 3 million lines of code and the classic or SOTA DL models, including GRU, LSTM, ASTNN, LSCNN, TBCNN, CodeBERT and CDLH, demonstrate the usefulness of our techniques for (1) effective and efficient adversarial example detection, (2) tight robustness estimation, and (3) effective robustness enhancement.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-88c02344e992b27688e92da926ae01d87668264b88a4974a43c96477eb70bd52",
+            "timestamp": 1685414155,
+            "size": 2185263,
+            "filename": "3511887.pdf",
+            "pages": 40
+        },
+        "publication_journal": "ACM Transactions on Software Engineering and Methodology (ACM TOSEM)",
+        "topics": [
+            "AI for SE"
+        ],
+        "date_acceptance": "09 April 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Huangzhao Zhang",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685414417
+    },
+    {
+        "pid": 40,
+        "title": "Machine learning-based test selection for simulation-based testing of self-driving cars software",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-c1170d3323481518782c0f158dc6e25a7a6d723f8b4ceaf5a932b6984c347860",
+            "timestamp": 1685682629,
+            "size": 103956,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "birc@zhaw.ch",
+                "first": "Christian",
+                "last": "Birchler",
+                "affiliation": "Zurich University of Applied Science",
+                "contact": true
+            },
+            {
+                "email": "mazr@zhaw.ch",
+                "first": "Sajad",
+                "last": "Khatiri",
+                "affiliation": "Zurich University of Applied Sciences & Software Institute USI",
+                "contact": true
+            },
+            {
+                "email": "bill.bosshard@outlook.com",
+                "first": "Bill",
+                "last": "Bosshard",
+                "affiliation": "Meier Planungsdienste GmbH"
+            },
+            {
+                "email": "alessio.gambi@fh-krems.ac.at",
+                "first": "Alessio",
+                "last": "Gambi",
+                "affiliation": "IMC University of Applied Science Krems",
+                "contact": true
+            },
+            {
+                "email": "panc@zhaw.ch",
+                "first": "Sebastiano",
+                "last": "Panichella",
+                "affiliation": "Zurich University of Applied Science",
+                "contact": true
+            }
+        ],
+        "opt3": "Simulation platforms facilitate the development of emerging Cyber-Physical Systems (CPS) like self-driving cars (SDC) because they are more efficient and less dangerous than\r\nfield operational test cases. Despite this, thoroughly testing SDCs in simulated environments remains challenging because SDCs must be tested in a sheer amount of long-running test cases. Past results on software testing optimization have shown that not all the test cases contribute equally to establishing confidence in test subjects’ quality and reliability, and the execution of “safe and uninformative” test cases can be skipped to reduce testing effort. However, this problem is only partially addressed in the context of SDC simulation platforms. In this paper, we investigate test\r\nselection strategies to increase the cost-effectiveness of simulation-based testing in the context of SDCs. We propose an approach called SDC-Scissor (SDC coSt-effeCtIve teSt SelectOR) that\r\nleverages Machine Learning (ML) strategies to identify and skip test cases that are unlikely to detect faults in SDCs before executing them.\r\nOur evaluation shows that SDC-SCISSOR outperforms the baselines. With the Logistic model, we achieve an accuracy of 70%, a precision of 65%, and a recall of 80% in selecting tests leading to a fault and improved testing cost-effectiveness. Specifically, SDC-SCISSOR avoided the execution of 50% of unnecessary tests as well as outperformed two baseline strategies. Complementary to existing work, we also integrated SDC-Scissor into the context of an industrial organization in the\r\nautomotive domain to demonstrate how it can be used in industrial settings.\r\n\r\nOriginal paper: https:\/\/doi.org\/10.1007\/s10664-023-10286-y\r\n",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-6800891b28795a77259116d4473740fb67f60986aecad332bcad95535235285c",
+            "timestamp": 1685682629,
+            "size": 5571201,
+            "filename": "EMSE-Birchler-et-al.pdf",
+            "pages": 55
+        },
+        "publication_journal": "Empirical Software Engineering Journal (EMSE, Springer)",
+        "topics": [
+            "AI for SE",
+            "Autonomous and self-adapting systems",
+            "Regression, mutation, model-based testing",
+            "Safety"
+        ],
+        "date_acceptance": "20 December 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Christian Birchler or Sajad Khatiri",
+        "pc_conflicts": {
+            "abergel@dcc.uchile.cl": true,
+            "snejati@uottawa.ca": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685682629
+    },
+    {
+        "pid": 41,
+        "title": "On the usage, co-usage and migration of CI\/CD tools: a qualitative analysis",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-1be6ef54ba2e87ae34dc1e69b9461226f88645aded1a0de260b6b97f89a644ef",
+            "timestamp": 1683191360,
+            "size": 56189,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "pooya.rostamimazrae@umons.ac.be",
+                "first": "Pooya Rostami",
+                "last": "Mazrae",
+                "affiliation": "University of Mons",
+                "contact": true
+            },
+            {
+                "email": "tom.mens@umons.ac.be",
+                "first": "Tom",
+                "last": "Mens",
+                "affiliation": "University of Mons",
+                "contact": true
+            },
+            {
+                "email": "mehdi.golzadeh@umons.ac.be",
+                "first": "Mehdi",
+                "last": "Golzadeh",
+                "affiliation": "University of Mons"
+            },
+            {
+                "email": "alexandre.decan@umons.ac.be",
+                "first": "Alexandre",
+                "last": "Decan",
+                "affiliation": "University of Mons"
+            }
+        ],
+        "opt3": "Continuous integration, delivery and deployment (CI\/CD) is used to support the collaborative software development process. CI\/CD tools automate a wide range of activities in the development workflow such as testing, linting, updating dependencies, creating and deploying releases, and so on. Previous quantitative studies have revealed important changes in the landscape of CI\/CD usage, with the increasing popularity of cloud-based services, and many software projects migrating to other CI\/CD tools. In order to understand the reasons behind these changes in CI\/CD usage, this paper presents a qualitative study based on in-depth interviews with 22 experienced software practitioners reporting on their usage, co-usage and migration of 31 different CI\/CD tools. Following an inductive and deductive coding process, we analyse the interviews and found a high amount of competition between CI\/CD tools. We observe multiple reasons for co-using different CI\/CD tools within the same project, and we identify the main reasons and detractors for migrating to different alternatives. Among all reported migrations, we observe a clear trend of migrations away from Travis and migrations towards GitHub Actions and we identify the main reasons behind them.",
+        "publication_journal": "Empirical Software Engineering Journal (EMSE, Springer)",
+        "topics": [
+            "Configuration and release management",
+            "Mining software repositories",
+            "Release engineering and DevOps",
+            "Software reuse"
+        ],
+        "date_acceptance": "28 December 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Pooya Rostami Mazrae",
+        "pc_conflicts": {
+            "Coen.De.Roover@vub.be": true,
+            "Tien.N.Nguyen@utdallas.edu": true,
+            "anne.etien@univ-lille.fr": true,
+            "davide.diruscio@univaq.it": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1683191463
+    },
+    {
+        "pid": 42,
+        "title": "Metamorphic Testing for Web System Security",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-9cb2de7bc78d39577997ddf2127e3612de21fd7b649caea6fefe78ea4cb88345",
+            "timestamp": 1685906091,
+            "size": 77413,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "n.bayati@uottawa.ca",
+                "first": "Nazanin",
+                "last": "Bayati Chaleshtari",
+                "affiliation": "University of Ottawa",
+                "contact": true
+            },
+            {
+                "email": "fabrizio.pastore@uni.lu",
+                "first": "Fabrizio",
+                "last": "Pastore",
+                "affiliation": "University of Luxembourg",
+                "contact": true
+            },
+            {
+                "email": "arda.goknil@sintef.no",
+                "first": "Arda",
+                "last": "Göknil",
+                "affiliation": "SINTEF Digital",
+                "contact": true
+            },
+            {
+                "email": "lionel.briand@uni.lu",
+                "first": "Lionel",
+                "last": "Briand",
+                "affiliation": "University of Luxembourg & University of Ottawa",
+                "contact": true
+            }
+        ],
+        "opt3": "Security testing aims at verifying that the software meets its security properties. In modern Web systems, however, this often entails the verification of the outputs generated when exercising the system with a very large set of inputs. Full automation is thus required to lower costs and increase the effectiveness of security testing. Unfortunately, to achieve such automation, in addition to strategies for automatically deriving test inputs, we need to address the oracle problem, which refers to the challenge, given an input for a system, of distinguishing correct from incorrect behavior.\r\nIn this paper, we propose Metamorphic Security Testing for Web-interactions (MST-wi), a metamorphic testing approach that integrates test input generation strategies inspired by mutational fuzzing. Metamorphic Testing (MT) is a testing technique following the idea that it may be simpler to reason about relations, called metamorphic relations (MRs), between outputs of multiple test executions than to specify the system’s input-output behavior.\r\nWe provide a catalog of 76 system-agnostic MRs to automate security testing in Web systems. It covers 39% of the OWASP security testing activities not automated by state-of-the-art techniques; further, our MRs can automatically discover 102 different types of vulnerabilities, which correspond to 45% of the vulnerabilities due to violations of security design principles according to the MITRE CWE database. We also define guidelines that enable test engineers to improve the testability of the system under test with respect to our approach.\r\nWe evaluated MST-wi effectiveness and scalability with two well-known Web systems (i.e., Jenkins and Joomla). It automatically detected 85% of their vulnerabilities and showed a high specificity (99.81% of the generated inputs do not lead to a false positive); our findings include a new security vulnerability detected in Jenkins. Finally, our results demonstrate that the approach scale, thus enabling automated security testing overnight.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-d3605afab9bb136cc9213b855cc122f67db7a54e099ed6eae938371e0fae308b",
+            "timestamp": 1685906091,
+            "size": 4952800,
+            "filename": "Metamorphic_Testing_for_Web_System_Security.pdf",
+            "pages": 43
+        },
+        "publication_journal": "IEEE Transaction of Software Engineering (IEEE TSE)",
+        "topics": [
+            "Privacy and security",
+            "Other"
+        ],
+        "date_acceptance": "9\/March\/2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Nazanin Bayati Chaleshtari",
+        "pc_conflicts": {
+            "snejati@uottawa.ca": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685906577
+    },
+    {
+        "pid": 43,
+        "title": "SLocator: Localizing the Origin of SQL Queries in Database-Backed Web Applications",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-59776aeddc48e9a679d2839b4422accd12e5185ac9cd3e2efb5a9090d9234eca",
+            "timestamp": 1686036904,
+            "size": 37072,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "w_liu201@encs.concordia.ca",
+                "first": "Wei",
+                "last": "Liu",
+                "affiliation": "Concordia University",
+                "contact": true
+            },
+            {
+                "email": "peterc@encs.concordia.ca",
+                "first": "Tse-Hsun (Peter)",
+                "last": "Chen",
+                "affiliation": "Concordia University",
+                "contact": true
+            }
+        ],
+        "opt3": "In database-backed web applications, developers often leverage Object-Relational Mapping (ORM) frameworks for database accesses. ORM frameworks provide an abstraction of the underlying database access details so that developers can focus on implementing the business logic of the application. However, due to the abstraction, developers may not know where and how a problematic SQL query is generated in the application code, causing challenges in debugging database access problems. In this paper, we propose an approach, called SLocator, which locates where a SQL query is generated in the application code. SLocator is a hybrid approach that leverages both static analysis and information retrieval (IR) techniques. SLocator uses static analysis to infer the database access for every possible path in the control ﬂow graph. Then, given a SQL query, SLocator applies IR techniques to ﬁnd the control ﬂow path (i.e., a sequence of methods called in an interprocedural control ﬂow graph) whose inferred database access has the highest similarity ranking. We implement SLocator for Java’s ofﬁcial ORM API speciﬁcation (JPA) and evaluate SLocator on seven open source Java applications. We ﬁnd that SLocator is able to locate the control ﬂow path that generates a SQL query with a Top@1 accuracy ranging from 37.4% to 70% for SQL queries in sessions, and 30.7% to 69.2% for individual SQL queries; and Top@5 ranging from 78.3% to 95.5% for SQL queries in sessions, and 59.1% to 100% for individual SQL queries. We also conduct a study to illustrate how SLocator may be used for locating issues in the database access code.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-dccc5bc1c601678c9cacb6eeeb0194cf615ecd2479cbd42cb8aff7a5eb08dc44",
+            "timestamp": 1686036904,
+            "size": 1987230,
+            "filename": "SLocator_Paper.pdf",
+            "pages": 15
+        },
+        "publication_journal": "IEEE Transaction of Software Engineering (IEEE TSE)",
+        "topics": [
+            "Debugging and fault-localization",
+            "Program analysis"
+        ],
+        "date_acceptance": "Feb 20, 2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Wei Liu",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1686036904
+    },
+    {
+        "pid": 47,
+        "title": "Simulator-based Explanation and Debugging of Hazard-triggering Events in DNN-based Safety-critical Systems",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-28fd457fc8d50f5cf551d0cd3d45722e8da6cfd399ef7140d2b472fb5217dbda",
+            "timestamp": 1685946222,
+            "size": 73988,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "hazem.fahmy@uni.lu",
+                "first": "Hazem",
+                "last": "FAHMY",
+                "affiliation": "University of Luxembourg",
+                "contact": true
+            },
+            {
+                "email": "fabrizio.pastore@uni.lu",
+                "first": "Fabrizio",
+                "last": "Pastore",
+                "affiliation": "University of Luxembourg",
+                "contact": true
+            },
+            {
+                "email": "lionel.briand@uni.lu",
+                "first": "Lionel",
+                "last": "Briand",
+                "affiliation": "University of Luxembourg & University of Ottawa",
+                "contact": true
+            },
+            {
+                "email": "thomas.stifter@iee.lu",
+                "first": "Thomas",
+                "last": "Stifter",
+                "affiliation": "IEE S.A."
+            }
+        ],
+        "opt3": "When Deep Neural Networks (DNNs) are used in safety-critical systems, engineers should determine the safety risks associated with failures (i.e., erroneous outputs) observed during testing. For image-processing DNNs, engineers visually inspect all failure-inducing images to determine common characteristics among them. Though informative, such activity is expensive and error-prone.\r\nTo support such safety analysis practices, we propose SEDE, a technique that generates readable descriptions for commonalities in failure-inducing, real-world images and improves the DNN through effective retraining. SEDE relies on genetic algorithms to drive simulators, which are commonly used for cyber-physical systems, towards the generation of images that are similar to real- world images; it then employs rule learning algorithms to derive expressions that describe commonalities in terms of simulator parameter values. The derived expressions are then used to generate additional images to retrain and improve the DNN.\r\nWith DNNs performing in-car sensing tasks, SEDE successfully characterized hazard-triggering events leading to a DNN accuracy drop. Also, SEDE enabled retraining leading to significant improvements in DNN accuracy, up to 18% percentage points.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-be43de3dee963c7711d3f273f1a5f76790ae33a69e6e29865eec7109aa54f009",
+            "timestamp": 1685946222,
+            "size": 2764861,
+            "filename": "3569935.pdf",
+            "pages": 47
+        },
+        "publication_journal": "ACM Transactions on Software Engineering and Methodology (ACM TOSEM)",
+        "topics": [
+            "Debugging and fault-localization",
+            "Safety",
+            "SE for AI",
+            "Search-based software engineering"
+        ],
+        "date_acceptance": "October, 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Hazem Fahmy",
+        "pc_conflicts": {
+            "snejati@uottawa.ca": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685946222
+    },
+    {
+        "pid": 49,
+        "title": "What Quality Aspects Influence the Adoption of Docker Images?",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-fc8679c2b94490009040def7793adfdfbc9c85d459a166505056f91e0da618e9",
+            "timestamp": 1685961768,
+            "size": 60710,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "giovanni.rosa@unimol.it",
+                "first": "Giovanni",
+                "last": "Rosa",
+                "affiliation": "STAKE Lab, University of Molise",
+                "contact": true
+            },
+            {
+                "email": "simone.scalabrino@unimol.it",
+                "first": "Simone",
+                "last": "Scalabrino",
+                "affiliation": "STAKE Lab, University of Molise",
+                "contact": true
+            },
+            {
+                "email": "gabriele.bavota@usi.ch",
+                "first": "Gabriele",
+                "last": "Bavota",
+                "affiliation": "Software Institute, Università della Svizzera Italiana (USI)",
+                "contact": true
+            },
+            {
+                "email": "rocco.oliveto@unimol.it",
+                "first": "Rocco",
+                "last": "Oliveto",
+                "affiliation": "STAKE Lab, University of Molise",
+                "contact": true
+            }
+        ],
+        "opt3": "Docker is a containerization technology that allows developers to ship software applications along with their dependencies in Docker images. Developers can extend existing images using them as base images when writing Dockerfiles. However, a lot of alternative functionally-equivalent base images are available. While many studies define and evaluate quality features that can be extracted from Docker artifacts, it is still unclear what are the criteria on which developers choose a base image over another.\r\n\r\nIn this paper, we aim to fill this gap. First, we conduct a literature review through which we define a taxonomy of quality features, identifying two main groups: Configuration-related features (i.e., mainly related to the Dockerfile and image build process), and externally observable features (i.e., what the Docker image users can observe). Second, we ran an empirical study considering the developers’ preference for 2,441 Docker images in 1,911 open-source software projects. We want to understand (i) how the externally observable features influence the developers’ preferences, and (ii) how they are related to the configuration-related features. Our results pave the way to the definition of a reliable quality measure for Docker artifacts, along with tools that support developers for a quality-aware development of them.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-0859fb21d81dee5f71c21b943e53d012769d921d68696ecc13f55a17e2c961e0",
+            "timestamp": 1685960267,
+            "size": 1922293,
+            "filename": "preprint.pdf",
+            "pages": 29
+        },
+        "publication_journal": "ACM Transactions on Software Engineering and Methodology (ACM TOSEM)",
+        "topics": [
+            "Configuration and release management",
+            "Mining software repositories"
+        ],
+        "date_acceptance": " 7 April 2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Giovanni Rosa",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685962916
+    },
+    {
+        "pid": 50,
+        "title": "On effort-aware metrics for defect prediction",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-013d8ee28e5c03768eb0bbb120ce58a0394420d5c1fd57967b402215e9ffa8ae",
+            "timestamp": 1684100067,
+            "size": 435003,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "jonida.carka@students.uniroma2.eu",
+                "first": "Jonida",
+                "last": "Çarka",
+                "affiliation": "University of Rome Tor Vergata",
+                "contact": true
+            },
+            {
+                "email": "m.esposito@ing.uniroma2.it",
+                "first": "Matteo",
+                "last": "Esposito",
+                "affiliation": "University of Rome Tor Vergata",
+                "contact": true
+            },
+            {
+                "email": "falessi@ing.uniroma2.it",
+                "first": "Davide",
+                "last": "Falessi",
+                "affiliation": "University of Rome Tor Vergata",
+                "contact": true
+            }
+        ],
+        "opt3": "Context Advances in defect prediction models, aka classifiers, have been validated via\r\naccuracy metrics. Effort-aware metrics (EAMs) relate to benefits provided by a classifier\r\nin accurately ranking defective entities such as classes or methods. PofB is an EAM that\r\nrelates to a user that follows a ranking of the probability that an entity is defective, provided\r\nby the classifier. Despite the importance of EAMs, there is no study investigating EAMs\r\ntrends and validity.\r\nAim The aim of this paper is twofold: 1) we reveal issues in EAMs usage, and 2) we propose\r\nand evaluate a normalization of PofBs (aka NPofBs), which is based on ranking defective\r\nentities by predicted defect density.\r\nMethod We perform a systematic mapping study featuring 152 primary studies in major\r\njournals and an empirical study featuring 10 EAMs, 10 classifiers, two industrial, and 12\r\nopen-source projects.\r\nResults Our systematic mapping study reveals that most studies using EAMs use only a\r\nsingle EAM (e.g., PofB20) and that some studies mismatched EAMs names. The main result\r\nof our empirical study is that NPofBs are statistically and by orders of magnitude higher\r\nthan PofBs.\r\nConclusions In conclusion, the proposed normalization of PofBs: (i) increases the realism\r\nof results as it relates to a better use of classifiers, and (ii) promotes the practical adoption\r\nof prediction models in industry as it shows higher benefits. Finally, we provide a tool to\r\ncompute EAMs to support researchers in avoiding past issues in using EAMs.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-e15bade71acbe4b55862d21b515db05f95b61ad925ca309bc16cf045556c769f",
+            "timestamp": 1684100067,
+            "size": 1409098,
+            "filename": "EAM full paper.pdf",
+            "pages": 38
+        },
+        "publication_journal": "Empirical Software Engineering Journal (EMSE, Springer)",
+        "topics": [
+            "AI for SE",
+            "Other"
+        ],
+        "date_acceptance": "06.08.2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Jonida Çarka",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1684100067
+    },
+    {
+        "pid": 51,
+        "title": "A Model-based Mode-Switching-Framework based on Security Vulnerability Scores",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-99fb2b0764e95b11d7894fc7c11219b306c3966c544f11e81b9f142be376ec21",
+            "timestamp": 1683725526,
+            "size": 36067,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "michael.riegler@jku.at",
+                "first": "Michael",
+                "last": "Riegler",
+                "affiliation": "Johannes Kepler University Linz",
+                "contact": true
+            },
+            {
+                "email": "johannes.sametinger@jku.at",
+                "first": "Johannes",
+                "last": "Sametinger",
+                "affiliation": "Johannes Kepler University Linz",
+                "contact": true
+            },
+            {
+                "email": "michael.vierhauser@jku.at",
+                "first": "Michael",
+                "last": "Vierhauser",
+                "affiliation": "Johannes Kepler University Linz",
+                "contact": true
+            },
+            {
+                "email": "manuel.wimmer@jku.at",
+                "first": "Manuel",
+                "last": "Wimmer",
+                "affiliation": "Johannes Kepler University Linz",
+                "contact": true
+            }
+        ],
+        "opt3": "Software vulnerabilities can affect critical systems within an organization impacting processes, workflows, privacy, and safety. When a software vulnerability becomes known, affected systems are at risk until appropriate updates become available and eventually deployed. This period can last from a few days to several months, during which attackers can develop exploits and take advantage of the vulnerability. It is tedious and time-consuming to keep track of vulnerabilities manually and perform necessary actions to shut down, update, or modify systems. Vulnerabilities affect system components, such as a web server, but sometimes only target specific versions or component combinations.\r\n\r\nIn this paper, we propose a novel approach for automated mode switching of software systems to support system administrators in dealing with vulnerabilities and reducing the risk of exposure. We rely on model-driven techniques and use a multi-modal architecture to react to discovered vulnerabilities and provide automated contingency support. We have developed a dedicated domain-specific language to describe potential mitigation as mode switches. We have evaluated our approach with a web server case study, analyzing historical vulnerability data. Based on the vulnerabilities scores sum, we demonstrated that switching to less vulnerable modes reduced the attack surface in 98.9% of the analyzed time.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-974c5f5d06048a53d80f01a0751c86d54589bbcf44ee16d011b630ff31a518bf",
+            "timestamp": 1683725526,
+            "size": 760591,
+            "filename": "1-s2.0-S0164121223000286-main.pdf",
+            "pages": 16
+        },
+        "publication_journal": "Journal of Systems and Software (JSS, Elsevier)",
+        "topics": [
+            "Architecture and design",
+            "Autonomous and self-adapting systems",
+            "Modeling and model-driven engineering",
+            "Privacy and security",
+            "Specification languages, DSLs"
+        ],
+        "date_acceptance": "04.02.2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Michael Riegler",
+        "pc_conflicts": {
+            "sahraouh@iro.umontreal.ca": true,
+            "esther.guerra@uam.es": true,
+            "davide.diruscio@univaq.it": true,
+            "baudry@kth.se": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1683725526
+    },
+    {
+        "pid": 55,
+        "title": "Enhancing Mobile App Bug Reporting via Real-Time Understanding of Reproduction Steps",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-bbcdf96789f998d9ba086c8b4fd6135fe297e3208507fa7b1a7cd00ad9b465f7",
+            "timestamp": 1686254147,
+            "size": 73924,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "mfazzini@umn.edu",
+                "first": "Mattia",
+                "last": "Fazzini",
+                "affiliation": "University of Minnesota",
+                "contact": true
+            },
+            {
+                "email": "kpmoran@gmu.edu",
+                "first": "Kevin",
+                "last": "Moran",
+                "affiliation": "George Mason University",
+                "contact": true
+            },
+            {
+                "email": "cebernal@cs.wm.edu",
+                "first": "Carlos",
+                "last": "Bernal-Cárdenas",
+                "affiliation": "College of William & Mary",
+                "contact": true
+            },
+            {
+                "email": "wendl155@umn.edu",
+                "first": "Tyler",
+                "last": "Wendland",
+                "affiliation": "University of Minnesota"
+            },
+            {
+                "email": "orso@cc.gatech.edu",
+                "first": "Alessandro",
+                "last": "Orso",
+                "affiliation": "Georgia Institute of Technology",
+                "contact": true
+            },
+            {
+                "email": "denys@cs.wm.edu",
+                "first": "Denys",
+                "last": "Poshyvanyk",
+                "affiliation": "College of William & Mary",
+                "contact": true
+            }
+        ],
+        "opt3": "One of the primary mechanisms by which developers receive feedback about in-field failures of software from users is through bug reports. Unfortunately, the quality of manually written bug reports can vary widely due to the effort required to include essential pieces of information, such as detailed reproduction steps (S2Rs). Despite the difficulty faced by reporters, few existing bug reporting systems attempt to offer automated assistance to users in crafting easily readable, and conveniently reproducible bug reports. To address the need for proactive bug reporting systems that actively aid the user in capturing crucial information, we introduce a novel bug reporting approach called EBug. EBug assists reporters in writing S2Rs for mobile applications by analyzing natural language information entered by reporters in real-time, and linking this data to information extracted via a combination of static and dynamic program analyses. As reporters write S2Rs, EBug is capable of automatically suggesting potential future steps using predictive models trained on realistic app usages. To evaluate EBug, we performed two user studies based on 20 failures from 11 real-world apps.  The empirical studies involved ten participants that submitted ten bug reports each and ten developers that reproduced the submitted bug reports. In the studies, we found that reporters were able to construct bug reports 31% faster with EBug as compared to the state-of-the-art bug reporting system used as a baseline.  EBug's reports were also more reproducible with respect to the ones generated with the baseline. Furthermore, we compared EBug's prediction models to other predictive modeling approaches and found that, overall, the predictive models of our approach outperformed the baseline approaches. Our results are promising and demonstrate the feasibility and potential benefits provided by proactively assistive bug reporting systems.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-c99959e0a7323228672f9e8530b4775bfbe2da1c027c7a1a05edfd233a1708ed",
+            "timestamp": 1686254147,
+            "size": 3703937,
+            "filename": "ebug.pdf",
+            "pages": 27
+        },
+        "publication_journal": "IEEE Transaction of Software Engineering (IEEE TSE)",
+        "topics": [
+            "Apps and app store analysis",
+            "Other"
+        ],
+        "date_acceptance": "April 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Mattia Fazzini",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1686254147
+    },
+    {
+        "pid": 57,
+        "title": "Code Cloning in Smart Contracts on the Ethereum Platform: An Extended Replication Study",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-5c5eab28e0852d85cf5b0576de4b61f20da782f5185ad092286bb1cf41088b9a",
+            "timestamp": 1685393989,
+            "size": 64579,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "faizan@plot.ly",
+                "first": "Faizan",
+                "last": "Khan",
+                "affiliation": "Plotly Technologies Inc."
+            },
+            {
+                "email": "istvan.david@umontreal.ca",
+                "first": "Istvan",
+                "last": "David",
+                "affiliation": "University of Montreal",
+                "contact": true
+            },
+            {
+                "email": "shane.mcintosh@uwaterloo.ca",
+                "first": "Shane",
+                "last": "McIntosh",
+                "affiliation": "University of Waterloo",
+                "contact": true
+            },
+            {
+                "email": "daniel.varro@liu.se",
+                "first": "Daniel",
+                "last": "Varro",
+                "affiliation": "Linköping University, Sweden \/ McGill University, Canada"
+            }
+        ],
+        "opt3": "Smart contracts are programs deployed on blockchains that run upon meeting predetermined conditions. Once deployed, smart contracts are immutable, thus, defects in the deployed code cannot be fixed.\r\nAs a consequence, software engineering anti-patterns, such as code cloning, pose a threat to code quality and security if unnoticed before deployment.\r\nIn this paper, we report on the cloning practices of the Ethereum blockchain platform by analyzing 33\\,073 smart contracts amounting to over 4MLOC.\r\nPrior work reported an unusually high 79.2\\% of code clones in Ethereum smart contracts. We replicate this study at the conceptual level, i.e., we investigate the same research questions by different methods. In particular, we analyze clones at the granularity of functions instead of code files, thereby providing a more fine-grained estimate of the clone ratio. Furthermore, we analyze more complex clone types, allowing for a richer analysis of cloning cases.\r\nTo achieve this finer granularity of cloning analysis, we rely on the NiCad clone detection tool and extend it with support for Solidity, the programming language of the Ethereum platform.\r\nOur analysis shows that most findings of the original study hold at the finer granularity of our study as well; but also sheds light on key differences, and contributes new findings. Most notably, we report a 30.13\\% overall clone ratio, of which 27.03\\% are exact duplicates.\r\nOur findings motivate improving reuse mechanisms of Solidity, and in a broader context, of smart contracts programming languages. Tool builders and language engineers can use this paper in the design and development of such reuse mechanisms. Business stakeholders can use this paper to assess the security risks and technical outlooks of blockchain platforms.\r\n\r\nIn the presentation, we will also touch upon the methodological aspects of our work. Replications and reproductions are essential methods in natural sciences but are seldom encountered in software engineering. However, with the maturation of evidence-based and empirical software engineering, replications are becoming increasingly important in our domain, as demonstrated by the emergence of community standards, such as the ACM Empirical Standards (https:\/\/github.com\/acmsigsoft\/EmpiricalStandards) and dedicated conferences (https:\/\/acm-rep.github.io\/2023\/).",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-efbbe3d8287ff46ea597cb5201a5ed9e0119d0495780ace265a395fa95de9ce9",
+            "timestamp": 1685393989,
+            "size": 957836,
+            "filename": "Code_Cloning_in_Smart_Contracts_on_the_Ethereum_Platform_An_Extended_Replication_Study.pdf",
+            "pages": 14
+        },
+        "publication_journal": "IEEE Transaction of Software Engineering (IEEE TSE)",
+        "topics": [
+            "Mining software repositories"
+        ],
+        "date_acceptance": "September 12, 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Istvan David",
+        "pc_conflicts": {
+            "sahraouh@iro.umontreal.ca": true,
+            "hata@shinshu-u.ac.jp": true,
+            "jmatlee@uwaterloo.ca": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685393989
+    },
+    {
+        "pid": 60,
+        "title": "The Secret Life of Software Vulnerabilities: A Large-Scale Empirical Study",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-a107bfe863b7ad50e60133405e0328ba722ff7eb597177591ffb4151f924a86a",
+            "timestamp": 1684778185,
+            "size": 67584,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "eiannone@unisa.it",
+                "first": "Emanuele",
+                "last": "Iannone",
+                "affiliation": "University of Salerno",
+                "contact": true
+            },
+            {
+                "email": "r.guadagni1@studenti.unisa.it",
+                "first": "Roberta",
+                "last": "Guadagni",
+                "affiliation": "University of Salerno"
+            },
+            {
+                "email": "fferrucci@unisa.it",
+                "first": "Filomena",
+                "last": "Ferrucci",
+                "affiliation": "University of Salerno",
+                "contact": true
+            },
+            {
+                "email": "adelucia@unisa.it",
+                "first": "Andrea",
+                "last": "De Lucia",
+                "affiliation": "University of Salerno",
+                "contact": true
+            },
+            {
+                "email": "fpalomba@unisa.it",
+                "first": "Fabio",
+                "last": "Palomba",
+                "affiliation": "University of Salerno",
+                "contact": true
+            }
+        ],
+        "opt3": "Software vulnerabilities are weaknesses in source code that can be potentially exploited to cause loss or harm. While researchers have been devising a number of methods to deal with vulnerabilities, there is still a noticeable lack of knowledge on their software engineering life cycle, for example how vulnerabilities are introduced and removed by developers. This information can be exploited to design more effective methods for vulnerability prevention and detection, as well as to understand the granularity at which these methods should aim. To investigate the life cycle of known software vulnerabilities, we focus on how, when, and under which circumstances the contributions to the introduction of vulnerabilities in software projects are made, as well as how long, and how they are removed. We consider 3,663 vulnerabilities with public patches from the National Vulnerability Database—pertaining to 1,096 open-source software projects on GitHub—and define an eight-step process involving both automated parts (e.g., using a procedure based on the SZZ algorithm to find the vulnerability-contributing commits) and manual analyses (e.g., how vulnerabilities were fixed). The investigated vulnerabilities can be classified in 144 categories, take on average at least 4 contributing commits before being introduced, and half of them remain unfixed for at least more than one year. Most of the contributions are done by developers with high workload, often when doing maintenance activities, and removed mostly with the addition of new source code aiming at implementing further checks on inputs. We conclude by distilling practical implications on how vulnerability detectors should work to assist developers in timely identifying these issues.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-755cd45429e1457e1a05123d4067737a21d8e5f5431404adf14247bb15dcf4e8",
+            "timestamp": 1684764557,
+            "size": 3893504,
+            "filename": "original_paper.pdf",
+            "pages": 20
+        },
+        "publication_journal": "IEEE Transaction of Software Engineering (IEEE TSE)",
+        "topics": [
+            "Mining software repositories",
+            "Privacy and security"
+        ],
+        "date_acceptance": "3 January 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Emanuele Iannone",
+        "pc_conflicts": {
+            "Coen.De.Roover@vub.be": true,
+            "davide.diruscio@univaq.it": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1684778185
+    },
+    {
+        "pid": 69,
+        "title": "Duplicate Bug Report Detection: How Far Are We?",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-c12467c4e4a995be612d726c9279ed6b7f0e79b0d47daa658c50aa518903b259",
+            "timestamp": 1685936115,
+            "size": 126115,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "tingzhang.2019@phdcs.smu.edu.sg",
+                "first": "Ting",
+                "last": "Zhang",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "DongGyun.Han@rhul.ac.uk",
+                "first": "DongGyun",
+                "last": "Han",
+                "affiliation": "Royal Holloway, University of London",
+                "contact": true
+            },
+            {
+                "email": "venkateshv@cmi.ac.in",
+                "first": "Venkatesh",
+                "last": "Vinayakarao",
+                "affiliation": "Chennai Mathematical Institute",
+                "contact": true
+            },
+            {
+                "email": "ivanairsan@smu.edu.sg",
+                "first": "Ivana Clairine",
+                "last": "Irsan",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "bowenxu@smu.edu.sg",
+                "first": "Bowen",
+                "last": "Xu",
+                "affiliation": "School of Computing and Information Systems, Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "ferdianthung@smu.edu.sg",
+                "first": "Ferdian",
+                "last": "Thung",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "davidlo@smu.edu.sg",
+                "first": "David",
+                "last": "Lo",
+                "affiliation": "School of Computing and Information Systems, Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "lxjiang@smu.edu.sg",
+                "first": "Lingxiao",
+                "last": "Jiang",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            }
+        ],
+        "opt3": "Many Duplicate Bug Report Detection (DBRD) techniques have been proposed in the research literature. The industry uses some other techniques. Unfortunately, there is insufficient comparison among them, and it is unclear how far we have been. This work fills this gap by comparing the aforementioned techniques. To compare them, we first need a benchmark that can estimate how a tool would perform if applied in a realistic setting today. Thus, we first investigated potential biases that affect the fair comparison of the accuracy of DBRD techniques. Our experiments suggest that data age and issue tracking system choice cause a significant difference. Based on these findings, we prepared a new benchmark. We then used it to evaluate DBRD techniques to estimate better how far we have been. Surprisingly, a simpler technique outperforms recently proposed sophisticated techniques on most projects in our benchmark. In addition, we compared the DBRD techniques proposed in research with those used in \\texttt{Mozilla} and \\texttt{VSCode}. Surprisingly, we observe that a simple technique already adopted in practice can achieve comparable results as a recently proposed research tool. Our study gives reflections on the current state of DBRD, and we share our insights to benefit future DBRD research.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-a874c4e97028988a4d6c4ef91762c406e3aee14b1958d6b276f2a8d8a74c4d1c",
+            "timestamp": 1685847992,
+            "size": 2050269,
+            "filename": "3576042.pdf",
+            "pages": 32
+        },
+        "publication_journal": "ACM Transactions on Software Engineering and Methodology (ACM TOSEM)",
+        "topics": [
+            "AI for SE",
+            "Mining software repositories"
+        ],
+        "date_acceptance": "26 November 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Ting Zhang",
+        "pc_conflicts": {
+            "sahraouh@iro.umontreal.ca": true,
+            "julia.lawall@inria.fr": true,
+            "Tien.N.Nguyen@utdallas.edu": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685936115
+    },
+    {
+        "pid": 71,
+        "title": "Taming Android Fragmentation through Lightweight Crowdsourced Testing",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-6abd0175ed08ac9b288903d79e935f653d838a113fab1264cff31a48a1022998",
+            "timestamp": 1685069025,
+            "size": 49780,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "Xiaoyu.Sun.IEEE@gmail.com",
+                "first": "Xiaoyu",
+                "last": "Sun",
+                "affiliation": "The Australian National University",
+                "contact": true
+            },
+            {
+                "email": "Xiao.Chen@monash.edu",
+                "first": "Xiao",
+                "last": "Chen",
+                "affiliation": "Monash University",
+                "contact": true
+            },
+            {
+                "email": "yonghui.liu@monash.edu",
+                "first": "yonghui",
+                "last": "liu",
+                "affiliation": "Monash University",
+                "contact": true
+            },
+            {
+                "email": "John.Grundy@monash.edu",
+                "first": "John",
+                "last": "Grundy",
+                "affiliation": "Monash University",
+                "contact": true
+            },
+            {
+                "email": "lilicoding@ieee.org",
+                "first": "Li",
+                "last": "Li",
+                "affiliation": "Beihang University",
+                "contact": true
+            }
+        ],
+        "opt3": "Android fragmentation refers to the overwhelming diversity of Android devices and OS versions. These lead to the impossibility of testing an app on every supported device, leaving a number of compatibility bugs scattered in the community and thereby resulting in poor user experiences. To mitigate this, our fellow researchers have designed various works to automatically detect such compatibility issues. However, the current state-of-the-art tools can only be used to detect specific kinds of compatibility issues (i.e., compatibility issues caused by API signature evolution), i.e., many other essential types of compatibility issues are still unrevealed. For example, customized OS versions on real devices and semantic changes of OS could lead to serious compatibility issues, which are non-trivial to be detected statically. \r\n\r\nTo this end, we propose a novel, lightweight, crowdsourced testing approach, LAZYCOW, to fill this research gap and enable the possibility of taming Android fragmentation through crowdsourced efforts. Specifically, crowdsourced testing is an emerging alternative to conventional mobile testing mechanisms that allow developers to test their products on real devices to pinpoint platform-specific issues. Experimental results on thousands of test cases on real-world Android devices show that LAZYCOW is effective in automatically identifying and verifying API-induced compatibility issues. Also, after investigating the user experience through qualitative metrics, users’ satisfaction provides strong evidence that LAZYCOW is useful and welcome in practice.\r\n",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-2020e042f81adb13d21bcad363808afa77c7e2e7638416d498023549d7c5e8e6",
+            "timestamp": 1685069025,
+            "size": 835524,
+            "filename": "ASE2023--JF--CrowdsourcedTesting.pdf",
+            "pages": 18
+        },
+        "publication_journal": "IEEE Transaction of Software Engineering (IEEE TSE)",
+        "topics": [
+            "Crowd-based software engineering",
+            "Reliability"
+        ],
+        "date_acceptance": "2023 Apr 11",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "John Grundy",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685069087
+    },
+    {
+        "pid": 72,
+        "title": "FaaSLight: General Application-Level Cold-Start Latency Optimization for Function-as-a-Service in Serverless Computing",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-9d5de8f702b73d6dfc446320ef86fb2b5c0de5bfe2fdedf9b42fb9be36eea593",
+            "timestamp": 1684762416,
+            "size": 182885,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "liuxuanzhe@pku.edu.cn",
+                "first": "Xuanzhe",
+                "last": "Liu",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "jinfeng.wen@stu.pku.edu.cn",
+                "first": "Jinfeng",
+                "last": "Wen",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "zp.chen@ucl.ac.uk",
+                "first": "Zhenpeng",
+                "last": "Chen",
+                "affiliation": "University College London",
+                "contact": true
+            },
+            {
+                "email": "ding_li@pku.edu.cn",
+                "first": "Ding",
+                "last": "Li",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "cjk@pku.edu.cn",
+                "first": "Junkai",
+                "last": "Chen",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "liuyi14@pku.edu.cn",
+                "first": "Yi",
+                "last": "Liu",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "haoyuwang@hust.edu.cn",
+                "first": "Haoyu",
+                "last": "Wang",
+                "affiliation": "Huazhong University of Science and Technology",
+                "contact": true
+            },
+            {
+                "email": "xinjinpku@pku.edu.cn",
+                "first": "Xin",
+                "last": "Jin",
+                "affiliation": "Peking University",
+                "contact": true
+            }
+        ],
+        "opt3": "Serverless computing is a popular cloud computing paradigm that frees developers from server management. Function-as-a-Service (FaaS) is the most popular implementation of serverless computing, representing applications as event-driven and stateless functions. However, existing studies report that functions of FaaS applications severely suffer from cold-start latency. In this paper, we propose an approach namely FaaSLight to accelerating the cold start for FaaS applications through application-level optimization. We first conduct a measurement study to investigate the possible root cause of the cold start problem of FaaS. The result shows that application code loading latency is a significant overhead. Therefore, loading only indispensable code from FaaS applications can be an adequate solution. Based on this insight, we identify code related to application functionalities by constructing the function-level call graph, and separate other code (i.e., optional code) from FaaS applications. The separated optional code can be loaded on demand to avoid the inaccurate identification of indispensable code causing application failure. In particular, a key principle guiding the design of FaaSLight is inherently general, i.e., platform- and language-agnostic. In practice, FaaSLight can be effectively applied to FaaS applications developed in different programming languages (Python and JavaScript), and can be  seamlessly deployed on popular serverless platforms such as AWS Lambda and Google Cloud Functions, without having to modify the underlying OSes or hypervisors, nor introducing any additional manual engineering efforts to developers. The evaluation results on real-world FaaS applications show that FaaSLight can significantly reduce the code loading latency (up to 78.95%, 28.78% on average), thereby reducing the cold-start latency. As a result, the total response latency of functions can be decreased by up to 42.05% (19.21% on average). Compared with the state-of-the-art, FaaSLight achieves a 21.25X improvement in reducing the average total response latency.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-9d99318c97a5438d0e90a0f21cd4d8cd9015d61b1812dc005cfa9cec0585ee7f",
+            "timestamp": 1684762416,
+            "size": 719944,
+            "filename": "FaaSLight.pdf",
+            "pages": 30
+        },
+        "publication_journal": "ACM Transactions on Software Engineering and Methodology (ACM TOSEM)",
+        "topics": [
+            "Performance"
+        ],
+        "date_acceptance": "January 24, 2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Jinfeng Wen",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1684762416
+    },
+    {
+        "pid": 78,
+        "title": "CodeEditor: Learning to Edit Source Code with Pre-trained Models",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-97b72281b286b454d7589e39aa6e2ef2dc94f8d221526ffa12a7bb7148c0ffc4",
+            "timestamp": 1685862943,
+            "size": 347668,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "lijia@stu.pku.edu.cn",
+                "first": "Jia",
+                "last": "Li",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "lige@pku.edu.cn",
+                "first": "Ge",
+                "last": "Li",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "lizhmq@pku.edu.cn",
+                "first": "Zhuo",
+                "last": "Li",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "zhijin@pku.edu.cn",
+                "first": "Zhi",
+                "last": "Jin",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "xinghu@zju.edu.cn",
+                "first": "Xing",
+                "last": "Hu",
+                "affiliation": "Zhejiang University",
+                "contact": true
+            },
+            {
+                "email": "zhangkechi@pku.edu.cn",
+                "first": "Kechi",
+                "last": "Zhang",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "fuzhiyi1129@gmail.com",
+                "first": "Zhiyi",
+                "last": "Fu",
+                "affiliation": "Peking University",
+                "contact": true
+            }
+        ],
+        "opt3": "A large-scale study found that human developers often perform repetitive code editing activities (up to 70%) for various reasons (e.g., code refactoring).\r\nMuch deep learning (DL) models have been proposed to automate code editing by learning from the code editing history.\r\nAmong DL-based models, pre-trained code editing models have achieved state-of-the-art (SOTA) results. Pre-trained models are first pre-trained with pre-training tasks and fine-tuned with the code editing task. Existing pre-training tasks are mainly code infilling tasks (e.g., masked language modeling), derived from the natural language processing field and not designed for automatic code editing. Thus, there are still rooms to improve existing pre-trained code editing models.\r\n\r\nIn this paper, we propose a novel pre-training task specialized in code editing and present an effective pre-trained code editing model named CodeEditor. \r\nCompared to previous code infilling tasks, our pre-training task further improves the performance and generalization ability of code editing models.\r\nSpecifically, we collect many real-world code snippets that have passed code reviews and can be viewed as the ground truth. We use a powerful generator to rewrite these code snippets into mutated versions. Then, we pre-train our CodeEditor to edit mutated versions into the corresponding ground truth, to learn edit patterns.\r\nWe conduct experiments on four code editing datasets and evaluate the pre-trained CodeEditor in three settings (i.e., fine-tuning, few-shot, and zero-shot).\r\n(1) In the fine-tuning setting, we train the pre-trained CodeEditor with four datasets and evaluate it on the test data. CodeEditor outperforms the SOTA baselines by 15%, 25.5%, and 9.4% and 26.6% on four datasets.\r\n(2) In the few-shot setting, we train the pre-trained CodeEditor with limited data and evaluate it on the test data. CodeEditor substantially performs better than all baselines, even outperforming baselines that are fine-tuned with all data.\r\n(3) In the zero-shot setting, we evaluate the pre-trained CodeEditor on the test data without training. CodeEditor correctly edits 1,113 programs while the SOTA baselines can not work.\r\nThe results show that the superiority of our pre-training task and the pre-trained CodeEditor is more effective in automatic code editing.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-3d0c55e9f7549dfebda19af5ec9025693251ad8a91375cf839e034191a6542cf",
+            "timestamp": 1685862943,
+            "size": 910694,
+            "filename": "CodeEditor- Learning to Edit Source Code with Pre-trained Models.pdf",
+            "pages": 21
+        },
+        "publication_journal": "ACM Transactions on Software Engineering and Methodology (ACM TOSEM)",
+        "topics": [
+            "AI for SE"
+        ],
+        "date_acceptance": "2023-4-7",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Jia Li",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685862943
+    },
+    {
+        "pid": 81,
+        "title": "Adonis: Practical and Efficient Control Flow Recovery through OS-Level Traces",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-b4ceac90dae9b0bf4890655ed52784cbf667907faa7e94d28238f3f96b451587",
+            "timestamp": 1685929717,
+            "size": 210155,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "liuxuanzhe@pku.edu.cn",
+                "first": "Xuanzhe",
+                "last": "Liu",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "yangchengxu@pku.edu.cn",
+                "first": "Chengxu",
+                "last": "Yang",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "ding_li@pku.edu.cn",
+                "first": "Ding",
+                "last": "Li",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "zhouyuhan@pku.edu.cn",
+                "first": "Yuhan",
+                "last": "Zhou",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "lishaofei@pku.edu.cn",
+                "first": "Shaofei",
+                "last": "Li",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "chenjiali@pku.edu.cn",
+                "first": "Jiali",
+                "last": "Chen",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "zp.chen@ucl.ac.uk",
+                "first": "Zhenpeng",
+                "last": "Chen",
+                "affiliation": "University College London",
+                "contact": true
+            }
+        ],
+        "opt3": "Control flow recovery is critical to promise the software quality, especially for large-scale software in the production environment. However, the efficiency of most current control flow recovery techniques is compromised due to their runtime overheads along with deployment and development costs. To tackle this problem, we propose a novel solution, \\emph{Adonis}, which harnesses OS-level traces, such as dynamic library calls and system call traces, to efficiently and safely  recover control flows in practice. \r\n\\emph{Adonis} operates in two steps: it first identifies the call-sites of trace entries, then it executes a pair-wise symbolic execution to recover valid execution paths. This technique has several advantages. First, \\emph{Adonis} does not require the insertion of any probes into existing applications, thereby minimizing \\textit{runtime cost}. Second, given that OS-level traces are hardware-independent, \\emph{Adonis} can be implemented across various hardware configurations without the need for hardware-specific engineering efforts, thus reducing \\textit{deployment cost}. Third, as \\emph{Adonis} is fully automated and does not depend on manually created logs, it circumvents additional \\textit{development cost}. \r\nWe conducted an evaluation of \\emph{Adonis} on representative desktop applications and real-world IoT applications. \\emph{Adonis} can faithfully recover the control flow with \\textbf{\\textit{86.8\\%}} recall and \\textbf{\\textit{81.7\\%}} precision. Compared to the state-of-the-art log-based approach, \\emph{Adonis} can not only cover all the execution paths recovered, but also recover \\textit{\\textbf{74.9\\%}} of statements that cannot be covered. In addition, the runtime cost of \\emph{Adonis} is \\textbf{\\textit{18.3$\\times$}} lower than the instrument-based approach; the analysis time and storage cost (indicative of the deployment cost) of \\emph{Adonis} is \\textbf{\\textit{50$\\times$}} smaller and \\textbf{\\textit{443$\\times$}} smaller than the hardware-based approach, respectively. To facilitate future replication and extension of this work, we have made the code and data publicly available.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-96682cf9f7d5633ef0cae8f9d0149b583e13887a310f70b10122beea3a3ead01",
+            "timestamp": 1685882786,
+            "size": 1239508,
+            "filename": "main.pdf",
+            "pages": 27
+        },
+        "publication_journal": "ACM Transactions on Software Engineering and Methodology (ACM TOSEM)",
+        "topics": [
+            "Debugging and fault-localization",
+            "Program analysis"
+        ],
+        "date_acceptance": "18th May 2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Chengxu Yang",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685882786
+    },
+    {
+        "pid": 83,
+        "title": "DiffSearch: A Scalable and Precise Search Engine for Code Changes",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-152f03f716943a64a5f17de8eb2d85c95d1ac3e14deaf355abea2136c6cfd749",
+            "timestamp": 1685725454,
+            "size": 66685,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "luca.di-grazia@iste.uni-stuttgart.de",
+                "first": "Luca",
+                "last": "Di Grazia",
+                "affiliation": "University of Stuttgart",
+                "contact": true
+            },
+            {
+                "email": "paulbredl@gmx.de",
+                "first": "Paul",
+                "last": "Bredl",
+                "affiliation": "University of Stuttgart",
+                "contact": true
+            },
+            {
+                "email": "michael@binaervarianz.de",
+                "first": "Michael",
+                "last": "Pradel",
+                "affiliation": "University of Stuttgart",
+                "contact": true
+            }
+        ],
+        "opt3": "The source code of successful projects is evolving all the time, resulting in hundreds of thousands of code changes stored in source code repositories. This wealth of data can be useful, e.g., to find changes similar to a planned code change or examples of recurring code improvements. This paper presents DiffSearch, a search engine that, given a query that describes a code change, returns a set of changes that match the query. The approach is enabled by three key contributions. First, we present a query language that extends the underlying programming language with wildcards and placeholders, providing an intuitive way of formulating queries that is easy to adapt to different programming languages. Second, to ensure scalability, the approach indexes code changes in a one-time preprocessing step, mapping them into a feature space, and then performs an efficient search in the feature space for each query. Third, to guarantee precision, i.e., that any returned code change indeed matches the given query, we present a tree-based matching algorithm that checks whether a query can be expanded to a concrete code change. We present implementations for Java, JavaScript, and Python, and show that the approach responds within seconds to queries across one million code changes, has a recall of 80.7% for Java, 89.6% for Python, and 90.4% for JavaScript, enables users to find relevant code changes more effectively than a regular expression-based search and GitHub’s search feature, and is helpful for gathering a large-scale dataset of real-world bug fixes.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-a5e6e3bbcf745d7249ad3854415b16792d04a13eb701219b92e8d9eec422d3f6",
+            "timestamp": 1685725454,
+            "size": 810695,
+            "filename": "ieeetse2022.pdf",
+            "pages": 16
+        },
+        "publication_journal": "IEEE Transaction of Software Engineering (IEEE TSE)",
+        "topics": [
+            "Mining software repositories",
+            "Program analysis",
+            "Software reuse"
+        ],
+        "date_acceptance": "02 November 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Luca Di Grazia",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685725454
+    },
+    {
+        "pid": 84,
+        "title": "Automatic Extraction of Security-Rich Dataflow Diagrams for Microservice Applications written in Java",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-d57dc9395d1664d5613b64533a13043a642ba7fc9be5e5d0bc24ccac2dee1416",
+            "timestamp": 1685965781,
+            "size": 74938,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "simon.schneider@tuhh.de",
+                "first": "Simon",
+                "last": "Schneider",
+                "affiliation": "Hamburg University of Technology",
+                "contact": true
+            },
+            {
+                "email": "riccardo.scandariato@tuhh.de",
+                "first": "Riccardo",
+                "last": "Scandariato",
+                "affiliation": "Hamburg University of Technology",
+                "contact": true
+            }
+        ],
+        "opt3": "Dataflow diagrams (DFDs) are a valuable asset for securing applications, as they are the starting point for multiple security assessment techniques and modelbased security approaches. Further, DFDs can increase applications’ security by providing software engineers an overview of the architectural security design. This is especially important for the increasingly popular microservice architecture, where the intended decoupled-ness heightens the mental load of human analysts. Creating DFDs, however, is often done manually, which is time-consuming and introduces problems concerning their correctness. Furthermore, as applications are continuously extended and modified in CI\/CD pipelines, the DFDs need to be kept in sync, which is also challenging.\r\nIn this paper, we present a novel technique for the automatic extraction of DFDs from the implementation code of microservices. To the best of our knowledge, this is the first paper focusing on DFDs and microservices for security. Following a textual static analysis approach, our technique parses source code and configuration files in search for keywords that indicate the existence of model items. The found keywords serve as evidence to create the models.\r\nThe approach uses a novel technique that iteratively detects new keywords which are used as search term for the next iteration, thereby snowballing through an application’s codebase. Coupled with other detection techniques, it produces a fully-fledged DFD enriched with security-relevant annotations. The extracted DFDs further provide full traceability between model items and code snippets.\r\nWe also present and publish a prototype of our approach written in Python. The prototype creates DFDs representing the complete application’s architecture including services, external entities, and information flows and enriches it with extensive annotations representing (security and other) properties.\r\nTo evaluate our approach and the accompanying prototype, we run it on a manually curated dataset of 17 open-source microservice applications written in Java and examine its performance. In our testing set of applications, we observe an overall precision of 93% and recall of 85% over all model items. Further, we compare the architecture recovery part of our prototype against two related approaches and observe that it outperforms them.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-184cf9441c38ab4252056a2162a9a2d5d6b75c56eb7d34df6026ccaedf7e8c44",
+            "timestamp": 1685691856,
+            "size": 587965,
+            "filename": "JSS_Automatic_Extraction_of_security-rich_dataflow_diagrams_for_microservice_applications_written_in_Java.pdf",
+            "pages": 15
+        },
+        "publication_journal": "Journal of Systems and Software (JSS, Elsevier)",
+        "topics": [
+            "Architecture and design",
+            "Modeling and model-driven engineering",
+            "Privacy and security"
+        ],
+        "date_acceptance": "18.04.2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Simon Schneider",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685965159
+    },
+    {
+        "pid": 87,
+        "title": "Predicting Health Indicators for Open Source Projects (using Hyperparameter Optimization)",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-7db5f4803ef7af58e750b61599d9884ed3d81079fb964ebe5a3aa671b47696cd",
+            "timestamp": 1685913530,
+            "size": 95299,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "txia4@ncsu.edu",
+                "first": "Tianpei",
+                "last": "Xia",
+                "affiliation": "North Carolina State University",
+                "contact": true
+            },
+            {
+                "email": "fuwei@gmail.com",
+                "first": "Wei",
+                "last": "Fu",
+                "affiliation": "North Carolina State University"
+            },
+            {
+                "email": "rshu@ncsu.edu",
+                "first": "Rui",
+                "last": "Shu",
+                "affiliation": "North Carolina State University",
+                "contact": true
+            },
+            {
+                "email": "agrawa3@ncsu.edu",
+                "first": "Rishabh",
+                "last": "Agrawal",
+                "affiliation": "North Carolina State University"
+            },
+            {
+                "email": "timm@ieee.org",
+                "first": "Tim",
+                "last": "Menzies",
+                "affiliation": "North Carolina State University",
+                "contact": true
+            }
+        ],
+        "opt3": "Software developed on public platform is a source of\r\ndata that can be used to make predictions about those projects.\r\nWhile the individual developing activity may be random and\r\nhard to predict, the developing behavior on project level can be\r\npredicted with good accuracy when large groups of developers\r\nwork together on software projects.\r\n\r\nTo demonstrate this, we use 64,181 months of data from 1,159\r\nGitHub projects to make various predictions about the recent\r\nstatus of those projects (as of April 2020). We find that traditional\r\nestimation algorithms make many mistakes. Algorithms like\r\nk-nearest neighbors (KNN), support vector regression (SVR),\r\nrandom forest (RFT), linear regression (LNR), and regression\r\ntrees (CART) have high error rates. But that error rate can be\r\ngreatly reduced using hyperparameter optimization.\r\n\r\nTo facilitate open science (and replications and extensions of\r\nthis work), all our materials are available online at https:\/\/github.com\/arennax\/Health_Indicator_Prediction.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-ccf708455ddc764480c7319b41cc0f8a8c720534584a9df5398be7450f8ddf3d",
+            "timestamp": 1685913499,
+            "size": 528901,
+            "filename": "2006.07240.pdf",
+            "pages": 32
+        },
+        "publication_journal": "Empirical Software Engineering Journal (EMSE, Springer)",
+        "topics": [
+            "AI for SE",
+            "Mining software repositories",
+            "Software economics"
+        ],
+        "date_acceptance": "Mar 17, 2022",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Tim Menzies",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685913530
+    },
+    {
+        "pid": 98,
+        "title": "Evaluating Pre-Trained Models for User Feedback Analysis in Software Engineering: A Study on Classification of App-Reviews",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-1b56b17dc2143b07870559031cfd2f1a2649634830be4e87bb517d8dac736d9f",
+            "timestamp": 1684863723,
+            "size": 59405,
+            "pages": 1
+        },
+        "abstract": "",
+        "authors": [
+            {
+                "email": "mohammad.hadi@ubc.ca",
+                "first": "Mohammad Abdul",
+                "last": "Hadi",
+                "affiliation": "University of British Columbia",
+                "contact": true
+            },
+            {
+                "email": "fatemeh.fard@ubc.ca",
+                "first": "Fatemeh Hendijani",
+                "last": "Fard",
+                "affiliation": "University of British Columbia",
+                "contact": true
+            }
+        ],
+        "opt3": "Context: Mobile application users’ feedback has been studied extensively in Software Engineering, including requirement engineering, release planning, software maintenance, change-file localization, and testing. Most of the research focused on developing classifiers for various purposes. However, supervised classification requires a lot of manually labeled data, and with introducing new classes or new platforms (e.g., App Store, Twitter, Google Play), new labeled data and models are required. Recently, Pre-trained Neural Language Models (PLMs) have gained much attention in Natural Language Processing (NLP) and Software Engineering (SE). Though\r\nthey have been used extensively in NLP for text classification and many other tasks, such as question answering, their applicability has yet to be explored for app review classification. Specifically, because PLMs are pre-trained on large natural language corpora, they have learned knowledge that can be transferred for other tasks and domains in zero-shot (i.e., no labeled data is available) or few shot settings (i.e., only a few labeled data is available for training).\r\n\r\nObjective: In this study, we evaluate PLMs for issue classification from app reviews in multiple  settings and compare them with the existing models.\r\n\r\nMethod: We set up different studies to evaluate the performance and time efficiency of PLMs compared to Prior approaches on six datasets. In addition, we train and study domain-specific (Custom) PLMs by incorporating app reviews in the pre-training. We report Micro and Macro Precision, Recall, and F1 scores and the time required for training and predicting with the models to answer three research questions.\r\n\r\nRQ1: How accurate and efficient are the PLMs in classifying app reviews compared to the existing tools?\r\n\r\nRQ2: How does the performance of the PLMs change when they are pre-trained on an app-review dataset instead of a generic dataset (e.g., Wiki documents, book corpus)?\r\n\r\nRQ3: How do the PLMs perform in the following settings? Binary vs. multi-class setting, Zero-shot classification, Multitask setting (i.e., different app-review analysis tasks), and Classification of user reviews collected from different resources (i.e., Twitter, App Store).\r\n\r\nResults: Our results show that PLMs can classify the app issues with higher scores, except in multi-resource settings. On the largest dataset, results are improved by 13 and 8 micro- and macro-average F1-scores, respectively, compared to the Prior approaches. Domain-specific PLMs achieve the highest scores in all settings with less prediction time, and they benefit from pre-training with a larger number of app reviews. On the largest dataset, we obtained 98 and 92 microand macro-average F1-score (from 4.5 to 8.3 more F1-score compared to general pre-trained models), 71 F1-score in zeroshot setting, and 93 and 92 F1-score in multi-task and multiresource settings, respectively, using the large domain-specific PLMs. \r\n\r\nConclusion: Although Prior approaches achieve high scores in some settings, PLMs are the only models that can work well in the zero-shot setting. When trained on the app review dataset, the Custom PLMs have higher performance and lower prediction times.",
+        "original_paper": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-54017020878c3356f6449988ba34e4d03eefd21cb1b4eedd7408f445ddf43e98",
+            "timestamp": 1684169953,
+            "size": 1780452,
+            "filename": "EMSE_AppReviewsStudy__CameraReady__ACCEPTED_ (1).pdf",
+            "pages": 77
+        },
+        "publication_journal": "Empirical Software Engineering Journal (EMSE, Springer)",
+        "topics": [
+            "AI for SE",
+            "Apps and app store analysis"
+        ],
+        "date_acceptance": "March 3, 2023",
+        "attestation_paper_not_presented_another_journal_first_track": true,
+        "presenter_name": "Fatemeh Fard",
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1684169953
+    }
+]

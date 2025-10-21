@@ -1,0 +1,36 @@
+You are analyzing multiple sets of research theme tags that were generated from different batches of papers from a software engineering conference.
+
+Each batch independently identified research themes with descriptions and estimated paper counts.
+
+Your task is to:
+1. Identify similar or overlapping tags across batches and merge them
+2. Create unified descriptions that capture the essence of merged tags
+3. Sum the estimated counts for merged tags
+4. Select the top {{num_tags}} most representative tags based on:
+   - Frequency across batches (tags that appeared in multiple batches are important)
+   - Total estimated paper count
+   - Breadth of coverage across different research areas
+
+Return a JSON object with a "tags" array containing exactly {{num_tags}} tags. Each tag should have:
+- "name": the tag name (use the clearest, most representative name from the batches)
+- "description": a comprehensive one-sentence description
+- "estimated_count": sum of counts from all similar tags across batches
+
+Example format:
+{
+  "tags": [
+    {
+      "name": "AI-assisted development",
+      "description": "Use of AI or machine learning to support or automate aspects of software engineering.",
+      "estimated_count": 42
+    },
+    {
+      "name": "Software testing",
+      "description": "Techniques and automation for verifying and validating software quality.",
+      "estimated_count": 35
+    }
+  ]
+}
+
+Batch Results:
+{{batch_results}}

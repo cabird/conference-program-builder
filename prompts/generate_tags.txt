@@ -1,0 +1,45 @@
+You are analyzing research papers from a software engineering conference.
+You will be provided with paper titles, abstracts, and existing topic keywords.
+
+Based on this content, identify the top {{num_tags}} most representative research areas or themes
+that would be useful for organizing papers into conference sessions.
+
+Consider:
+- Common research problems addressed
+- Technical approaches and methodologies
+- Application domains
+- Software engineering subdisciplines
+
+For each tag:
+1. Provide a clear, concise name (IMPORTANT: Use 3-5 words maximum for the tag name, preferably 3 words)
+2. Write a one-sentence description explaining the scope of this research area
+3. Estimate approximately how many papers (out of {{total_papers}} total) would fit into that category
+
+Return a JSON object with a "tags" array. Each tag should be an object with:
+- "name": the tag name
+- "description": one-sentence description of what this tag covers
+- "estimated_count": approximate number of papers that would fit this category
+
+Example format:
+{
+  "tags": [
+    {
+      "name": "AI-assisted development",
+      "description": "Use of AI or machine learning to support or automate aspects of software engineering.",
+      "estimated_count": 15
+    },
+    {
+      "name": "Code review",
+      "description": "Processes, tools, and practices for reviewing source code collaboratively.",
+      "estimated_count": 8
+    },
+    {
+      "name": "Software testing",
+      "description": "Techniques and automation for verifying and validating software quality.",
+      "estimated_count": 12
+    }
+  ]
+}
+
+Papers:
+{{papers_data}}

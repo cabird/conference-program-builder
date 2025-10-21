@@ -1,0 +1,658 @@
+[
+    {
+        "pid": 2,
+        "title": "Dramatically Improving Design Reviews at Google",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-5f6405636f177f5839044a44d7d47eed2f6351b1fc91c4cd0cafcb213bae49a6",
+            "timestamp": 1686590890,
+            "size": 529202,
+            "pages": 5
+        },
+        "abstract": "Design review is an important initial phase of the software development life-cycle where stakeholders gain and discuss early insights into the design's viability, discover potentially costly mistakes, and identify inconsistencies and inadequacies. For improved development velocity, it is important that design owners get their designs approved as quickly as possible.\r\n\r\nIn this paper, we discuss how engineering design reviews are typically conducted at Google, and propose a novel, structured, automated solution to improve design review velocity. Based on data collected on 141,652 approved documents authored by 41,030 users over four years, we show that our proposed solution decreases median time-to-approval by 29%, and provides further gains when used consistently. We also provide qualitative data to demonstrate our solution's success, discuss factors that impact design review latency and propose strategies to tackle them.",
+        "authors": [
+            {
+                "email": "celal@google.com",
+                "first": "Celal",
+                "last": "Ziftci",
+                "affiliation": "Google",
+                "contact": true
+            },
+            {
+                "email": "greenbben@google.com",
+                "first": "Ben",
+                "last": "Greenberg",
+                "affiliation": "Google"
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1686583420
+    },
+    {
+        "pid": 6,
+        "title": "Predicting Compilation Resources for Adaptive Build in an Industrial Setting",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-2a74fe455c9dd16cf604bc2ec71fc34361e2c578497b2a586b728c47fe92a12b",
+            "timestamp": 1687348516,
+            "size": 532969,
+            "pages": 5
+        },
+        "abstract": "Development teams in large companies often maintain a huge codebase whose build time can be painfully long in a single machine. To reduce the build time, tools such as Bazel and distcc are used to build the codebase in a distributed fashion. However, in the process of a distributed building, it is normal that certain remote nodes crash due to two types of errors: Out Of Memory (OOM) and Deadline Exceeded (DE) errors. These crashes lead to a time-consuming rebuild, which is also a problem faced by WeiXin Group (WXG) of Tencent Inc., the company that created WeChat. Since existing tools cannot help avoid the OOM and DE errors, we propose PCRLinear, which predicts the memory and time requirement of a C++ file, allowing the original distributed build system to schedule compilation adaptively according to the prediction. Our experiments show that PCRLinear reduces the OOM and DE errors to zero and demonstrates a significant average build performance improvement of 30%.",
+        "authors": [
+            {
+                "email": "junhaohu@stu.pku.edu.cn",
+                "first": "Junhao",
+                "last": "Hu",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "adf111178@gmail.com",
+                "first": "Chaozheng",
+                "last": "Wang",
+                "affiliation": "The Chinese University of Hong Kong",
+                "contact": true
+            },
+            {
+                "email": "eraserhuang@tencent.com",
+                "first": "Hailiang",
+                "last": "Huang",
+                "affiliation": "Tencent Inc.",
+                "contact": true
+            },
+            {
+                "email": "lucienluo@tencent.com",
+                "first": "Huang",
+                "last": "Luo",
+                "affiliation": "Tencent Inc."
+            },
+            {
+                "email": "lenajin@tencent.com",
+                "first": "Yu",
+                "last": "Jin",
+                "affiliation": "Tencent Inc.",
+                "contact": true
+            },
+            {
+                "email": "yuetangdeng@tencent.com",
+                "first": "Yuetang",
+                "last": "Deng",
+                "affiliation": "Tencent Inc.",
+                "contact": true
+            },
+            {
+                "email": "taoxie@pku.edu.cn",
+                "first": "Tao",
+                "last": "Xie",
+                "affiliation": "Peking University",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1687252124
+    },
+    {
+        "pid": 13,
+        "title": "Zero-Config Fuzzing for Microservices",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-326955a0d33bcf139df0cb58c6e64677e2f8e389e683baa4a3169330f27b4d19",
+            "timestamp": 1685735650,
+            "size": 169184,
+            "pages": 5
+        },
+        "abstract": "The microservice paradigm is a popular software development pattern that breaks down a large application into smaller, independent services. While this approach offers several advantages, such as scalability, agility, and flexibility, it also introduces new security challenges. This paper presents a novel approach to securing microservice architectures using fuzz testing. Fuzz testing is known to find security vulnerabilities in software by feeding it with unexpected or random inputs. In this paper, we propose a zero-config fuzz test generation technique for microservices that can maximize coverage of internal states by mutating the frontend requests and the backend responses from dependent services. We also present the results of our fuzz testing, which reported and got fixed thousands of security vulnerabilities in real-world microservice applications.",
+        "authors": [
+            {
+                "email": "wwweiwang@google.com",
+                "first": "Wei",
+                "last": "Wang",
+                "affiliation": "Google",
+                "contact": true
+            },
+            {
+                "email": "abenea@google.com",
+                "first": "Andrei",
+                "last": "Benea",
+                "affiliation": "Google",
+                "contact": true
+            },
+            {
+                "email": "ivancic@google.com",
+                "first": "Franjo",
+                "last": "Ivancic",
+                "affiliation": "Google",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685735650
+    },
+    {
+        "pid": 14,
+        "title": "Green AI Quotient : Assessing Greenness of AI-based software and the way forward",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-d42d58306f1b6c0d87ccd09a01de54cbd8d9b7543d4f62f6f824332532ce5a83",
+            "timestamp": 1687345392,
+            "size": 421184,
+            "pages": 5
+        },
+        "abstract": "As the world takes cognizance of AI’s growing role in greenhouse gas(GHG) and carbon emissions, the focus of AI research & development is shifting towards inclusion of energy efficiency as another core metric. Sustainability, a core agenda for most organizations, is also being viewed as a core nonfunctional requirement in software engineering. A similar effort is being undertaken to extend sustainability principles to AI-based systems with focus on energy efficient training and inference techniques. But an important question arises, does there even exist any metrics or methods which can quantify adoption of “green” practices in the life cycle of AI-based systems? There is a huge gap which exists between the growing research corpus related to sustainable practices in AI research and its adoption at an industry scale. The goal of this work is to introduce a methodology and novel metric for assessing ”greenness” of any AI-based system and its development process, based on energy efficient AI research and practices. The novel metric, termed as Green AI Quotient, would be a key step towards AI practitioner’s Green AI journey. Empirical validation of our approach suggest\r\nthat Green AI Quotient is able to encourage adoption and raise awareness regarding sustainable practices in AI lifecycle.",
+        "authors": [
+            {
+                "email": "s.sikand@accenture.com",
+                "first": "Samarth",
+                "last": "Sikand",
+                "affiliation": "Accenture Labs",
+                "contact": true
+            },
+            {
+                "email": "vibhu.sharma@accenture.com",
+                "first": "Vibhu Saujanya",
+                "last": "Sharma",
+                "affiliation": "Accenture Labs",
+                "contact": true
+            },
+            {
+                "email": "vikrant.kaulgud@accenture.com",
+                "first": "Vikrant",
+                "last": "Kaulgud",
+                "affiliation": "Accenture Labs",
+                "contact": true
+            },
+            {
+                "email": "sanjay.podder@accenture.com",
+                "first": "Sanjay",
+                "last": "Podder",
+                "affiliation": "Accenture Labs",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "ch@iittp.ac.in": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1687327345
+    },
+    {
+        "pid": 17,
+        "title": "Open Source Software Tools for Data Management and Deep Model Training Automation",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-0316b83fb2af7b94b6157c9d4c5539f273b5ce9cce2eb53fc5b6848b2854f3db",
+            "timestamp": 1687294660,
+            "size": 122937,
+            "pages": 5
+        },
+        "abstract": "Designing and optimizing deep models require managing large datasets and conducting carefully designed controlled experiments that depend on large sets of hyper-parameters and problem dependent software\/data configurations. These experiments are executed by training the model under observation with varying configurations. Since executing a typical training run can take days even on proven acceleration fabrics such as Graphics Processing Units (GPU), avoiding human error in configuration preparations and securing the repeatability of the experiments are of utmost importance. Failed training runs lead to lost time, wasted energy and frustration. On the other hand, unrepeatable or poorly monitored\/logged training runs make it exceedingly hard to track performance and lock on a successful and well generalizing deep model. Hence, managing large datasets and training automation are crucial for efficiently training deep models. In this paper, we present two open source software tools that aim to achieve these goals, namely, a Dataset Manager (DatumAid) tool and a Training Automation Manager (OrchesTrain) tool. DatumAid is a software tool that integrates with Computer Vision Annotation Tool (CVAT) to facilitate the management of annotated datasets. By adding additional functionality, DatumAid allows users to filter labeled data, manipulate datasets, and export datasets for training purposes. The tool adopts a simple code structure while providing flexibility to users through configuration files. OrchesTrain aims to automate model training process by facilitating rapid preparation and training of models in the desired style for the intended tasks. Users can seamlessly integrate their models prepared in the PyTorch library into the system and leverage the full capabilities of OrchesTrain. It enables the simultaneous or separate usage of Wandb, MLflow, and TensorBoard loggers. To ensure reproducibility of the conducted experiments, all configurations and codes are saved to the selected logger in an appropriate structure within a YAML file along with the serialized model files. Both software tools are publicly available on GitHub.",
+        "authors": [
+            {
+                "email": "umut.tirasoglu@ordulu.com.tr",
+                "first": "Umut",
+                "last": "Tıraşoğlu",
+                "affiliation": "ORDULU Corp.",
+                "contact": true
+            },
+            {
+                "email": "abdussamet.turker@ordulu.com.tr",
+                "first": "Abdussamet",
+                "last": "Türker",
+                "affiliation": "ORDULU Corp."
+            },
+            {
+                "email": "adnan.ekici@ordulu.com.tr",
+                "first": "Adnan",
+                "last": "Ekici",
+                "affiliation": "ORDULU Corp."
+            },
+            {
+                "email": "hayri.yigit@ordulu.com.tr",
+                "first": "Hayri",
+                "last": "Yiğit",
+                "affiliation": "ORDULU Corp."
+            },
+            {
+                "email": "yusuf.bolukbasi@ordulu.com.tr",
+                "first": "Yusuf Enes",
+                "last": "Bölükbaşı",
+                "affiliation": "ORDULU Corp."
+            },
+            {
+                "email": "toygarakgun@gmail.com",
+                "first": "Toygar",
+                "last": "Akgun",
+                "affiliation": "TOBB ETU",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1687294660
+    },
+    {
+        "pid": 32,
+        "title": "Coding and Debugging by Separating Secret Code toward Secure Remote Development",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-cc5bfa213068d5505ea866370af0ba95771f53479213c8ba6fcf3b189b1790c0",
+            "timestamp": 1687354296,
+            "size": 488821,
+            "pages": 4
+        },
+        "abstract": "It is a higher priority for organizations to keep their source code secured. Sometimes code leaks comes from acts by inside programmers. This industrial paper proposes a MORDEn (Micro Organized Remote Development Environment) toward preventing code leaks. MORDEn enables programmers capable of coding and debugging by physically separating secret code from their client. We also introduce a showcase that demonstrates the feasibility of MORDEn from a case study project using it.",
+        "authors": [
+            {
+                "email": "shinobu.saitou.cm@hco.ntt.co.jp",
+                "first": "Shinobu",
+                "last": "Saito",
+                "affiliation": "NTT",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1687332339
+    },
+    {
+        "pid": 40,
+        "title": "Software Engineering Using Autonomous Agents: Are We There Yet?",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-14f4b52132f100035126c868880be1cb9b121da2e6a692165956e908fdbcb392",
+            "timestamp": 1687329963,
+            "size": 151712,
+            "pages": 2
+        },
+        "abstract": "Autonomous agents equipped with Large Language Models (LLMs) are rapidly gaining prominence as a revolutionary technology within the realm of Software Engineering. These\r\nintelligent systems demonstrate the capacity to autonomously perform tasks and make independent decisions, leveraging their intrinsic reasoning and decision-making abilities. This paper addresses an examination that involves delving into the current state of autonomous agents including their capabilities, challenges, and opportunities in Software Engineering practices, with special\r\nemphasis on Auto-GPT.",
+        "authors": [
+            {
+                "email": "samdyuti.suri@accenture.com",
+                "first": "Samdyuti",
+                "last": "Suri",
+                "affiliation": "Accenture Tech Labs",
+                "contact": true
+            },
+            {
+                "email": "sankar.naryan.das@accenture.com",
+                "first": "Sankar Narayan",
+                "last": "Das",
+                "affiliation": "Accenture Tech Labs"
+            },
+            {
+                "email": "kapil.singi@accenture.com",
+                "first": "Kapil",
+                "last": "Singi",
+                "affiliation": "Accenture Labs",
+                "contact": true
+            },
+            {
+                "email": "kuntal.dey@accenture.com",
+                "first": "Kuntal",
+                "last": "Dey",
+                "affiliation": "Accenture Labs, India",
+                "contact": true
+            },
+            {
+                "email": "vibhu.sharma@accenture.com",
+                "first": "Vibhu Saujanya",
+                "last": "Sharma",
+                "affiliation": "Accenture Labs",
+                "contact": true
+            },
+            {
+                "email": "vikrant.kaulgud@accenture.com",
+                "first": "Vikrant",
+                "last": "Kaulgud",
+                "affiliation": "Accenture Tech Labs",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "ch@iittp.ac.in": "pinned collaborator"
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1687329963
+    },
+    {
+        "pid": 65,
+        "title": "Smart Prompt Advisor: Multi-objective Prompt Framework for Consistency and Best Practices",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-034e46c2de4455567401cfed4f927f0746026ce86289dc8605d7ec9fb2a8a206",
+            "timestamp": 1687345311,
+            "size": 2639786,
+            "pages": 2
+        },
+        "abstract": "Recent breakthroughs in Large Language Models (LLM), comprised of billions of parameters, have achieved the ability to unveil exceptional insight into a wide range of Natural Language Processing (NLP) tasks. The onus of the performance of these models lies in the sophistication and completeness of the input prompt. As such, minimizing the series of prompt enhancements with improvised keywords becomes critically important as it directly affects the time to market and cost of the developing solution. However, this process inevitably has a trade-off between the learning curve\/proficiency of the user and completeness of the prompt, as generating absolute solutions is an incremental process. In this paper, we have designed a novel solution and implemented it in the form of a plugin for Visual Studio Code IDE, which can optimize this trade-off, by learning the underline prompt intent to enhance with keywords. This will tend to align with developers’ collection of semantics while developing a secure code, ensuring parameter and local variable names, return expressions, simple pre and post-conditions, and basic control and data flow are met.",
+        "authors": [
+            {
+                "email": "kanchanjot.k.phokela@accenture.com",
+                "first": "Kanchanjot Kaur",
+                "last": "Phokela",
+                "affiliation": "Accenture Technology Labs, Bangalore, India",
+                "contact": true
+            },
+            {
+                "email": "s.sikand@accenture.com",
+                "first": "Samarth",
+                "last": "Sikand",
+                "affiliation": "Accenture Technology Labs, Bangalore, India",
+                "contact": true
+            },
+            {
+                "email": "kapil.singi@accenture.com",
+                "first": "Kapil",
+                "last": "Singi",
+                "affiliation": "Accenture Technology Labs, Bangalore, India",
+                "contact": true
+            },
+            {
+                "email": "kuntal.dey@accenture.com",
+                "first": "Kuntal",
+                "last": "Dey",
+                "affiliation": "Accenture Technology Labs, Bangalore, India",
+                "contact": true
+            },
+            {
+                "email": "vibhu.sharma@accenture.com",
+                "first": "Vibhu Saujanya",
+                "last": "Sharma",
+                "affiliation": "Accenture Technology Labs, Bangalore, India",
+                "contact": true
+            },
+            {
+                "email": "vikrant.kaulgud@accenture.com",
+                "first": "Vikrant",
+                "last": "Kaulgud",
+                "affiliation": "Accenture Technology Labs, Bangalore, India",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "ch@iittp.ac.in": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1687335480
+    },
+    {
+        "pid": 68,
+        "title": "Assessing the Impact of Refactoring Energy-Inefficient Code Patterns on Software Sustainability: An Industry Case Study",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-ba66e572806361dedb6093af3d922210d1ca2edff75b22cacaebbbba6d7360a5",
+            "timestamp": 1687321099,
+            "size": 227868,
+            "pages": 3
+        },
+        "abstract": "Advances in technologies like artificial intelligence and metaverse have led to a proliferation of software systems in business and everyday life. With this widespread penetration, the carbon emissions of software are rapidly growing as well, thereby negatively impacting the long-term sustainability of our environment. Hence, optimizing software from a sustainability standpoint becomes more crucial than ever. We believe that the adoption of automated tools that can identify energy-inefficient patterns in the code and guide appropriate refactoring can significantly assist in this optimization. In this extended abstract, we present an industry case study that evaluates the sustainability impact of refactoring energy-inefficient code patterns identified by automated software sustainability assessment tools for a large application. Preliminary results highlight a positive impact on the application's sustainability post-refactoring, leading to a 29% decrease in energy consumption.",
+        "authors": [
+            {
+                "email": "rohit.a.mehra@accenture.com",
+                "first": "Rohit",
+                "last": "Mehra",
+                "affiliation": "Accenture Labs, India",
+                "contact": true
+            },
+            {
+                "email": "priyavanshi.pathania@accenture.com",
+                "first": "Priyavanshi",
+                "last": "Pathania",
+                "affiliation": "Accenture Labs, India",
+                "contact": true
+            },
+            {
+                "email": "vibhu.sharma@accenture.com",
+                "first": "Vibhu Saujanya",
+                "last": "Sharma",
+                "affiliation": "Accenture Labs, India",
+                "contact": true
+            },
+            {
+                "email": "vikrant.kaulgud@accenture.com",
+                "first": "Vikrant",
+                "last": "Kaulgud",
+                "affiliation": "Accenture Labs, India",
+                "contact": true
+            },
+            {
+                "email": "sanjay.podder@accenture.com",
+                "first": "Sanjay",
+                "last": "Podder",
+                "affiliation": "Technology Sustainability Innovation, Accenture, India",
+                "contact": true
+            },
+            {
+                "email": "adam.p.burden@accenture.com",
+                "first": "Adam P.",
+                "last": "Burden",
+                "affiliation": "Accenture, USA"
+            }
+        ],
+        "pc_conflicts": {
+            "ch@iittp.ac.in": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1687321099
+    },
+    {
+        "pid": 73,
+        "title": "Challenges of Accurate and Efficient AutoML",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-4271a591f6fddf7edcf6fa86ff9378b17d47c821edd1deeb3db5ba1b7911cc6a",
+            "timestamp": 1687319863,
+            "size": 3325040,
+            "pages": 5
+        },
+        "abstract": "Artificial Intelligence (AI) enabled embedded devices are becoming increasingly important in the field of healthcare where such devices are utilized to assist physicians, clinicians, and surgeons in their diagnosis, therapy planning, and rehabilitation. However, it is still a challenging task to come up with an accurate and efficient machine learning model for resource-limited devices that work $24\\times7$. It requires both intuition and experience. This dependence on human expertise and reliance on trial-and-error-based design methods create impediments to the standard processes of effort estimation, design phase planning, and generating service-level agreements for projects that involve AI-enabled MedTech devices.\r\n\r\nIn this paper, we present AutoML search from an algorithmic perspective, instead of a more prevalent optimization or black-box tool perspective. We briefly present and point to case studies that demonstrate the efficacy of the automation approach in terms of productivity improvements. We believe that our proposed method can make AutoML more amenable to the applications of software engineering principles and also accelerate biomedical device engineering, where there is a high dependence on skilled human resources.",
+        "authors": [
+            {
+                "email": "swarnava.dey@tcs.com",
+                "first": "Swarnava",
+                "last": "Dey",
+                "affiliation": "TCS Research",
+                "contact": true
+            },
+            {
+                "email": "avik.ghose@tcs.com",
+                "first": "Avik",
+                "last": "Ghose",
+                "affiliation": "TCS Research",
+                "contact": true
+            },
+            {
+                "email": "soumik.das@tcs.com",
+                "first": "Soumik",
+                "last": "Das",
+                "affiliation": "Tata Consultancy Services Ltd.",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1687163444
+    },
+    {
+        "pid": 88,
+        "title": "An Industrial Practice for Securing Android Apps in the Banking Domain",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-241f9a8e09a89f57163be7c5ea7e56c3e4ffb8208e885674dae095001ede141c",
+            "timestamp": 1687334756,
+            "size": 523579,
+            "pages": 5
+        },
+        "abstract": "The emergence of mobile technology has significantly advanced the banking sector in terms of how consumers interact with their banks and manage their finances. The accessibility and ease of financial services have been improved by the switch from desktop banking to mobile banking. Mobile banking has a lot of advantages, but it also has security concerns. Illegal access to personal and financial information often occurs due to lapses in mobile security. In recent years, we have worked with banks from 10 countries and systematically analyzed 28 of their apps. We found several vulnerabilities in these apps by manual code reviews and by conducting 11 types of attacks. We then proposed and applied adequate security measures to protect these apps. In this paper, we report our experience and practice of securing these Android apps.",
+        "authors": [
+            {
+                "email": "vikasm@smu.edu.sg",
+                "first": "Vikas",
+                "last": "Malviya",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "phan.phong@i-sprint.com",
+                "first": "Phong",
+                "last": "Phan",
+                "affiliation": "i-Sprint Innovations Pte. Ltd"
+            },
+            {
+                "email": "yannaingtun@smu.edu.sg",
+                "first": "Yan Naing",
+                "last": "Tun",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "albert.ching@i-sprint.com",
+                "first": "Albert",
+                "last": "Ching",
+                "affiliation": "i-Sprint Innovations Pte. Ltd"
+            },
+            {
+                "email": "lkshar@smu.edu.sg",
+                "first": "Lwin Khin",
+                "last": "Shar",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "lkshar@smu.edu.sg": "collaborator author",
+            "seungyeob.shin@uni.lu": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1687335228
+    },
+    {
+        "pid": 91,
+        "title": "RocketHA: A High Availability Design Paradigm for Distributed Log-Based Storage System",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-3517a0d72d99ccdba685a235ed789d919a73b9d45f88d1c84b1bba8981a1b871",
+            "timestamp": 1687224740,
+            "size": 2344756,
+            "pages": 5
+        },
+        "abstract": "As a team from Alibaba Cloud, we have developed and open-sourced Apache RocketMQ, a cloud-native \"messaging, eventing, streaming\" real-time data processing platform that covers cloud-edge-device collaboration scenarios. During the development of RocketMQ, we formulated a log-based storage high availability paradigm that provides a high availability design solution for distributed log storage software used in industrial applications. The paradigm includes six essential components that enable the cluster to recover automatically. Our evaluation shows that this paradigm can achieve high availability, fast recovery, high throughput, and data loss prevention. We hope this paradigm will inspire and guide the development of high-availability solutions for all log-based storage systems.",
+        "authors": [
+            {
+                "email": "juntao.jjt@alibaba-inc.com",
+                "first": "Juntao",
+                "last": "Ji",
+                "affiliation": "Alibaba Cloud Computing Co. Ltd.",
+                "contact": true
+            },
+            {
+                "email": "jinrongtong@apache.org",
+                "first": "Rongtong",
+                "last": "Jin",
+                "affiliation": "Alibaba Cloud Computing Co. Ltd."
+            },
+            {
+                "email": "fuyou001@apache.org",
+                "first": "Yubao",
+                "last": "Fu",
+                "affiliation": "Alibaba Cloud Computing Co. Ltd."
+            },
+            {
+                "email": "guyinyou.gyy@alibaba-inc.com",
+                "first": "Yinyou",
+                "last": "Gu",
+                "affiliation": "Alibaba Cloud Computing Co. Ltd."
+            },
+            {
+                "email": "tsaitsung-han.tht@alibaba-inc.com",
+                "first": "Tsung-han",
+                "last": "Tsai",
+                "affiliation": "Alibaba Cloud Computing Co. Ltd."
+            },
+            {
+                "email": "hill007299@apach.org",
+                "first": "Qingshan",
+                "last": "Lin",
+                "affiliation": "Alibaba Cloud Computing Co. Ltd."
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1687224740
+    },
+    {
+        "pid": 95,
+        "title": "Government Mobile Apps: Analysing Citizen Feedback via App Reviews",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-5adc64d9657bcf6a8be957530a5073adcb201e0365cf252b63a0a511ab36a3a1",
+            "timestamp": 1687348708,
+            "size": 1048273,
+            "pages": 5
+        },
+        "abstract": "Governments worldwide are increasingly embracing\r\ndigital transformation initiatives to improve service delivery,\r\nenhance citizen engagement and participation, and achieve better\r\noutcomes. However, obtaining continuous feedback on these\r\ninitiatives presents a significant challenge. This paper investigates\r\nthe feasibility of leveraging mobile app reviews as a valuable\r\nsource of citizen feedback on government digital services.\r\nThrough an analysis of 100146 app reviews from 129 government\r\nmobile apps in Australia, we identify several functional and\r\nusability issues such as authentication, inaccuracy, integration,\r\ninstability, and verification. Moreover, we uncover several factors\r\ninfluencing user satisfaction, including accuracy, convenience,\r\ndependability, efficiency and reliability. Our research demonstrates\r\na close alignment between user feedback and government digital\r\ntransformation strategy, emphasising the potential of mobile app\r\nreviews as a cost-effective source of ongoing citizen feedback",
+        "authors": [
+            {
+                "email": "Tooba.aamir@data61.csiro.au",
+                "first": "Tooba",
+                "last": "Aamir",
+                "affiliation": "Data61 CSIRO AUstralia",
+                "contact": true
+            },
+            {
+                "email": "mohan.baruwalchhetri@data61.csiro.au",
+                "first": "Mohan",
+                "last": "Baruwal Chhetri",
+                "affiliation": "Data61 CSIRO Australia",
+                "contact": true
+            },
+            {
+                "email": "Chamikara.Mahawagaarachchige@data61.csiro.au",
+                "first": "M.A.P.",
+                "last": "Chamikara",
+                "affiliation": "Data61 CSIRO Australia",
+                "contact": true
+            },
+            {
+                "email": "Marthie.Grobler@data61.csiro.au",
+                "first": "Marthie",
+                "last": "Grobler",
+                "affiliation": "Data61 CSIRO Australia",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1687348708
+    }
+]

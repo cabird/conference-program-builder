@@ -1,0 +1,119 @@
+{
+  "conference": "ASE 2025",
+  "paper_types": {
+    "technical": 15,
+    "jf": 12,
+    "demo": 8,
+    "nier": 8,
+    "industry": 12
+  },
+  "sessions": {
+    "count": 26,
+    "duration_minutes": 90
+  },
+  "session_creation_options": {
+    "algorithm": "greedy",
+    "min_fill_ratio": 0.75,
+    "allow_two_topic_sessions": false,
+    "allow_no_match_in_mixed": false,
+    "swap_passes": 3,
+    "time_budget_seconds": 30,
+    "random_seed": 42,
+    "weights": {
+      "utilization": 1.0,
+      "primary": 4.0,
+      "secondary": 2.0,
+      "tertiary": 0.5
+    }
+  },
+  "constraints": {
+    "avoid_author_conflicts": true,
+    "author_contstraints": [
+      {
+        "type": "date_constraint",
+        "author_name": "David Lo",
+        "unavailable_dates": ["2023-09-13"]
+      },
+      {
+        "type": "timeslot_constraint",
+        "author_name": "Xin Xia",
+        "date": "2023-09-12",
+        "unavailable_timeslots": ["15:30-17:00"]
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "date": "2023-09-12",
+      "day": "Tuesday",
+      "timeslots": [
+        {
+          "time": "10:30-12:00",
+          "duration_minutes": 90,
+          "parallel_rooms": 3,
+          "room_ids": ["Room C", "Plenary Room 2", "Room D"]
+        },
+        {
+          "time": "13:30-15:00",
+          "duration_minutes": 90,
+          "parallel_rooms": 3,
+          "room_ids": ["Room C", "Plenary Room 2", "Room E"]
+        },
+        {
+          "time": "15:30-17:00",
+          "duration_minutes": 90,
+          "parallel_rooms": 3,
+          "room_ids": ["Room C", "Plenary Room 2", "Room D"]
+        }
+      ]
+    },
+    {
+      "date": "2023-09-13",
+      "day": "Wednesday",
+      "timeslots": [
+        {
+          "time": "10:30-12:00",
+          "duration_minutes": 90,
+          "parallel_rooms": 3,
+          "room_ids": ["Room C", "Plenary Room 2", "Room D"]
+        },
+        {
+          "time": "13:30-15:00",
+          "duration_minutes": 90,
+          "parallel_rooms": 3,
+          "room_ids": ["Room C", "Plenary Room 2", "Room E"]
+        },
+        {
+          "time": "15:30-17:00",
+          "duration_minutes": 90,
+          "parallel_rooms": 3,
+          "room_ids": ["Room C", "Plenary Room 2", "Room D"]
+        }
+      ]
+    },
+    {
+      "date": "2023-09-14",
+      "day": "Thursday",
+      "timeslots": [
+        {
+          "time": "10:30-12:00",
+          "duration_minutes": 90,
+          "parallel_rooms": 3,
+          "room_ids": ["Room C", "Room D", "Room E", "Plenary Room 2"]
+        },
+        {
+          "time": "13:30-15:00",
+          "duration_minutes": 90,
+          "parallel_rooms": 3,
+          "room_ids": ["Room C", "Room D", "Room E", "Plenary Room 2"]
+        },
+         {
+          "time": "15:30-17:00",
+          "duration_minutes": 90,
+          "parallel_rooms": 2,
+          "room_ids": ["Room C", "Room D", "Room E"]
+        }
+      ]
+    }
+  ]
+}

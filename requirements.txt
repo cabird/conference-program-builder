@@ -1,0 +1,8 @@
+# LLM API (Azure OpenAI and OpenAI)
+openai>=1.0.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Google OR-Tools for constraint optimization
+ortools>=9.0.0

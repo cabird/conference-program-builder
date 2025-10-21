@@ -1,0 +1,25 @@
+Given the paper information below and the following tag list (each with a description),
+assign the three most relevant tags to this paper in order of importance.
+
+Paper Title: {{title}}
+
+Paper Abstract: {{abstract}}
+
+Existing Topics: {{topics}}
+
+Tag List:
+{{tag_list}}
+
+Instructions:
+- Choose the primary tag that best represents the main focus of the paper
+- Choose the secondary tag that represents an important secondary aspect
+- Choose the tertiary tag that represents a relevant but less central aspect
+- All three tags must be different
+- Tags must come from the provided tag list
+
+Return JSON in this exact format:
+{
+  "primary_tag": "<tag name>",
+  "secondary_tag": "<tag name>",
+  "tertiary_tag": "<tag name>"
+}

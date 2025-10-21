@@ -1,0 +1,1155 @@
+[
+    {
+        "pid": 5,
+        "title": "BUGSC++: A Highly Usable Real World Defect Benchmark for C\/C++",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-57e1dd0d2adc7f5a6122d84b61f7f537b9bcbf74ed6e999205144df01826edf0",
+            "timestamp": 1685163022,
+            "size": 175184,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "As software systems grow larger and more complex, debugging takes up an increasingly significant portion of developers’ time and efforts during software maintenance. To aid software engineers in debugging, many automated debugging and repair techniques have been proposed. Both the development and evaluation of these automated techniques depend on benchmarks of bugs. While many different defect benchmarks have been developed, only a few benchmarks are widely used due to the origin of the collected bugs as well as the usability of the benchmarks themselves, risking a biased research landscape. This paper presents BugsC++, a new benchmark that contains 209 real-world bugs collected from 22 open-source C\/C++ projects. BugsC++ aims to provide high usability by providing a similar user interface to the widely used Defects4J. Further, BugsC++ ensures the replicability of the bugs in its collection by encapsulating each buggy program in a Docker container. By providing a highly usable real-world defect benchmark for C\/C++, we hope to promote debugging research for C\/C++.",
+        "authors": [
+            {
+                "email": "agb94@kaist.ac.kr",
+                "first": "Gabin",
+                "last": "An",
+                "affiliation": "Korea Advanced Institute of Science and Technology",
+                "contact": true
+            },
+            {
+                "email": "minhyuk@suresofttech.com",
+                "first": "Minhyuk",
+                "last": "Kwon",
+                "affiliation": "Suresoft Technologies"
+            },
+            {
+                "email": "khchoi@suresofttech.com",
+                "first": "Kyunghwa",
+                "last": "Choi",
+                "affiliation": "Suresoft Technologies"
+            },
+            {
+                "email": "jooyong@unist.ac.kr",
+                "first": "Jooyong",
+                "last": "Yi",
+                "affiliation": "Ulsan National Institute of Science and Technology",
+                "contact": true
+            },
+            {
+                "email": "shin.yoo@kaist.ac.kr",
+                "first": "Shin",
+                "last": "Yoo",
+                "affiliation": "Korea Advanced Institute of Science and Technology",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "darkrsw@gmail.com": true,
+            "ezekiel.soremekun@rhul.ac.uk": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685158938
+    },
+    {
+        "pid": 8,
+        "title": "SpecFuzzer: A Tool for Inferring Class Specifications via Grammar-based Fuzzing",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-bd9eedb7bedec1aecca947067f73ebb51d798062205bc54704a36ec473a56a8e",
+            "timestamp": 1685180875,
+            "size": 371475,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "In object-oriented design, class specifications are primarily used to express properties describing the intended behavior of the class methods and constraints on class' objects. Although the presence of these specifications is important for various software engineering tasks such as test generation, bug finding and automated debugging, developers rarely write them. \r\n\r\nIn this tool demo we present the details of SpecFuzzer, a tool that aims at alleviating the problem of writing class specifications by using a combination of grammar-based fuzzing, dynamic invariant detection and mutation analysis to automatically infer specifications for Java classes. Given a class under analysis, SpecFuzzer uses (i) a generator of candidate assertions derived from a grammar automatically extracted from the class; (ii) a dynamic invariant detector --Daikon-- in order to discard the assertions invalidated by a test suite; and (iii) a mutation-based mechanism to cluster and rank assertions, so that similar constraints are grouped and the stronger ones prioritized.",
+        "authors": [
+            {
+                "email": "facundo.molina@imdea.org",
+                "first": "Facundo",
+                "last": "Molina",
+                "affiliation": "IMDEA Software Institute",
+                "contact": true
+            },
+            {
+                "email": "mdamori@ncsu.edu",
+                "first": "Marcelo",
+                "last": "d'Amorim",
+                "affiliation": "North Carolina State University",
+                "contact": true
+            },
+            {
+                "email": "naguirre@dc.exa.unrc.edu.ar",
+                "first": "Nazareno",
+                "last": "Aguirre",
+                "affiliation": "University of Rio Cuarto and CONICET",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685165399
+    },
+    {
+        "pid": 12,
+        "title": "TEASER: Simulation-based CAN Bus Regression Testing for Self-driving Cars Software",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-9de1e4d04a35b2a880d589f252258cef1ddb0eed01e3550b3acdddf82387b20c",
+            "timestamp": 1685177498,
+            "size": 210332,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Software systems for safety-critical systems like self-driving cars (SDCs) need to be tested rigorously. Especially electronic control units (ECUs) of SDCs should be tested with realistic input data. In this context, a communication protocol called Controller Area Network (CAN) is typically used to transfer sensor data to the SDC control units. A challenge for SDC maintainers and testers is the need to manually define the CAN inputs that realistically represent the state of the SDC in the real world. To address this challenge, we developed TEASER, which is a tool that generates realistic CAN signals for SDCs obtained from sensors from state-of-the-art car simulators. We evaluated TEASER based on its integration capability into a DevOps pipeline of aicas GmbH, a company in the automotive sector. Concretely, we integrated TEASER in a Continous Integration (CI) pipeline configured with Jenkins. The pipeline executes the test cases in simulation environments and sends the sensor data over the CAN bus to a physical CAN device, which is the test subject. Our evaluation shows the ability of TEASER to generate and execute CI test cases that expose simulation-based faults (using regression strategies); the tool produces CAN inputs that realistically represent the state of the SDC in the real world. This result is of critical importance for increasing automation and effectiveness of simulation-based CAN bus regression testing for SDC software.\r\nTool: https:\/\/doi.org\/10.5281\/zenodo.7964890\r\nGitHub: https:\/\/github.com\/christianbirchler-org\/sdc-scissor\/\r\nreleases\/tag\/v2.2.0-rc.1\r\nDocumentation: https:\/\/sdc-scissor.readthedocs.io",
+        "authors": [
+            {
+                "email": "birc@zhaw.ch",
+                "first": "Christian",
+                "last": "Birchler",
+                "affiliation": "Zurich University of Applied Sciences, Switzerland & University of Bern, Switzerland",
+                "contact": true
+            },
+            {
+                "email": "cyrill.rohrbach@students.unibe.ch",
+                "first": "Cyrill",
+                "last": "Rohrbach",
+                "affiliation": "University of Bern, Switzerland"
+            },
+            {
+                "email": "hyeongkyun.kim@uzh.ch",
+                "first": "Hyeongkyun",
+                "last": "Kim",
+                "affiliation": "University of Zurich, Switzerland",
+                "contact": true
+            },
+            {
+                "email": "alessio.gambi@fh-krems.ac.at",
+                "first": "Alessio",
+                "last": "Gambi",
+                "affiliation": "IMC University of Applied Sciences Krems, Austria",
+                "contact": true
+            },
+            {
+                "email": "tianhai.liu@aicas.com",
+                "first": "Tianhai",
+                "last": "Liu",
+                "affiliation": "aicas GmbH, Germany"
+            },
+            {
+                "email": "jens.horneber@aicas.com",
+                "first": "Jens",
+                "last": "Horneber",
+                "affiliation": "aicas GmbH, Germany"
+            },
+            {
+                "email": "timo.kehrer@unibe.ch",
+                "first": "Timo",
+                "last": "Kehrer",
+                "affiliation": "University of Bern, Switzerland",
+                "contact": true
+            },
+            {
+                "email": "panc@zhaw.ch",
+                "first": "Sebastiano",
+                "last": "Panichella",
+                "affiliation": "Zurich University of Applied Sciences, Switzerland",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "zp.chen@ucl.ac.uk": true,
+            "pouria.derakhshanfar@jetbrains.com": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685065291
+    },
+    {
+        "pid": 13,
+        "title": "ICTDroid: Parameter-Aware Combinatorial Testing for Components of Android Apps",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-9e7d84e27e03594405e8db7510bc16e02f83736ac7abb0e635207a811605a36c",
+            "timestamp": 1685177737,
+            "size": 322926,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Components are the fundamental building blocks of Android applications. Different functional modules represented by components often rely on inter-component communication mechanisms to achieve cross-module data transfer and method invocation. It is necessary to conduct robustness testing on components to prevent component launching crashes and privacy leaks caused by unexpected input parameters. However, as the complexity of the input parameter structure and the diversity of possible inputs, developers may overlook specific inputs that result in exceptions. At the same time, the vast input space also brings challenges to efficient component testing. In this paper, we designed an automated testing tool for Android application components named \\textit{\\textbf{ICTDroid}}, which combines static parameter extraction and adaptive-strength combinatorial testing generation to detect bugs with a compact test suite. Experiments have shown that the tool triggers 205 unique exceptions in 30 open-source applications with 1,919 test cases in 83 minutes, where the developers have confirmed three of six issues we reported.\r\nThe tool and demostration video of \\textit{ICTDroid} is available at https:\/\/lightningrs.github.io\/tools\/ICTDroid.html.",
+        "authors": [
+            {
+                "email": "zhangshixin@otcaix.iscas.ac.cn",
+                "first": "Shixin",
+                "last": "Zhang",
+                "affiliation": "Technology Center of Software Engineering, Institute of Software, Chinese Academy of Sciences; Beijing Jiaotong University",
+                "contact": true
+            },
+            {
+                "email": "lsn@bjtu.edu.cn",
+                "first": "Shanna",
+                "last": "Li",
+                "affiliation": "Beijing Jiaotong University"
+            },
+            {
+                "email": "dengxi@ios.ac.cn",
+                "first": "Xi",
+                "last": "Deng",
+                "affiliation": "State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences; University of Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "yanjw@ios.ac.cn",
+                "first": "Jiwei",
+                "last": "Yan",
+                "affiliation": "Technology Center of Software Engineering, Institute of Software, Chinese Academy of Sciences; University of Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "yanjun@ios.ac.cn",
+                "first": "Jun",
+                "last": "Yan",
+                "affiliation": "Technology Center of Software Engineering, Institute of Software, Chinese Academy of Sciences; State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences; University of Chinese Academy of Sciences",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "wensheng@iscas.ac.cn": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685177737
+    },
+    {
+        "pid": 15,
+        "title": "ExpressAPR: Efficient Patch Validation for Java Automated Program Repair Systems",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-c32299863bd58714cac9597d5ee6d012a814fb075b433784616515a697347ebc",
+            "timestamp": 1684899651,
+            "size": 270505,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Automated program repair (APR) approaches suffer from long patch validation time, which limits their practical application and receives relatively low attention. The patch validation process repeatedly executes tests to filter patches, and has been recognized as the dual of mutation analysis. We systematically investigate existing mutation testing techniques and recognize five families of acceleration techniques that are suitable for patch validation, two of which are never adapted to a general-purpose patch validator. We implement and demonstrate ExpressAPR, the first framework that combines five families of acceleration techniques for patch validation as the complete set. In our evaluation on 30 random Defects4J bugs and four APR systems, ExpressAPR accelerates patch validation for two orderof-magnitudes over plain validation or one order-of-magnitude over the state-of-the-art approach, benefiting APR researchers and users with a much shorter patch validation time. \r\n\r\nDemo video available at https:\/\/youtu.be\/7AB-4VvBuuM \r\n\r\nTool repo (source code + Docker image + evaluation dataset) available at https:\/\/github.com\/ExpressAPR\/ExpressAPR",
+        "authors": [
+            {
+                "email": "xiaoyuanan@pku.edu.cn",
+                "first": "Yuan-An",
+                "last": "Xiao",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "chenyangy@pku.edu.cn",
+                "first": "Chenyang",
+                "last": "Yang",
+                "affiliation": "Peking University",
+                "contact": true
+            },
+            {
+                "email": "wangbo_cs@bjtu.edu.cn",
+                "first": "Bo",
+                "last": "Wang",
+                "affiliation": "Beijing Jiaotong University",
+                "contact": true
+            },
+            {
+                "email": "xiongyf@pku.edu.cn",
+                "first": "Yingfei",
+                "last": "Xiong",
+                "affiliation": "Peking University",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "zhmh@pku.edu.cn": true,
+            "zp.chen@ucl.ac.uk": true,
+            "yilinglou@fudan.edu.cn": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685054996
+    },
+    {
+        "pid": 17,
+        "title": "Polyglot Code Smell Detection for Infrastructure as Code with GLITCH",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-5f5c54ede20036ef41b8704a3bf46441d3cb89bbae15e9c8aadf7f1d5d861289",
+            "timestamp": 1685184689,
+            "size": 226504,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "This paper presents GLITCH, a new technology-agnostic framework that enables automated polyglot code smell detection for Infrastructure as Code scripts. GLITCH uses an intermediate representation on which different code smell detectors can be defined. It currently supports the detection of nine security smells and nine design & implementation smells in scripts written\r\nin Ansible, Chef, Docker, Puppet, or Terraform. Studies conducted with GLITCH not only show that GLITCH can reduce the effort of writing code smell analyses for multiple IaC technologies, but also that it has higher precision and recall than current state-of-the-art tools. A video describing and demonstrating GLITCH is available at: https:\/\/youtu.be\/E4RhCcZjWbk.",
+        "authors": [
+            {
+                "email": "nuno@saavedra.pt",
+                "first": "Nuno",
+                "last": "Saavedra",
+                "affiliation": "INESC-ID and IST, University of Lisbon",
+                "contact": true
+            },
+            {
+                "email": "joao.marques.goncalves@tecnico.ulisboa.pt",
+                "first": "João",
+                "last": "Gonçalves",
+                "affiliation": "INESC-ID and IST, University of Lisbon"
+            },
+            {
+                "email": "miguel.c.henriques22@gmail.com",
+                "first": "Miguel",
+                "last": "Henriques",
+                "affiliation": "INESC-ID and IST, University of Lisbon"
+            },
+            {
+                "email": "joao@joaoff.com",
+                "first": "João F.",
+                "last": "Ferreira",
+                "affiliation": "INESC-ID and IST, University of Lisbon",
+                "contact": true
+            },
+            {
+                "email": "alexandra@archimendes.com",
+                "first": "Alexandra",
+                "last": "Mendes",
+                "affiliation": "Faculty of Engineering, University of Porto & HASLab\/INESC TEC",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685146504
+    },
+    {
+        "pid": 19,
+        "title": "CEGAR-PT: A Tool for Abstraction by Program Transformation",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-eec91d0f5c6b96c279f55b960c943650ecf451f7c06a5a84f69104c8ab2ce6c4",
+            "timestamp": 1685186154,
+            "size": 149148,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Abstraction is a key technology for proving the correctness of computer programs.\r\nThere are many approaches available, but unfortunately,\r\nthe various techniques are difficult to combine and the successful techniques\r\nhave to be re-implemented again and again.\r\n%\r\nWe address this problem by using the tool \\cegarpt,\r\nwhich views abstraction as program transformation\r\nand integrates different verification components off-the-shelf.\r\nThe idea is to use existing components\r\nwithout having to change their implementation,\r\nwhile still adjusting the precision of the abstraction\r\nusing the successful CEGAR approach.\r\nThe approach is largely general: it only restricts\r\nthe abstraction to transform, given a precision that defines the level of abstraction,\r\none program into another program.\r\nThe abstraction by program transformation can over-approximate the data flow\r\n(e.g., havoc some variables, use more abstract types) or\r\nthe control flow (e.g., loop abstraction, slicing).\r\nDemonstration video: \\url{https:\/\/youtu.be\/ASZ6hoq8asE}",
+        "authors": [
+            {
+                "email": "dirk.beyer@sosy-lab.org",
+                "first": "Dirk",
+                "last": "Beyer",
+                "affiliation": "LMU Munich",
+                "contact": true
+            },
+            {
+                "email": "m.rosenfeld@campus.lmu.de",
+                "first": "Marian Lingsch",
+                "last": "Rosenfeld",
+                "affiliation": "LMU Munich",
+                "contact": true
+            },
+            {
+                "email": "spiessl@sosy.ifi.lmu.de",
+                "first": "Martin",
+                "last": "Spiessl",
+                "affiliation": "LMU Munich",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "sw@stefan-winter.net": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685183005
+    },
+    {
+        "pid": 26,
+        "title": "SmartBugs 2.0: An Execution Framework for Weakness Detection in Ethereum Smart Contracts",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-9220110902ae4d2b6bd5aefcd3107c8dd6d0efaabec3ba5b34278b3fab578eda",
+            "timestamp": 1685181710,
+            "size": 725786,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Smart contracts are blockchain programs that often handle valuable assets. Writing secure smart contracts is far from trivial, and any vulnerability may lead to significant financial losses. To support developers in identifying and eliminating vulnerabilities, methods and tools for the automated analysis have been proposed. However, the lack of commonly accepted benchmark suites and performance metrics makes it difficult to compare and evaluate such tools. Moreover, the tools are heterogeneous in their interfaces and reports as well as their runtime requirements, and installing several tools is time-consuming.\r\n\r\nIn this paper, we present SmartBugs 2.0, a modular execution framework. It provides a uniform interface to 19 tools aimed at smart contract analysis and accepts both Solidity source code and EVM bytecode as input. After describing its architecture, we highlight the features of the framework. We evaluate the framework via its reception by the community and illustrate its scalability by describing its role in a study involving 3.25 million analyses.",
+        "authors": [
+            {
+                "email": "monika.di.angelo@tuwien.ac.at",
+                "first": "Monika",
+                "last": "di Angelo",
+                "affiliation": "TU Wien",
+                "contact": true
+            },
+            {
+                "email": "thomas.durieux@tudelft.nl",
+                "first": "Thomas",
+                "last": "Durieux",
+                "affiliation": "TU Delft"
+            },
+            {
+                "email": "joao@joaoff.com",
+                "first": "João F.",
+                "last": "Ferreira",
+                "affiliation": "INESC-ID and IST, University of Lisbon",
+                "contact": true
+            },
+            {
+                "email": "gernot.salzer@tuwien.ac.at",
+                "first": "Gernot",
+                "last": "Salzer",
+                "affiliation": "TU Wien",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685134097
+    },
+    {
+        "pid": 35,
+        "title": "RJoules: An Energy Measurement Tool for R",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-ac87a82f10f3d3f905859cbcfb658dd8c4701b76c35ceef105771b36688dd261",
+            "timestamp": 1685187980,
+            "size": 336138,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "With the exponential growth of data, the demand for effective data analysis tools has increased significantly. R language, known for its statistical modeling and data analysis capabilities, has become one of the most popular programming languages among data scientists and researchers. As the importance of energy-aware software systems continues to rise, several studies investigate the impact of source code and different stages of machine learning model training on energy consumption. However, existing studies in this domain primarily focus on programming languages like Python and Java, leaving a gap for energy measuring tools in other programming language such as R. To address this gap, we propose ``\\textbf{\\textit{RJoules}}'', a tool designed to measure the energy consumption of R code snippets. We evaluate the correctness and performance of \\textit{RJoules} by applying it to four machine learning algorithms on three different systems. Our aim is to support developers and practitioners in building energy-aware systems in R. The demonstration of the tool is available at \\url{https:\/\/youtu.be\/yMKFuvAM-DE} and related artifacts at https:\/\/rishalab.github.io\/RJoules.",
+        "authors": [
+            {
+                "email": "cs22s504@iittp.ac.in",
+                "first": "Rajrupa",
+                "last": "Chattaraj",
+                "affiliation": "Indian Institute of Technology Tirupati, India",
+                "contact": true
+            },
+            {
+                "email": "ch@iittp.ac.in",
+                "first": "Sridhar",
+                "last": "Chimalakonda",
+                "affiliation": "Indian Institute of Technology Tirupati, India",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685184038
+    },
+    {
+        "pid": 49,
+        "title": "COMEX: A Tool for Generating Customized Source Code Representations",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-b2e46f36303c110c8074fe639cd066c5536f6be7fc02777804bb22377aa96f6a",
+            "timestamp": 1685189311,
+            "size": 940103,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Learning effective representations of source code is critical for any Machine Learning for Software Engineering (ML4SE) system. Inspired by natural language processing, large language models (LLMs) like \\textit{Codex} and \\textit{CodeGen} treat code as generic sequences of text and are trained on huge corpora of code data, achieving state of the art performance on several software engineering (SE) tasks. However, valid source code, unlike natural language, follows a strict structure and pattern governed by the underlying grammar of the programming language. Current LLMs do not exploit this property of the source code as they treat code like a sequence of tokens and overlook key structural and semantic properties of code that can be extracted from code-views like the Control Flow Graph (CFG), Data Flow Graph (DFG), Abstract Syntax Tree (AST), etc. Unfortunately, the process of generating and integrating code-views for every programming language is cumbersome and time consuming. To overcome this barrier, we propose our tool \\textit{COMEX} - a framework that allows researchers and developers to create and combine multiple code-views which can be used by machine learning (ML) models for various SE tasks. Some salient features of our tool are: (i) it works directly on source code (which need not be compilable), (ii) it currently supports Java and C\\#, (iii) it can analyze both method-level snippets and program-level snippets by using both intra-procedural and inter-procedural analysis, and (iv) it is easily extendable to other languages as it is built on \\emph{tree-sitter} - a widely used incremental parser that supports over 40 languages. We believe this easy-to-use code-view generation and customization tool will give impetus to research in source code representation learning methods and ML4SE. The demonstration of our tool can be found at https:\/\/youtu.be\/GER6U87FVbU",
+        "authors": [
+            {
+                "email": "debesheedas@gmail.com",
+                "first": "Debeshee",
+                "last": "Das",
+                "affiliation": "Indian Institute of Technology Tirupati",
+                "contact": true
+            },
+            {
+                "email": "elbonleon@gmail.com",
+                "first": "Noble Saji",
+                "last": "Mathews",
+                "affiliation": "Indian Institute of Technology Tirupati",
+                "contact": true
+            },
+            {
+                "email": "alexmathai98@gmail.com",
+                "first": "Alex",
+                "last": "Mathai",
+                "affiliation": "IBM Research",
+                "contact": true
+            },
+            {
+                "email": "srikanthtamilselvam@gmail.com",
+                "first": "Srikanth",
+                "last": "Tamilselvam",
+                "affiliation": "IBM Research",
+                "contact": true
+            },
+            {
+                "email": "skranthi4444@gmail.com",
+                "first": "Kranthi",
+                "last": "Sedamaki",
+                "affiliation": "Indian Institute of Technology Tirupati",
+                "contact": true
+            },
+            {
+                "email": "sridhar.chimalakonda@gmail.com",
+                "first": "Sridhar",
+                "last": "Chimalakonda",
+                "affiliation": "Indian Institute of Technology Tirupati",
+                "contact": true
+            },
+            {
+                "email": "atulkumar@gmail.com",
+                "first": "Atul",
+                "last": "Kumar",
+                "affiliation": "IBM Research",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "Rangeet.Pan@ibm.com": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685180396
+    },
+    {
+        "pid": 52,
+        "title": "Bus Factor Explorer",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-97e1b1b7aa0096f49d114a41b87a3f11ddb79f0b537e0f7fcc8fc7629818cd09",
+            "timestamp": 1685186785,
+            "size": 1614428,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Bus factor (BF) is a metric that tracks knowledge distribution in a project. It is the minimal number of engineers that have to leave for a project to stall. Despite the fact that there are several algorithms for calculating the bus factor, only a few tools allow easy calculation of bus factor and convenient analysis of results for projects hosted on Git-based providers.\r\n\r\nWe introduce Bus Factor Explorer, a web application that provides an interface and an API to compute, export, and explore the Bus Factor metric via treemap visualization, simulation mode, and chart editor. It supports repositories hosted on GitHub and enables functionality to search repositories in the interface and process many repositories at the same time. Our tool allows users to identify the files and subsystems at risk of stalling in the event of developer turnover by analyzing the VCS history. \r\n\r\nThe application and its source code are publicly available on GitHub at https:\/\/github.com\/JetBrains-Research\/bus-factor-explorer. The demonstration video can be found on YouTube:  https:\/\/youtu.be\/uIoV79N14z8",
+        "authors": [
+            {
+                "email": "egor.klimov@jetbrains.com",
+                "first": "Egor",
+                "last": "Klimov",
+                "affiliation": "JetBrains Research",
+                "contact": true
+            },
+            {
+                "email": "umair.ahmed@bilkent.edu.tr",
+                "first": "Muhammad Umair",
+                "last": "Ahmed",
+                "affiliation": "Bilkent University",
+                "contact": true
+            },
+            {
+                "email": "nikolai.sviridov@jetbrains.com",
+                "first": "Nikolai",
+                "last": "Sviridov",
+                "affiliation": "JetBrains Research"
+            },
+            {
+                "email": "pouria.derakhshanfar@jetbrains.com",
+                "first": "Pouria",
+                "last": "Derakhshanfar",
+                "affiliation": "JetBrains Research",
+                "contact": true
+            },
+            {
+                "email": "eraytuzun@cs.bilkent.edu.tr",
+                "first": "Eray",
+                "last": "Tüzün",
+                "affiliation": "Bilkent University",
+                "contact": true
+            },
+            {
+                "email": "vladimir.kovalenko@jetbrains.com",
+                "first": "Vladimir",
+                "last": "Kovalenko",
+                "affiliation": "JetBrains Research",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "pouria.derakhshanfar@jetbrains.com": "collaborator author"
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685186809
+    },
+    {
+        "pid": 54,
+        "title": "Provengo: A Tool Suite for Scenario Driven Model-Based Testing",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-22d61b07f073cdf010991f614329985e772e977939ee044566c4e7dc60858132",
+            "timestamp": 1685173879,
+            "size": 274084,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "We present Provengo, a comprehensive suite of tools designed to facilitate the implementation of Scenario-Driven Model-Based Testing (SDMBT), an innovative approach that utilizes scenarios to construct a model encompassing the user's perspective and the system's business value, while also defining the desired outcomes. With the assistance of Provengo, testers gain the ability to effortlessly create natural user stories and seamlessly integrate them into a model capable of generating effective tests. The demonstration illustrates how SDMBT effectively addresses the bootstrapping challenge commonly encountered in model-based testing (MBT) by enabling incremental development, starting from simple models and gradually augmenting them with additional stories.",
+        "authors": [
+            {
+                "email": "michael@provengo.tech",
+                "first": "Michael Bar",
+                "last": "Sinai",
+                "affiliation": "Provengo",
+                "contact": true
+            },
+            {
+                "email": "achiya@bgu.ac.il",
+                "first": "Achiya",
+                "last": "Elyasaf",
+                "affiliation": "Ben-Gurion University of the Negev",
+                "contact": true
+            },
+            {
+                "email": "geraw@cs.bgu.ac.il",
+                "first": "Gera",
+                "last": "Weiss",
+                "affiliation": "Ben-Gurion University of the Negev",
+                "contact": true
+            },
+            {
+                "email": "weissye@post.bgu.ac.il",
+                "first": "‪Yeshayahu",
+                "last": "Weiss‬‏",
+                "affiliation": "Ben-Gurion University of the Negev",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685113995
+    },
+    {
+        "pid": 60,
+        "title": "DroneReqValidator: Facilitating High Fidelity Simulation Testing for Uncrewed Aerial Systems Developers",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-bcb9eb516138a818b6a3fd5b27576547f70dfa709a9dff9318fb6de61f06b1c8",
+            "timestamp": 1685122523,
+            "size": 5957082,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Rigorous testing of Small Uncrewed Aerial Systems (sUAS) is crucial to ensure their safe and reliable deployment in the real world. sUAS developers aim to validate the reliability and safety of their applications through simulation testing. However, the dynamic nature of the real-world environment, including factors such as challenging weather conditions and wireless interference, causes unique software faults that may only be revealed through field testing. Considering the high cost and impracticality of conducting field testing in thousands of environmental contexts and conditions, there exists a pressing need to develop automated techniques that can generate high-fidelity, realistic environments enabling sUAS developers to deploy their applications and conduct thorough simulation testing in close-to-reality environmental conditions. To address this need, DroneWorld offers a comprehensive small Unmanned Aerial Vehicle (sUAV) simulation ecosystem that automatically generates realistic environments based on developer-specified constraints, monitors sUAV activities against predefined safety parameters, and generates detailed acceptance test reports for effective debugging and analysis of sUAV applications. Providing these capabilities, DroneWorld offers a valuable solution for enhancing the testing and development process of sUAV applications. The comprehensive demo of DroneWorld is available at https:\/\/youtu.be\/RUsXYMi9rWs",
+        "authors": [
+            {
+                "email": "bohan.zhang.1@slu.edu",
+                "first": "Bohan",
+                "last": "Zhang",
+                "affiliation": "Saint Louis University",
+                "contact": true
+            },
+            {
+                "email": "yashaswini.shivalingaiah@slu.edu",
+                "first": "Yashaswini",
+                "last": "Shivalingaiah",
+                "affiliation": "Saint Louis University",
+                "contact": true
+            },
+            {
+                "email": "ankit.agrawal.1@slu.edu",
+                "first": "Ankit",
+                "last": "Agrawal",
+                "affiliation": "Saint Louis University",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685052614
+    },
+    {
+        "pid": 74,
+        "title": "ArduinoProg: Towards Automating Arduino Programming",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-9b37183f0ef09504df27f42c8b017dbeb6939f5ca7a955b4d6608813504a9dad",
+            "timestamp": 1685186276,
+            "size": 550468,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Writing code for Arduino poses unique challenges. A developer 1) needs hardware-specific knowledge about the interface configuration between the Arduino controller and the I\/O hardware, 2) identifies a suitable driver library for the I\/O hardware, and 3) follows certain usage patterns of the driver library in order to use them properly.\r\nIn this work, based on a study of real-world user queries posted in the Arduino forum, we propose ArduinoProg to address such challenges. \r\nArduinoProg consists of three components, i.e., Library Retriever, Configuration Classifier, and Pattern Generator. Given a query, Library Retriever retrieves library names relevant to the I\/O hardware identified from the query using vector-based similarity matching.\r\nConfiguration Classifier predicts the interface configuration between the I\/O hardware and the Arduino controller based on the method definitions of each library. \r\nPattern Generator generates the usage pattern of a library using a sequence-to-sequence deep learning model.\r\nWe have evaluated ArduinoProg using real-world queries, and our results show that the components of ArduinoProg can generate accurate and useful suggestions to guide developers in writing Arduino code.\r\n\\newline Demo video: \\url{bit.ly\/3Y3aeBe}\r\n\\newline Tool: \\url{https:\/\/huggingface.co\/spaces\/imamnurby\/ArduinoProg}\r\n\\newline Code and data: \\url{https:\/\/github.com\/imamnurby\/ArduinoProg}",
+        "authors": [
+            {
+                "email": "imamy.2020@phdcs.smu.edu.sg",
+                "first": "Imam Nur Bani",
+                "last": "Yusuf",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "diyanahj.2020@scis.smu.edu.sg",
+                "first": "Diyanah Binte Abdul",
+                "last": "Jamal",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "lxjiang@smu.edu.sg",
+                "first": "Lingxiao",
+                "last": "Jiang",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685186276
+    },
+    {
+        "pid": 76,
+        "title": "QuCAT: A Combinatorial Testing Tool for Quantum Software",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-9be3ea43dbabc8a49d09afca4c23e5f43df2a56d7fd238d8de0902b79b75683b",
+            "timestamp": 1684974279,
+            "size": 591260,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "With the increased developments in quantum computing, the availability of systematic and automatic testing approaches for quantum programs is becoming increasingly essential. To this end, we present the quantum software testing tool QuCAT for combinatorial testing of quantum programs. QuCAT provides two functionalities of use. With the first functionality, the tool generates a test suite of a given strength (e.g., pair-wise). With the second functionality, it generates test suites with increasing strength until a failure is triggered or a maximum strength is reached. QuCAT uses two test oracles to check the correctness of test outputs. We assess the cost and effectiveness of QuCAT with 3 faulty versions of 5 quantum programs. Results show that combinatorial test suites with a low strength can find faults with limited cost, while a higher strength performs better to trigger some difficult faults with relatively higher cost.\r\nRepository: https:\/\/github.com\/qiqihannah\/QuCAT-Tool\r\nVideo: https:\/\/youtu.be\/UsqgOudKLio",
+        "authors": [
+            {
+                "email": "xinyi@simula.no",
+                "first": "Xinyi",
+                "last": "Wang",
+                "affiliation": "Simula Research Laboratory",
+                "contact": true
+            },
+            {
+                "email": "arcaini@nii.ac.jp",
+                "first": "Paolo",
+                "last": "Arcaini",
+                "affiliation": "National Institute of Informatics",
+                "contact": true
+            },
+            {
+                "email": "tao@simula.no",
+                "first": "Tao",
+                "last": "Yue",
+                "affiliation": "Simula Research Laboratory",
+                "contact": true
+            },
+            {
+                "email": "shaukat@simula.no",
+                "first": "Shaukat",
+                "last": "Ali",
+                "affiliation": "Simula Research Laboratory and Oslo Metropolitan University, Oslo",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1684962916
+    },
+    {
+        "pid": 77,
+        "title": "MUT4SLX: Fast Mutation Testing for Simulink",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-4b4ec349133be3f2a1a7f8198f492f29c3c8f5ab9a3ccf519984a6336ca2776c",
+            "timestamp": 1685140818,
+            "size": 315846,
+            "pages": 5,
+            "format_status": "ok"
+        },
+        "abstract": "Several experience reports illustrate that mutation testing is capable of supporting a ``shift-left'' testing strategy for software systems coded in textual programming languages like C++.\r\nFor graphical modelling languages like Simulink, such experience reports are missing, primarily because of a lack of adequate tool support.\r\nIn this paper we present a proof-of-concept (named MUT4SLX) for automatic mutant generation and test execution of Simulink models.\r\nMUT4SLX features 15 mutation operators which are modelled after realistic faults (mined from an industrial bug database) and are fast to inject (because we only replace parameter values within blocks).\r\nAn experimental evaluation on a sample project (a Helicopter Control System) demonstrates that MUT4SLX is capable of injecting 70 mutants in less than a second, resulting in a total analysis time of 8.14 hours.\r\n\r\nThe tool is available at: https:\/\/github.com\/haliliceylan\/MUT4SLX\/ and the demonstration video can be found at: https:\/\/youtu.be\/inud_NRGutc.",
+        "authors": [
+            {
+                "email": "Halil.Ceylan@student.uantwerpen.be",
+                "first": "Halil Ibrahim",
+                "last": "Ceylan",
+                "affiliation": "University of Antwerp",
+                "contact": true
+            },
+            {
+                "email": "onur.kilincceker@uantwerpen.be",
+                "first": "Onur",
+                "last": "Kilincceker",
+                "affiliation": "University of Antwerp and Flanders Make vzw",
+                "contact": true
+            },
+            {
+                "email": "Mutlu.Beyazit@uantwerpen.be",
+                "first": "Mutlu",
+                "last": "Beyazıt",
+                "affiliation": "University of Antwerp and Flanders Make vzw",
+                "contact": true
+            },
+            {
+                "email": "Serge.Demeyer@uantwerpen.be",
+                "first": "Serge",
+                "last": "Demeyer",
+                "affiliation": "University of Antwerp and Flanders Make vzw",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {},
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685140818
+    },
+    {
+        "pid": 79,
+        "title": "CompSuite: A Dataset of Java Library Upgrade Incompatibility Issues",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-f26da693c632edbf97261f81bde8e300a33de855317f7e63c728eb55a1cf0932",
+            "timestamp": 1685103031,
+            "size": 274430,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Modern software systems heavily rely on external libraries developed by third-parties to ensure efficient development. However, frequent library upgrades can lead to compatibility issues between the libraries and their client systems. In this paper, we introduce CompSuite, a dataset that includes 123 real-world Java client-library pairs where upgrading the library causes an incompatibility issue in the corresponding client. Each incompatibility issue in CompSuite is associated with a test case authored by the developers, which can be used to reproduce the issue. The dataset also provides a command-line interface that simplifies the execution and validation of each issue. With this infrastructure, users can perform an inspection of any incompatibility issue with the push of a button, or reproduce an issue step-by-step for a more detailed investigation. We make CompSuite publicly available to promote open science. We believe that various software analysis techniques, such as compatibility checking, debugging, and regression test selection, can benefit from CompSuite.",
+        "authors": [
+            {
+                "email": "xiufeng001@e.ntu.edu.sg",
+                "first": "Xiufeng",
+                "last": "Xu",
+                "affiliation": "Nanyang Technological University",
+                "contact": true
+            },
+            {
+                "email": "cgzhu@utexas.edu",
+                "first": "Chenguang",
+                "last": "Zhu",
+                "affiliation": "The University of Texas at Austin",
+                "contact": true
+            },
+            {
+                "email": "yi_li@ntu.edu.sg",
+                "first": "Yi",
+                "last": "Li",
+                "affiliation": "Nanyang Technological University",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "yi_li@ntu.edu.sg": "author"
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1684810891
+    },
+    {
+        "pid": 84,
+        "title": "NRAgo: Solving SMT(NRA) Formulas with Gradient-based Optimization",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-1a14a8e8a8c79d0be552efc9803ac974d52e330b5a02962ef66cb180b045484b",
+            "timestamp": 1685188467,
+            "size": 446654,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "The satisfiability problem modulo the nonlinear real arithmetic (NRA) theory serves as the foundation for a wide range of important applications, such as model checking, program analysis, and software testing. However, due to the high computational complexity, developing efficient solving algorithms for this problem has consistently presented a substantial challenge. We present a hybrid SMT(NRA) solver, called NRAgo, which combines the efficiency of gradient-based optimization method with the completeness of algebraic solving algorithm. With our approach, the practical performance on many satisfiable instances is substantially improved. The experimental evaluation shows that NRAgo achieves remarkable acceleration effects on a set of challenging SMT(NRA) benchmarks that are hard to solve for state-of-the-art SMT solvers.",
+        "authors": [
+            {
+                "email": "liumh@ios.ac.cn",
+                "first": "Minghao",
+                "last": "Liu",
+                "affiliation": "Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "kylelv2000@gmail.com",
+                "first": "Kunhang",
+                "last": "Lv",
+                "affiliation": "Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "huangpei@stanford.edu",
+                "first": "Pei",
+                "last": "Huang",
+                "affiliation": "Stanford University",
+                "contact": true
+            },
+            {
+                "email": "hanrui@ios.ac.cn",
+                "first": "Rui",
+                "last": "Han",
+                "affiliation": "Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "jiafq@ios.ac.cn",
+                "first": "Fuqi",
+                "last": "Jia",
+                "affiliation": "Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "zhangyu172@mails.ucas.ac.cn",
+                "first": "Yu",
+                "last": "Zhang",
+                "affiliation": "Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "maff@ios.ac.cn",
+                "first": "Feifei",
+                "last": "Ma",
+                "affiliation": "Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            },
+            {
+                "email": "zj@ios.ac.cn",
+                "first": "Jian",
+                "last": "Zhang",
+                "affiliation": "Institute of Software, Chinese Academy of Sciences",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "wensheng@iscas.ac.cn": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685187000
+    },
+    {
+        "pid": 85,
+        "title": "EXPRESS 2.0: An Intelligent Service Management Framework for AIoT Systems in the Edge",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-b6f0f82749a6085bbffa67bb077721215d265fd610b91f82a90ed78df4922fbb",
+            "timestamp": 1685067465,
+            "size": 4274876,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "AIoT (Artificial Intelligence of Things) which integrates AI and IoT has received rapidly growing interest from the software engineering community in recent years. It is crucial to design scalable, efficient, and reliable software solutions for large-scale AIoT systems in edge computing environments. However, the lack of effective service management including the support for service collaboration, AI application, and data security in the edge, has seriously limited the development of AIoT systems. To seal this gap, we propose EXPRESS 2.0 which is an intelligent service management framework for AIoT in the edge. Specifically, on top of the existing EXPRESS platform, EXPRESS 2.0 includes the intelligent service collaboration management module, AI application management module, and data security management module. To demonstrate the effectiveness of the framework, we design and implement a last-mile delivery system using both UAVs (Unmanned Aerial Vehicles) and UGVs (Unmanned Ground Vehicles). The EXPRESS 2.0 is open-sourced at https:\/\/github.com\/ISEC-AHU\/EXPRESS2.0. A video demonstration of EXPRESS 2.0 is at https:\/\/youtu.be\/GHKD_VvJD88.",
+        "authors": [
+            {
+                "email": "xujia@ahu.edu.cn",
+                "first": "Jia",
+                "last": "Xu",
+                "affiliation": "School of Computer Science and Technology, Anhui University",
+                "contact": true
+            },
+            {
+                "email": "xiao.liu@deakin.edu.au",
+                "first": "Xiao",
+                "last": "Liu",
+                "affiliation": "School of Information Technology, Deakin University",
+                "contact": true
+            },
+            {
+                "email": "pwz_ahu@foxmail.com",
+                "first": "Wuzhen",
+                "last": "Pan",
+                "affiliation": "School of Computer Science and Technology, Anhui University",
+                "contact": true
+            },
+            {
+                "email": "xjli@ahu.edu.cn",
+                "first": "Xuejun",
+                "last": "Li",
+                "affiliation": "School of Computer Science and Technology, Anhui University",
+                "contact": true
+            },
+            {
+                "email": "yaoat@foxmail.com",
+                "first": "Aiting",
+                "last": "Yao",
+                "affiliation": "School of Computer Science and Technology, Anhui University",
+                "contact": true
+            },
+            {
+                "email": "yyang@swin.edu.au",
+                "first": "Yun",
+                "last": "Yang",
+                "affiliation": "Swinburne University of Technology",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "xiao.liu@deakin.edu.au": "collaborator author"
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685107365
+    },
+    {
+        "pid": 104,
+        "title": "LIV: Invariant Validation Using Straight-Line Programs",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-324748b4f9f1ac29ae0db894cb0a60d4b9ca8c4bbcf41639e7aa9bfd5f29e755",
+            "timestamp": 1685187964,
+            "size": 206177,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Validation of correctness proofs is an established\r\nprocedure in software verification. While there are steady ad-\r\nvances when it comes to verification of more and more complex\r\nsoftware systems, it becomes increasingly hard to determine\r\nwhich information is actually useful for validation of the cor-\r\nrectness proof. Usually, the central piece that verifiers struggle\r\nto come up with are good loop invariants. While a proof using\r\ninductive invariants is easy to validate, not all invariants used\r\nby verifiers necessarily are inductive. In order to alleviate this\r\nproblem, we propose LIV, an approach that makes it easy\r\nto check if the invariant information provided by the verifier\r\nis sufficient to establish an inductive proof. This is done by\r\nemulating a Hoare-style proof, splitting the program into Hoare\r\ntriples and converting these into verification tasks that can\r\nthemselves be efficiently verified by an off-the-shelf verifier. In\r\ncase the validation fails, useful information about the failure\r\nreason can be extracted from the overview of which triples\r\ncould be established and which were refuted. We show that our\r\napproach works by evaluating it on a state-of-the-art benchmark\r\nset.\r\nDemonstration video: https:\/\/youtu.be\/mZhoGAa08Rk\r\nReproduction package: https:\/\/doi.org\/10.5281\/zenodo.7969555",
+        "authors": [
+            {
+                "email": "spiessl@sosy.ifi.lmu.de",
+                "first": "Martin",
+                "last": "Spiessl",
+                "affiliation": "LMU Munich",
+                "contact": true
+            },
+            {
+                "email": "dirk.beyer@sosy-lab.org",
+                "first": "Dirk",
+                "last": "Beyer",
+                "affiliation": "LMU Munich",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "sw@stefan-winter.net": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685187964
+    },
+    {
+        "pid": 107,
+        "title": "AutoDebloater: Automated Android App Debloating",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-30b63e99a6376a266ae1d2fc73aed92c8c94dc5faaf7b88ad59a5c015e70d73b",
+            "timestamp": 1685186644,
+            "size": 919681,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Android applications are getting bigger with an increasing number of features. However, not all the features are needed by a specific user. The unnecessary features can increase the attack surface and cost additional resources (e.g., storage and memory). Therefore, it is important to remove unnecessary features from Android applications. However, it is difficult for the end users to fully explore the apps to identify the unnecessary features, and there is no off-the-shelf tool available to assist users to debloat the apps by themselves. In this work, we propose AutoDebloater to debloat Android applications automatically for end users. AutoDebloater is a web application that can be accessed by end-users through a web browser. In particular, AutoDebloater can automatically explore an app and identify the transitions between activities. Then, AutoDebloater will present the Activity Transition Graph to users and ask them to select the activities they do not want to keep. Finally, AutoDebloater will remove the activities that are selected by users from the app. We conducted a user study on five Android apps downloaded from three categories (i.e., Finance, Tools, and Navigation) in Google Play and F-Droid. The results show that users are satisfied with AutoDebloater in terms of the stability of the debloated apps and the ability of AutoDebloater to identify features that are never noticed before. The tool is available at http:\/\/autodebloater.club. The code is available at https:\/\/github.com\/jiakun-liu\/autodebloater\/ and the demonstration video can be found at https:\/\/youtu.be\/Gmz0-p2n9D4",
+        "authors": [
+            {
+                "email": "jkliu@smu.edu.sg",
+                "first": "Jiakun",
+                "last": "Liu",
+                "affiliation": "School of Computing and Information Systems, Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "xinghu@zju.edu.cn",
+                "first": "Xing",
+                "last": "Hu",
+                "affiliation": "Zhejiang University",
+                "contact": true
+            },
+            {
+                "email": "ferdianthung@smu.edu.sg",
+                "first": "Ferdian",
+                "last": "Thung",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "maoz@cs.tau.ac.il",
+                "first": "Shahar",
+                "last": "Maoz",
+                "affiliation": "Tel Aviv University",
+                "contact": true
+            },
+            {
+                "email": "erant@tauex.tau.ac.il",
+                "first": "Eran",
+                "last": "Toch",
+                "affiliation": "Tel Aviv University",
+                "contact": true
+            },
+            {
+                "email": "dbgao@smu.edu.sg",
+                "first": "Debin",
+                "last": "Gao",
+                "affiliation": "Singapore Management University",
+                "contact": true
+            },
+            {
+                "email": "davidlo@smu.edu.sg",
+                "first": "David",
+                "last": "Lo",
+                "affiliation": "School of Computing and Information Systems, Singapore Management University",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "darkrsw@gmail.com": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685183117
+    },
+    {
+        "pid": 161,
+        "title": "CPA-DF: A Tool for Configurable Interval Analysis to Boost Program Verification",
+        "submission": {
+            "mimetype": "application\/pdf",
+            "hash": "sha2-a149bcee514b2ad345d9c1c325b421f73a25371fda8c329dcfea5c128cfdb02a",
+            "timestamp": 1685187892,
+            "size": 505050,
+            "pages": 4,
+            "format_status": "ok"
+        },
+        "abstract": "Software verification is challenging, and auxiliary\r\nprogram invariants are used to improve the effectiveness of verification approaches.\r\nFor instance, the k-induction implementation in\r\nCPACHECKER, an award-winning framework for program analysis,\r\nuses invariants produced by a configurable data-flow analysis to\r\nstrengthen induction hypotheses. This invariant generator, CPA-DF,\r\nuses arithmetic expressions over intervals as its abstract domain\r\nand is able to prove some safe verification tasks alone. After\r\nextensively evaluating CPA-DF over SV-Benchmarks, the largest\r\npublicly available suite of C safety-verification tasks, we discover\r\nthat its potential as a stand-alone analysis or a sub-analysis in\r\na parallel portfolio for combined verification approaches has\r\nbeen significantly underestimated: (1) as a stand-alone analysis,\r\nCPA-DF finds almost as many proofs as the plain k-induction\r\nimplementation without auxiliary invariants; (2) as a sub-analysis\r\nrunning in parallel to the plain k-induction implementation,\r\nCPA-DF boosts the portfolio verifier to solve a comparable amount\r\nof tasks as the heavily-optimized k-induction implementation with\r\ninvariant injection. Our detailed analysis reveals that dynamic\r\nprecision adjustment is crucial to the efficiency and effectiveness\r\nof CPA-DF. To generalize our results beyond CPACHECKER, we use\r\nC OV ERI T EAM, a platform for cooperative verification, to compose\r\nthree portfolio verifiers executing CPA-DF and one of three other\r\nstate-of-the-art software verifiers in parallel. Surprisingly, running\r\nCPA-DF merely in parallel to these established tools can further\r\nboost the number of correct results up to more than 20 %.",
+        "authors": [
+            {
+                "email": "dirk.beyer@sosy-lab.org",
+                "first": "Dirk",
+                "last": "Beyer",
+                "affiliation": "LMU Munich",
+                "contact": true
+            },
+            {
+                "email": "po-chun.chien@sosy.ifi.lmu.de",
+                "first": "Po-Chun",
+                "last": "Chien",
+                "affiliation": "LMU Munich",
+                "contact": true
+            },
+            {
+                "email": "nian-ze.lee@sosy.ifi.lmu.de",
+                "first": "Nian-Ze",
+                "last": "Lee",
+                "affiliation": "LMU Munich",
+                "contact": true
+            }
+        ],
+        "pc_conflicts": {
+            "sw@stefan-winter.net": true
+        },
+        "decision": "Accepted",
+        "status": "accept",
+        "submitted": true,
+        "submitted_at": 1685187892
+    }
+]
