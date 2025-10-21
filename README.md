@@ -1,6 +1,6 @@
 # Conference Program Creation Pipeline
 
-An automated pipeline for organizing conference papers into scheduled sessions using LLM-powered tagging, greedy session allocation, constraint-based optimization, and CP-SAT scheduling. This system processes papers exported from HotCRP and uses Azure OpenAI to generate tags, then assigns papers to sessions and schedules them to specific timeslots and rooms.
+Automated conference session builder using LLMs and constraint optimization. This pipeline processes papers exported from HotCRP, uses AI to discover and assign topical tags, then employs greedy algorithms and constraint solvers to create and schedule coherent sessions.
 
 ## Overview
 
@@ -17,9 +17,53 @@ This pipeline automates the organization of research papers through multiple sta
 ## Prerequisites
 
 - Python 3.8 or higher
-- Azure OpenAI API access
+- LLM API access: Azure OpenAI or OpenAI (GPT-5 recommended)
 - Conference data exported from HotCRP in JSON format
 - Google OR-Tools for constraint optimization
+
+## How LLMs Are Used
+
+This pipeline uses large language models in **three distinct ways**:
+
+### 1. Tag Generation (Analytical/Discovery)
+**Purpose:** Discover common research themes across the entire paper corpus
+**Frequency:** 1-5 API calls total (batch + aggregation)
+**Model Recommendation:** **GPT-5** or most capable model available
+- Analyzes 50-200+ papers per batch to identify topical patterns
+- Requires strong reasoning to find meaningful, non-overlapping themes
+- Critical for pipeline quality - better tags = better sessions
+- **Why GPT-5?** Superior reasoning (94.6% on AIME 2025), better at identifying semantic patterns across large document sets
+
+### 2. Tag Assignment (Classification)
+**Purpose:** Classify each paper with primary, secondary, and tertiary tags
+**Frequency:** 1 API call per paper (~100-500 calls typical)
+**Model Recommendation:** **GPT-5-mini** (balanced performance/cost) or **GPT-5-nano** (cost-optimized)
+- Selects from predefined tag vocabulary (closed-set classification)
+- Simpler task than generation - matching paper to existing categories
+- Runs many times, so cost-per-call matters
+- **Why mini/nano?** Classification is less demanding than generation. GPT-5-mini provides excellent accuracy at lower cost. For large conferences (500+ papers), GPT-5-nano offers significant savings with minimal quality loss.
+
+### 3. Session Title Generation (Creative Writing)
+**Purpose:** Generate professional, academic session titles from paper groupings
+**Frequency:** 1 API call per session (~20-30 calls typical)
+**Model Recommendation:** **GPT-5-mini** (recommended) or **GPT-5** (if titles critical)
+- Reads 3-8 paper titles/abstracts per session
+- Produces concise, professional academic titles (3-8 words)
+- Moderate complexity - needs good language generation, not deep reasoning
+- **Why GPT-5-mini?** Strong writing capabilities at reasonable cost. Upgrade to GPT-5 if session titles are externally published and quality is paramount.
+
+### Model Selection Summary
+
+| Task | Complexity | Frequency | Recommended Model | Alternative |
+|------|-----------|-----------|-------------------|-------------|
+| **Tag Generation** | High (analytical reasoning) | 1-5 calls | **GPT-5** | GPT-5-mini (acceptable) |
+| **Tag Assignment** | Low (classification) | 100-500 calls | **GPT-5-mini** | GPT-5-nano (cost savings) |
+| **Title Generation** | Medium (creative writing) | 20-30 calls | **GPT-5-mini** | GPT-5 (higher quality) |
+
+**Cost Example (100 papers, 20 sessions):**
+- Using GPT-5 for generation + GPT-5-mini for assignment/titles: ~105 API calls
+- Estimated cost: ~$0.50-2.00 depending on paper/abstract length
+- Constraint solvers run locally (no API cost)
 
 ## Installation
 
@@ -31,23 +75,59 @@ cd conference_program_creation
 
 2. Install required Python packages:
 ```bash
-pip install openai python-dotenv ortools
+pip install openai python-dotenv ortools tenacity
 ```
 
 3. Set up your LLM provider credentials:
 
-The pipeline supports both Azure OpenAI and OpenAI. Configure your provider using a `.env` file:
+The pipeline supports both **Azure OpenAI** and **OpenAI**. Configure your provider using a `.env` file:
 
 ```bash
 # Copy the example file to create your .env file
 cp env.example .env
 
 # Edit .env with your credentials
-# For Azure OpenAI, set LLM_PROVIDER=azure and configure Azure variables
-# For OpenAI, set LLM_PROVIDER=openai and configure OpenAI variables
 ```
 
-See `env.example` for detailed configuration options and comments explaining each variable.
+### Environment Variables Reference
+
+**Choose your provider:**
+```bash
+LLM_PROVIDER=azure    # For Azure OpenAI
+# OR
+LLM_PROVIDER=openai   # For OpenAI direct
+```
+
+**For Azure OpenAI (if LLM_PROVIDER=azure):**
+```bash
+# Azure endpoint and authentication
+AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
+AZURE_OPENAI_KEY=your-api-key-here
+AZURE_OPENAI_API_VERSION=2024-12-01-preview
+
+# Model deployments (use deployment names from Azure Portal)
+AZURE_OPENAI_TAG_GENERATION_DEPLOYMENT=gpt-5-production
+AZURE_OPENAI_TAG_ASSIGNMENT_DEPLOYMENT=gpt-5-mini-production
+AZURE_OPENAI_TITLE_GENERATION_DEPLOYMENT=gpt-5-mini-production
+```
+
+**For OpenAI (if LLM_PROVIDER=openai):**
+```bash
+# OpenAI authentication
+OPENAI_API_KEY=sk-proj-...your-key-here...
+OPENAI_API_VERSION=v1  # Optional, defaults to latest
+
+# Model names (use actual model IDs)
+OPENAI_TAG_GENERATION_MODEL=gpt-5
+OPENAI_TAG_ASSIGNMENT_MODEL=gpt-5-mini
+OPENAI_TITLE_GENERATION_MODEL=gpt-5-mini
+```
+
+**Model Naming:**
+- **Azure:** Use your deployment names (whatever you named them in Azure Portal)
+- **OpenAI:** Use official model names: `gpt-5`, `gpt-5-mini`, `gpt-5-nano`
+
+See `env.example` for complete documentation with detailed comments.
 
 4. Test your LLM configuration:
 
@@ -132,7 +212,7 @@ The **weights** section is particularly important as it's used throughout the pi
 ```json
 "constraints": {
   "avoid_author_conflicts": true,
-  "author_contstraints": [
+  "author_constraints": [
     {
       "type": "date_constraint",
       "author_name": "David Lo",
@@ -227,6 +307,7 @@ python scripts/generate_tags.py --input data/papers.json --output data/tags_raw.
 Options:
 - `--num-tags`: Number of tags to generate (default: 20)
 - `--batch-size`: Number of papers to analyze per batch (default: 50)
+- `--delay-between-batches`: Seconds to wait between batches to avoid rate limits (default: 30)
 
 This creates `data/tags_raw.json` with LLM-generated tag names ranked by frequency.
 
@@ -723,13 +804,20 @@ If you encounter rate limiting errors:
 
 If scripts fail with "Missing required environment variables":
 - Verify `.env` file exists in the project root
-- Check all required variables are set:
+- Check `LLM_PROVIDER` is set to either `azure` or `openai`
+- **For Azure OpenAI (LLM_PROVIDER=azure):**
   - `AZURE_OPENAI_ENDPOINT`
   - `AZURE_OPENAI_KEY`
-  - `AZURE_OPENAI_DEPLOYMENT`
-  - `AZURE_OPENAI_DEPLOYMENT_TAG_GENERATION`
-  - `AZURE_OPENAI_DEPLOYMENT_TITLE_GENERATION`
   - `AZURE_OPENAI_API_VERSION`
+  - `AZURE_OPENAI_TAG_GENERATION_DEPLOYMENT`
+  - `AZURE_OPENAI_TAG_ASSIGNMENT_DEPLOYMENT`
+  - `AZURE_OPENAI_TITLE_GENERATION_DEPLOYMENT`
+- **For OpenAI (LLM_PROVIDER=openai):**
+  - `OPENAI_API_KEY`
+  - `OPENAI_TAG_GENERATION_MODEL`
+  - `OPENAI_TAG_ASSIGNMENT_MODEL`
+  - `OPENAI_TITLE_GENERATION_MODEL`
+- Run `python scripts/llm_client.py` to test your configuration
 
 ### JSON Parsing Errors
 
@@ -810,18 +898,32 @@ python scripts/session_analysis.py \
 
 ## Cost Considerations
 
-Azure OpenAI API calls incur costs based on token usage:
+LLM API calls incur costs based on token usage. The pipeline is designed to be cost-effective:
 
-- **Tag generation**: ~1-2 API calls for entire corpus
-- **Tag assignment**: 1 API call per paper
-- **Session title generation**: 1 API call per session
+**API Call Breakdown:**
+- **Tag generation**: 1-5 calls total (batch processing + aggregation)
+- **Tag assignment**: 1 call per paper (~100-500 calls)
+- **Session title generation**: 1 call per session (~20-30 calls)
 
-For a conference with 100 papers organized into 20 sessions:
-- Tag generation/assignment: ~105 API calls
-- Title generation: ~20 API calls
-- **Total**: ~125 API calls
+**Example Conference (100 papers, 20 sessions):**
+- Tag generation: 2 calls (GPT-5)
+- Tag assignment: 100 calls (GPT-5-mini)
+- Title generation: 20 calls (GPT-5-mini)
+- **Total**: ~122 API calls
+- **Estimated cost**: $0.50-2.00 depending on paper/abstract length
 
-The constraint solvers (greedy, fill-in, CP-SAT scheduling) run locally and incur no API costs.
+**Cost Optimization Tips:**
+1. Use **GPT-5** only for tag generation (critical quality, low volume)
+2. Use **GPT-5-mini** for tag assignment and title generation (high volume, simpler tasks)
+3. Use **GPT-5-nano** for tag assignment on very large conferences (500+ papers)
+4. Enable `--resume` flag to avoid re-processing on interruptions
+5. Use `--delay-between-batches` to avoid rate limits (default: 30s)
+
+**Zero-cost components:**
+- Greedy session allocation (local algorithm)
+- Fill-in session optimization (local CP-SAT solver)
+- CP-SAT scheduling (local constraint solver)
+- Session analysis (local metrics calculation)
 
 ## Key Features
 
